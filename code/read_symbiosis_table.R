@@ -13,13 +13,24 @@ setnames(symbiosis_tbl, "Name", "Species")
 symbiosis_tbl$Species <- gsub("_", " ",  symbiosis_tbl$Species)
 
 ## Add a abbreviation column
-species_abbrev <- function(full_name, sep_string=". "){
-  genus_name <- str_split(full_name, " ")[[1]][1]
-  sp_name <- str_split(full_name, " ")[[1]][2]
-  genus_abbrev <- str_sub(genus_name, 1, 1)
-  combine_name <- paste(genus_abbrev, sp_name, sep = sep_string)
-  return (combine_name)
+species_abbrev <- function(full_name, sep_string = ". ") {
+  name_parts <- str_split(full_name, " ")[[1]]
+  genus_name <- name_parts[1]
+  species_name <- name_parts[2]
+  
+  if (length(name_parts) > 2) {
+    subspecies_name <- name_parts[3]
+    genus_abbrev <- str_sub(genus_name, 1, 1)
+    abbrev <- paste(genus_abbrev, species_name, sep = sep_string)
+    abbrev <- paste(abbrev, subspecies_name, sep=" ")
+  } else {
+    genus_abbrev <- str_sub(genus_name, 1, 1)
+    abbrev <- paste(genus_abbrev, species_name, sep = sep_string)
+  }
+  
+  return(abbrev)
 }
+
 
 symbiosis_tbl[, short_name := mapply(species_abbrev, Species)][]
 
