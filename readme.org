@@ -1,3 +1,5 @@
+#+TITLE: Foraminifera Census Data Compilation in the Last Glacial Maximum (21 ka)
+
 * About
 
 This project aims to collect and sort out existing foraminifera census data in the Last Glacial Maximum (21 ka).
@@ -10,16 +12,17 @@ This project aims to collect and sort out existing foraminifera census data in t
 + /sp: species level data in each project
 + /tidy: combined lgm and forcens in fg/sp or absolute/relative abundance. SST are assigned according to the georeferences.
 
-* Data Sources
-** [[file:raw/RAEDME.txt][Foraminifera data]]
-** LGM Temperature
+* Raw Data Sources
+** [[file:raw/RAEDME.txt][Foraminifera global abundance]]
+** LGM Sea Surface Temperature
 
 Tierney, J. E., Zhu, J., King, J., Malevich, S. B., Hakim, G. J., & Poulsen, C. J. (2020). Glacial cooling and climate sensitivity revisited. Nature, 584(7822), 569-573.
 
-** Pre-industrial temperatue
+** Pre-industrial Sea Surface Temperature
 Kennedy, J. J., Rayner, N. A., Atkinson, C. P., & Killick, R. E. (2019). An ensemble data set of sea‐surface temperature change from 1850: the Met Office Hadley Centre HadSST.4.0.0.0 data set. Journal of Geophysical Research: Atmospheres, 124.
 
-* Data Clean Steps
+* Data cleaning
+** Conceptual Steps
 + 0 read raw data in wide format
 + 1 clean and replace column name
 + 2 generate species-based relative/absolute abundance (long format, in `sp` folder)
@@ -30,6 +33,8 @@ Kennedy, J. J., Rayner, N. A., Atkinson, C. P., & Killick, R. E. (2019). An ense
 #+BEGIN_QUOTE
 Taxonomy in this project is as Brummer and Kucera (2022). And relative abundance is in decimal format (0-1) not percentage.
 #+END_QUOTE
+** Run the codes
++ Open foram_core.Rproject and follow the prompt
 
 * License [[https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg]]
 This project is under protection of Attribution-NonCommercial 4.0 International (CC BY NC 4.0) license, which means you can share and adapt the code but you also must give appropriate credit to this project.
