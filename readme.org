@@ -1,16 +1,23 @@
 * About
 
-This project aims to collect and sort out existing foraminifera census data in the LGM.
+This project aims to collect and sort out existing foraminifera census data in the Last Glacial Maximum (21 ka).
 + Author: Rui Ying (rui.ying@bristol.ac.uk)
++ Publication citation: in preparation
 
 * Structure
-+ raw: raw data after cleaning
-+ fg: functionl group level data in each project
-+ sp: species level data in each project
-+ tidy: combine the lgm and forcens in fg/sp or absolute/relative abundance
++ /raw: raw data after cleaning
++ /fg: functionl group level data in each project
++ /sp: species level data in each project
++ /tidy: combined lgm and forcens in fg/sp or absolute/relative abundance. SST are assigned according to the georeferences.
 
 * Data Sources
-[[file:raw/RAEDME.txt][Data description]]
+** [[file:raw/RAEDME.txt][Foraminifera data]]
+** LGM Temperature
+
+Tierney, J. E., Zhu, J., King, J., Malevich, S. B., Hakim, G. J., & Poulsen, C. J. (2020). Glacial cooling and climate sensitivity revisited. Nature, 584(7822), 569-573.
+
+** Pre-industrial temperatue
+Kennedy, J. J., Rayner, N. A., Atkinson, C. P., & Killick, R. E. (2019). An ensemble data set of sea‐surface temperature change from 1850: the Met Office Hadley Centre HadSST.4.0.0.0 data set. Journal of Geophysical Research: Atmospheres, 124.
 
 * Data Clean Steps
 + 0 read raw data in wide format
@@ -20,10 +27,9 @@ This project aims to collect and sort out existing foraminifera census data in t
 + 4 merge all data in lgm in long format and convert to wide format (in `tidy` folder, sp in abbreviation)
 + 5 Add SST in each lgm data
 
-* Others
-+ Taxonomy: Brummer and Kucera (2022)
-+ Relative abundance: all in decimal format (0-1)
-+ NA: replace NA with 0 (absence is still information)
+#+BEGIN_QUOTE
+Taxonomy in this project is as Brummer and Kucera (2022). And relative abundance is in decimal format (0-1) not percentage.
+#+END_QUOTE
 
 * License [[https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg]]
-This project is under protection of Attribution-NonCommercial 4.0 International (CC BY NC 4.0) license.
+This project is under protection of Attribution-NonCommercial 4.0 International (CC BY NC 4.0) license, which means you can share and adapt the code but you also must give appropriate credit to this project.
