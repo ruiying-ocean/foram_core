@@ -1,0 +1,19 @@
+* About
+This project aims to collect and sort out existing foraminifera census data in the LGM.
+Author: Rui Ying (rui.ying@bristol.ac.uk)
+
+* Data Sources
+[[file:raw/RAEDME.txt][Data description]]
+
+* Data Clean Steps
+0 read raw data in wide format
+1 clean and replace column name
+2 generate species-based relative/absolute abundance (long format, in `sp` folder)
+3 generate functional group-based relative/absolute abundance (long format, in `fg` folder)
+4 merge all data in lgm in long format and convert to wide format (in `tidy` folder, sp in abbreviation)
+5 Add SST in each lgm data
+
+* Others
+Taxonomy: Brummer and Kucera (2022)
+Relative abundance: all in decimal format (0-1)
+NA: replace NA with 0 (absence is still information)
