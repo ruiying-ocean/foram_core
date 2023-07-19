@@ -1,5 +1,7 @@
 #+TITLE: Foraminifera Census Data Compilation in the Last Glacial Maximum (21 ka)
 
+ [[https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg]]
+
 * About
 
 This project aims to collect and sort out existing foraminifera census data in the Last Glacial Maximum (21 ka). These data, as those of pre-industrial project, will be used to construct foraminifera thermal performance curves. 
@@ -36,5 +38,5 @@ Taxonomy in this project is as Brummer and Kucera (2022). And relative abundance
 ** Run the codes
 + Open foram_core.Rproject and follow the prompt
 
-* License [[https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg]]
+* License
 This project is under protection of Attribution-NonCommercial 4.0 International (CC BY NC 4.0) license, which means you can share and adapt the code but you also must give appropriate credit to this project.
