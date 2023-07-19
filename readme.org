@@ -4,7 +4,7 @@
 
 * About
 
-This project aims to collect and sort out existing foraminifera census data in the Last Glacial Maximum (21 ka). These data, as those of pre-industrial project, will be used to construct foraminifera thermal performance curves. 
+This project aims to collect and sort out existing foraminifera census data in the Last Glacial Maximum (21 ka). These data, as those of pre-industrial project (ForCenS, https://doi.org/10.1038/sdata.2017.109), will be used to construct foraminifera thermal performance curves. 
 + Author: Rui Ying (rui.ying@bristol.ac.uk)
 + Publication citation: Ying, R., Monteiro, F. M., Wilson, J. D., & Schmidt, D. N. (2023). in submission
 
