@@ -15,7 +15,7 @@ This project aims to collect and sort out existing foraminifera census data in t
 + /tidy: combined lgm and forcens in fg/sp or absolute/relative abundance. SST are assigned according to the georeferences.
 
 * Raw Data Sources
-** [[file:raw/RAEDME.txt][Foraminifera global abundance]]
+** [[file:raw/RAEDME.org][Foraminifera global abundance]]
 ** LGM Sea Surface Temperature
 
 Tierney, J. E., Zhu, J., King, J., Malevich, S. B., Hakim, G. J., & Poulsen, C. J. (2020). Glacial cooling and climate sensitivity revisited. Nature, 584(7822), 569-573.
