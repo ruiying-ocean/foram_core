@@ -1,10 +1,10 @@
 #+TITLE: Foraminifer census data source
 
-* Foraminifera assemblage projects
-** surface sediment (pre-industrial) (core sample depth < 0.03 m)
+* Foraminifera projects
+** 1. surface sediment (pre-industrial) (core sample depth < 0.03 m)
 + ForCenS includes all the modern subset of CLIMAP, MARGO, GLAMAP and BUFD (Brown University Foraminiferal Database)
 
-** Downcore (core sample depth 0.3~3.0 m) 
+** 2. LGM downcore (core sample depth 0.3~3.0 m) 
 + CLIMAP (1970s, contains both 18ka and 120 ka, yielding a result that low-latitude have little change of SST in LGM)
 + MARGO (Launched in 2002, includes both Modern and LGM. Kucera 2005 QSR, MARGO et al. 2009 Nat Geo)
 + EPILOG (An update on CLIMAP,  South Atlantic only, e.g., age model, 1999. Mix et al. 2001 QSR)
@@ -12,14 +12,15 @@
 + MIX (Mix et al. 1999 Palaoceanography, a subset of CLIMAP data and using different transfer function)
 
 * Data format  
-ForCenS (relative + absolute abundance)
-MARGO (relative + absolute abundance)
-CLIMAP (relative + absolute abundance)
-EPILOG (relative + absolute abundance)
-GLAMAP (relative abundance only)
-Mix1999 (relative abundance only)
++ ForCenS (relative + absolute abundance)
++ MARGO (relative + absolute abundance)
++ CLIMAP (relative + absolute abundance)
++ EPILOG (relative + absolute abundance)
++ GLAMAP (relative abundance only)
++ Mix1999 (relative abundance only)
 
 * Data sources
+** [[https://doi.org/10.1594/PANGAEA.873570][ForCenS/Modern]]
 ** [[https://www.ncei.noaa.gov/access/paleo-search/study/2516][CLIMAP]]
 ** [[https://doi.org/10.1594/PANGAEA.57027][EPILOG/LGM]]
 ** [[https://doi.org/10.1594/PANGAEA.55156][GLAMAP/LGM]]
@@ -28,4 +29,4 @@ Mix1999 (relative abundance only)
 *** [[https://doi.org/10.1594/PANGAEA.227327][LGM Pacific]]
 *** [[https://doi.org/10.1594/PANGAEA.227306][LGM Mediterranean]]
 *** [[https://doi.org/10.1594/PANGAEA.227319][LGM Indo-Pacific]]
-** [[https://doi.org/10.1594/PANGAEA.873570][ForCenS/Modern]]
+
