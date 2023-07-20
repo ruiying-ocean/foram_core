@@ -8,6 +8,8 @@ This project aims to collect and sort out existing foraminifera census data in t
 + Author: Rui Ying (rui.ying@bristol.ac.uk)
 + Publication citation: Ying, R., Monteiro, F. M., Wilson, J. D., & Schmidt, D. N. (2023). in submission
 
+#+html: <p align="center"><img src="example/example_map.png" /></p>
+
 * Structure
 + /raw: raw data after cleaning
 + /fg: functionl group level data in each project
