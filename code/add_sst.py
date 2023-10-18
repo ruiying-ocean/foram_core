@@ -1,94 +1,131 @@
 import xarray as xr
 import numpy as np
 import pandas as pd
+class DataProduct:
 
-def normal_to_east(x):
-    "from -180~180 to 0~360, to eastern degrees"
-    x[x<0] = x[x<0] + 360
-    return x
+    def __init__(self, data_array, lon='lon', lat='lat', lon_eastern=False):
+        """
+        The class to find the nearest value in the data array to the target longitude and latitude.
+        ------
+        Parameters
+        ------
+        data_array: a xarray Data Array with longitude and latitude as dimensions
+        lon: the name of the longitude dimension
+        lat: the name of the latitude dimension
+        lon_eastern: whether the longitude is in eastern format (0, 360) or not (-180, 180)
+        """
+        self.data = data_array
+        self.lon_name = lon
+        self.lat_name = lat
+        self.lon_eastern = lon_eastern
 
-def east_to_normal(x):
-    "from 0~360 to -180~180"
-    x[x>180] = x[x>180] - 360
-    return x
+        self.stacked_data = self.data.stack(x=[self.lon_name, self.lat_name])
+        self.stacked_ocn_mask =~np.isnan(self.stacked_data)
+        self.ocn_only_data = self.stacked_data[self.stacked_ocn_mask]
 
-def add_tierney_sst(data, lookup_data, column_name="SST"):
-    lst = []
-    latitude = data['Latitude'].copy()
-    longitude = data['Longitude'].copy()
-    longitude = normal_to_east(longitude)
+    def convert_to_longitude_east(self, normal_longitude):
+        """
+        normal longitude (-180, 180) to longitude east(0,360)
+        """
+        if normal_longitude < 0:
+            return 360 + normal_longitude
+        else:
+            return normal_longitude
 
-    for i in range(len(longitude)):
-        lat = latitude[i]
-        lon = longitude[i]
-        x = lookup_data.sel(lat=lat,
-                         lon=lon,
-                         method="nearest",
-                         tolerance=1).values
+    @staticmethod
+    def haversine_distance(point1, point2):
+        """
+        Calculate the Haversine distance between two points.
+        """
+        lon1, lat1 = point1
+        lon2, lat2 = point2
 
-        if np.isnan(x):
-            x = lookup_data.sel(lat=lat,
-                             lon=lon,
-                             method="pad").values
-        if np.isnan(x):
-            x = lookup_data.sel(lat=lat,
-                             lon=lon,
-                             method="backfill").values
-        lst.append(x)
-    data[column_name] = np.array(lst)
+        # Convert latitude and longitude from degrees to radians
+        lat1, lon1, lat2, lon2 = np.radians([lat1, lon1, lat2, lon2])
 
-def add_Had_data(data, lookup_data, column_name="SST"):
-    lst = []
-    latitude = data['Latitude'].copy()
-    longitude = data['Longitude'].copy()
+        # Haversine formula
+        dlon = lon2 - lon1
+        dlat = lat2 - lat1
+        a = np.sin(dlat / 2) ** 2 + np.cos(lat1) * np.cos(lat2) * np.sin(dlon / 2) ** 2
+        c = 2 * np.arctan2(np.sqrt(a), np.sqrt(1 - a))
 
-    for i in range(len(longitude)):
-        lat = latitude[i]
-        lon = longitude[i]
-        x = lookup_data.sel(latitude=lat,
-                         longitude=lon,
-                         tolerance=1,
-                         method="nearest").values
-        lst.append(x)
-    data[column_name] = np.array(lst)
+        # Radius of the Earth in kilometers
+        earth_radius = 6371.0
+        distance = earth_radius * c
 
-lgm_data = xr.open_dataset("tidy/Tierney2020_DA_ocn_regrid.nc")
-pi_data = xr.open_dataset("tidy/HadISST_PI.nc")
+        return distance
 
-## longitude checked, regular but in eastern format
-SST_LGM = lgm_data['SSTLGM']
-SST_PI = pi_data['sst']
+    def find_nearest(self, lon, lat):
+        """
+        The API for users to find the nearest value and ignore the NA values
 
-lgm_fg_a = pd.read_csv("~/foram_core/tidy/lgm_fg_a_tidy.csv")
-lgm_fg_r = pd.read_csv("~/foram_core/tidy/lgm_fg_r_tidy.csv")
-lgm_sp_a = pd.read_csv("~/foram_core/tidy/lgm_sp_a_tidy.csv")
-lgm_sp_r = pd.read_csv("~/foram_core/tidy/lgm_sp_r_tidy.csv")
+        The strategy is to mask the NA values and then use the nearest value
+        source: https://github.com/pydata/xarray/issues/644
 
-add_tierney_sst(lgm_fg_a, SST_LGM, "SST")
-add_tierney_sst(lgm_fg_r, SST_LGM, "SST")
-add_tierney_sst(lgm_sp_a, SST_LGM, "SST")
-add_tierney_sst(lgm_sp_r, SST_LGM, "SST")
+        Find the nearest value in the data array to the target longitude and latitude.
+        ------
+        Parameters
+        ------
+        ds: a stacked xarray data array with x
+        lon: target longitude
+        lat: target latitude
+        """
 
-lgm_fg_a.to_csv("~/foram_core/tidy/lgm_fg_a_wsst.csv",index=False)
-lgm_fg_r.to_csv("~/foram_core/tidy/lgm_fg_r_wsst.csv",index=False)
-lgm_sp_a.to_csv("~/foram_core/tidy/lgm_sp_a_wsst.csv",index=False)
-lgm_sp_r.to_csv("~/foram_core/tidy/lgm_sp_r_wsst.csv",index=False)
+        index_pool = self.ocn_only_data.x.values
+        point1 = (lon, lat)
 
-## ------------------------------
+        distances = np.array([DataProduct.haversine_distance(point1, point2) for point2 in index_pool])
+        idx_min = np.argmin(distances)
+        nearest_value = self.ocn_only_data.values[idx_min]
+        return nearest_value
 
-pi_fg_a = pd.read_csv("~/foram_core/tidy/forcens_fg_a_tidy.csv")
-pi_fg_r = pd.read_csv("~/foram_core/tidy/forcens_fg_r_tidy.csv")
-pi_sp_a = pd.read_csv("~/foram_core/tidy/forcens_sp_a_tidy.csv")
-pi_sp_r = pd.read_csv("~/foram_core/tidy/forcens_sp_r_tidy.csv")
+    def match_dataframe(self, df, lat_col, lon_col, column_name):
+        lst = []
 
-add_Had_data(pi_fg_a, SST_PI, "SST")
-add_Had_data(pi_fg_r, SST_PI, "SST")
-add_Had_data(pi_sp_a, SST_PI, "SST")
-add_Had_data(pi_sp_r, SST_PI, "SST")
+        for i in range(len(df)):
+            lat = df[lat_col].iloc[i,]
+            lon = df[lon_col].iloc[i,]
 
-pi_fg_a.to_csv("~/foram_core/tidy/forcens_fg_a_wsst.csv",index=False)
-pi_fg_r.to_csv("~/foram_core/tidy/forcens_fg_r_wsst.csv",index=False)
-pi_sp_a.to_csv("~/foram_core/tidy/forcens_sp_a_wsst.csv",index=False)
-pi_sp_r.to_csv("~/foram_core/tidy/forcens_sp_r_wsst.csv",index=False)
+            ## if the model uses eastern longitude format
+            ## convert the dataframe's longitude to match the model
+            if self.lon_eastern:
+                lon = self.convert_to_longitude_east(lon)
+                ## find the value
+            lst.append(self.find_nearest(lon, lat))
+        df[column_name] = np.array(lst)
+        return df
 
-print(">>> [DONE] SST Added")
+def main():
+    tierney_data = xr.open_dataset("../tidy/Tierney2020_DA_ocn_regrid.nc")['SSTLGM']
+    SST_LGM = DataProduct(tierney_data, lon='lon', lat='lat', lon_eastern=True)
+
+    lgm_fg_a = pd.read_csv("../tidy/lgm_fg_a_tidy.csv")
+    lgm_fg_r = pd.read_csv("../tidy/lgm_fg_r_tidy.csv")
+    lgm_sp_a = pd.read_csv("../tidy/lgm_sp_a_tidy.csv")
+    lgm_sp_r = pd.read_csv("../tidy/lgm_sp_r_tidy.csv")
+
+    hadi_sst = xr.open_dataset("../tidy/HadISST_PI.nc")['sst']
+    PI_SST = DataProduct(hadi_sst, lon='longitude', lat='latitude', lon_eastern=False)
+
+    pi_fg_a = pd.read_csv("../tidy/forcens_fg_a_tidy.csv")
+    pi_fg_r = pd.read_csv("../tidy/forcens_fg_r_tidy.csv")
+    pi_sp_a = pd.read_csv("../tidy/forcens_sp_a_tidy.csv")
+    pi_sp_r = pd.read_csv("../tidy/forcens_sp_r_tidy.csv")
+
+    df_lon = 'Longitude'
+    df_lat = 'Latitude'
+    df_sst = 'SST'
+
+    SST_LGM.match_dataframe(lgm_fg_a, df_lat, df_lon, df_sst).to_csv("../tidy/lgm_fg_a_wsst.csv", index=False)
+    SST_LGM.match_dataframe(lgm_fg_r, df_lat, df_lon, df_sst).to_csv("../tidy/lgm_fg_r_wsst.csv", index=False)
+    SST_LGM.match_dataframe(lgm_sp_a, df_lat, df_lon, df_sst).to_csv("../tidy/lgm_sp_a_wsst.csv", index=False)
+    SST_LGM.match_dataframe(lgm_sp_r, df_lat, df_lon, df_sst).to_csv("../tidy/lgm_sp_r_wsst.csv", index=False)
+
+    PI_SST.match_dataframe(pi_fg_a, df_lat, df_lon, df_sst).to_csv("../tidy/forcens_fg_a_wsst.csv", index=False)
+    PI_SST.match_dataframe(pi_fg_r, df_lat, df_lon, df_sst).to_csv("../tidy/forcens_fg_r_wsst.csv", index=False)
+    PI_SST.match_dataframe(pi_sp_a, df_lat, df_lon, df_sst).to_csv("../tidy/forcens_sp_a_wsst.csv", index=False)
+    PI_SST.match_dataframe(pi_sp_r, df_lat, df_lon, df_sst).to_csv("../tidy/forcens_sp_r_wsst.csv", index=False)
+    print(">>> [DONE] SST Added")
+
+if __name__ == "__main__":
+    main()
