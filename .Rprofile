@@ -14,9 +14,9 @@ message("<<< DONE")
 
 USE_FORCENS = TRUE
 USE_MARGO = TRUE
-USE_EPILOG = TRUE
-USE_GLAMAP = TRUE
-USE_CLIMAP = TRUE
+USE_EPILOG = FALSE
+USE_GLAMAP = FALSE
+USE_CLIMAP = FALSE ## This is 18 ka, that differs from MARGO's 19-23 ka
 USE_MIX1999 = FALSE ## this should be Holocene not LGM
 
 
@@ -35,48 +35,62 @@ delete_files <- function(folder_path,except_file="foram_sp_db.csv"){
 
 add_sst <- function(){
     cat("Running Python script...\n")
-    ## Set the path to the Python script
-    python_script <- "code/add_sst.py"
-
+    
+    ## Set the path to the Python script    
+    project_path <- file.path(getwd())
+    
+    python_script_path <- paste(project_path, "code/add_sst.py", sep = "/")
+    
     ## Run the Python script
-    system(paste("python3", python_script))
+    system(paste("python3", python_script_path, project_path))
 }
 
 
-# Define the function for interactive prompt using menu
+                                        # Define the function for interactive prompt using menu
 customPrompt <- function() {
-  # Define the menu choices
-  choices <- c("Yes", "No", "Exit")
-  
-  # Display the menu and prompt for user selection
-  selection <- utils::menu(choices, title = "Do you want to re-run all codes?")
-  
-  # Convert the selection to lowercase
-  selection <- tolower(choices[selection])
-  
-  # Check the selection and execute code accordingly
-  if (selection == "yes") {
-    # Code to execute if user selects "Yes"
-      cat("Executing the action...\n")
-      delete_files("sp")
-      delete_files("fg")
-      if (USE_FORCENS) source("code/clean_forcens.R")
-      if (USE_CLIMAP)source("code/clean_climap.R")
-      if (USE_MARGO) source("code/clean_margo.R")
-      if (USE_EPILOG) source("code/clean_epilog.R")
-      if (USE_GLAMAP) source("code/clean_glamap.R")
-      if (USE_MIX1999) source("code/clean_mix1999.R")
-      source("code/tidy_all.R")
-      add_sst()
-    # Add your specific code here
-  } else if (selection == "no") {
-    # Code to execute if user selects "No"
-    cat("No action taken.\n")
-  } else {
-    # Code to execute if user selects "Exit" or closes the menu
-    cat("Exiting...\n")    
-  }
+    ## Define the menu choices
+    choices <- c("Yes", "No", "Exit")
+    
+    ## Display the menu and prompt for user selection
+    selection <- utils::menu(choices, title = "Do you want to re-generate abundance data?")
+    
+    ## Convert the selection to lowercase
+    selection <- tolower(choices[selection])
+    
+    ## Check the selection and execute code accordingly
+    if (selection == "yes") {        
+        
+        ## Code to execute if user selects "Yes"
+        cat("Executing the action...\n")
+        cat("Removing existing csv files...\n")
+        delete_files("sp")
+        delete_files("fg")
+        if (USE_FORCENS) source("code/clean_forcens.R")
+        if (USE_CLIMAP)source("code/clean_climap.R")
+        if (USE_MARGO) source("code/clean_margo.R")
+        if (USE_EPILOG) source("code/clean_epilog.R")
+        if (USE_GLAMAP) source("code/clean_glamap.R")
+        if (USE_MIX1999) source("code/clean_mix1999.R")
+        source("code/tidy_all.R")
+        ## Add your specific code here
+    } else if (selection == "no") {
+        ## Code to execute if user selects "No"
+        cat("No action taken.\n")
+    } else {
+        ## Code to execute if user selects "Exit" or closes the menu
+        cat("Exiting...\n")    
+    }
+
+    selection <- utils::menu(choices, title = "Do you want to re-match SST data?")
+    selection <- tolower(choices[selection])
+    if (selection == "yes") {
+        add_sst()
+    } else if (selection == "no") {
+        cat("No action taken.\n")
+    } else {
+        cat("Exiting...\n")    
+    }
 }
 
-# Call the custom prompt function
+                                        # Call the custom prompt function
 customPrompt()
