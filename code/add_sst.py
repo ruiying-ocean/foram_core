@@ -55,9 +55,9 @@ class DataProduct:
 
         return distance
 
-    def find_nearest(self, lon, lat):
+    def find_nearest(self, lon, lat, tolerate_na = True):
         """
-        The API for users to find the nearest value and ignore the NA values
+        The API for users to find the nearest value and allow ignorance of the NA values
 
         The strategy is to mask the NA values and then use the nearest value
         source: https://github.com/pydata/xarray/issues/644
@@ -69,19 +69,24 @@ class DataProduct:
         ds: a stacked xarray data array with x
         lon: target longitude
         lat: target latitude
+        tolerate_na: whether to tolerate NA values or not, this could greately slow down the process
         """
 
-        index_pool = self.ocn_only_data.x.values
-        point1 = (lon, lat)
+        if tolerate_na:
+            kw_args = {self.lon_name: lon, self.lat_name: lat, 'method': 'nearest'}
+            nearest_value =self.data.sel(**kw_args).values.item()
+        else:                    
+            index_pool = self.ocn_only_data.x.values
+            point1 = (lon, lat)
 
-        distances = np.array([DataProduct.haversine_distance(point1, point2) for point2 in index_pool])
-        idx_min = np.argmin(distances)
-        nearest_value = self.ocn_only_data.values[idx_min]
+            distances = np.array([DataProduct.haversine_distance(point1, point2) for point2 in index_pool])
+            idx_min = np.argmin(distances)
+            nearest_value = self.ocn_only_data.values[idx_min]
         return nearest_value
 
-    def match_dataframe(self, df, lat_col, lon_col, column_name):
-        lst = []
-
+    def match_dataframe(self, df, lat_col, lon_col, column_name, tolerate_na = True):
+        lst = []        
+            
         for i in range(len(df)):
             lat = df[lat_col].iloc[i,]
             lon = df[lon_col].iloc[i,]
