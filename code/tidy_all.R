@@ -15,6 +15,9 @@ wdf <- ldf %>% rbindlist() %>% pivot_wider(id_cols = c("Latitude", "Longitude"),
                            values_fill = 0,
                            values_fn=mean)
 
+## remove duplicate rows
+wdf <- wdf[!duplicated(wdf), ]
+
 wdf %>% fwrite("tidy/lgm_sp_r_tidy.csv")
 
 #---------------------------------------------------
@@ -33,7 +36,8 @@ wdf <- ldf %>%  rbindlist() %>%pivot_wider(id_cols = c("Latitude", "Longitude"),
                            names_from = "Species", 
                            values_fill = 0,
                            values_fn=mean)
-
+## remove duplicate rows
+wdf <- wdf[!duplicated(wdf), ]
 wdf %>% fwrite("tidy/lgm_sp_a_tidy.csv")
 
 #---------------------------------------------------
@@ -58,6 +62,9 @@ wdf <- ldf %>% pivot_wider(id_cols = c("Latitude", "Longitude"),
                            names_from = "Functional Group", 
                            values_fill = 0,
                            values_fn=mean)
+
+## remove duplicate rows
+wdf <- wdf[!duplicated(wdf), ]
 
 wdf %>% fwrite("tidy/lgm_fg_a_tidy.csv")
 
@@ -84,6 +91,9 @@ wdf <- ldf %>% pivot_wider(id_cols = c("Latitude", "Longitude"),
                            values_fill = 0,
                            values_fn=mean)
 
+## remove duplicate rows
+wdf <- wdf[!duplicated(wdf), ]
+
 wdf %>% fwrite("tidy/lgm_fg_r_tidy.csv")
 
 #--------------------
@@ -95,12 +105,13 @@ pi_a <- read_csv("fg/forcens_fg_a.csv")%>% mutate(`Functional Group` = case_when
   Symbiosis == "Yes" & Spinose=="No" ~ "Symbiont-facultative Non-Spinose",
   Symbiosis == "Yes" & Spinose=="Yes" ~ "Symbiont-obligate Spinose"))
 
-pi_a %>% pivot_wider(id_cols = c("Latitude", "Longitude"),
+pi_aw <- pi_a %>% pivot_wider(id_cols = c("Latitude", "Longitude"),
                            values_from = "Absolute Abundance",
                            names_from = "Functional Group", 
                            values_fill = 0,
-                           values_fn=mean)%>%
-  fwrite("tidy/forcens_fg_a_tidy.csv")
+                           values_fn=mean) %>% distinct()
+
+pi_aw  %>% fwrite("tidy/forcens_fg_a_tidy.csv")
 
 pi_r <- read_csv("fg/forcens_fg_r.csv")%>% mutate(`Functional Group` = case_when(
   Symbiosis == "No" & Spinose=="No" ~ "Symbiont-barren Non-Spinose",
@@ -108,12 +119,12 @@ pi_r <- read_csv("fg/forcens_fg_r.csv")%>% mutate(`Functional Group` = case_when
   Symbiosis == "Yes" & Spinose=="No" ~ "Symbiont-facultative Non-Spinose",
   Symbiosis == "Yes" & Spinose=="Yes" ~ "Symbiont-obligate Spinose"))
 
-pi_r %>% pivot_wider(id_cols = c("Latitude", "Longitude"),
+pi_rw <- pi_r %>% pivot_wider(id_cols = c("Latitude", "Longitude"),
                      values_from = "Relative Abundance",
                      names_from = "Functional Group", 
                      values_fill = 0,
-                     values_fn=mean)%>%
-  fwrite("tidy/forcens_fg_r_tidy.csv")
+                     values_fn=mean)%>% distinct()
+pi_rw %>% fwrite("tidy/forcens_fg_r_tidy.csv")
 
 #--------------------
 # Plot example
