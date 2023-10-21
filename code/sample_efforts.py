@@ -19,11 +19,11 @@ def main():
     # Create a figure and axis with Seaborn
     fig, ax = plt.subplots(figsize=(6, 4))
     sns.set(style="ticks")  # Set Seaborn style (white background with grid lines)
-    sns.set_palette("Set1")  # Set color palette
+    colors = sns.color_palette("Set1",2).as_hex()
 
     # Plot the histograms using Seaborn
-    sns.histplot(data=pi, x=data_column, bins=temperature_bins, kde=False, label='PI')
-    sns.histplot(data=lgm, x=data_column, bins=temperature_bins, kde=False, label='LGM', zorder=2)
+    sns.histplot(data=pi, x=data_column, bins=temperature_bins, kde=False, label='PI', color=colors[0], zorder=1)
+    sns.histplot(data=lgm, x=data_column, bins=temperature_bins, kde=False, label='LGM', color=colors[1],zorder=2)
 
     # Set labels and a title
     ax.set_xlabel('Temperature')
