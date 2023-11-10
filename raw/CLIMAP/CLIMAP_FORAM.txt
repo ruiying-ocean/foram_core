@@ -1,0 +1,46 @@
+CLIMAP_FORAM
+Orbulina universa
+Globigerinoides conglobatus
+Globigerinoides ruber p
+Globigerinoides ruber w
+Globigerinoides ruber total
+Globigerinoides tenellus
+Globigerinoides sacculifer wo sac
+Globigerinoides sacculifer w sac
+Globigerinoides sacculifer total
+Sphaeroidinella dehiscens
+Globigerinella adamsi
+Globigerinella aequilateralis
+Globigerina calida
+Globigerina bulloides
+Globigerina falconensis
+Globigerina digitata
+Globigerina rubescens
+Globigerina humilis
+Globigerina quinqueloba
+Globigerina pachyderma left
+Globigerina pachyderma right
+Globoquadrina dutertrei
+Globoquadrina conglomerata
+Globoquadrina hexagona
+Pulleniatina obliquiloculata
+Globorotalia inflata
+Globorotalia truncatulinoides left
+Globorotalia truncatulinoides right
+Globorotalia crassaformis
+G. pachyderma--G. dutertrei intergrade
+Globorotalia hirsuta
+Globorotalia scitula
+Globorotalia anfracta
+Globorotalia menardii
+Globorotalia tumida
+Globorotalia tumida flexuosa
+Globorotalia menardii--Globorotalia tumida--Globorotalia tumida flexuosa
+Candeina nitida
+Globigerinita glutinata
+Globigerinita iota
+Globigerinita bradyi
+Globorotalia pumilio
+Hastigerina pelagica
+Hastigerinella digitata
+Others species
