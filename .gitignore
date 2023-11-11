@@ -2,3 +2,4 @@
 .Rhistory
 .RData
 .Ruserdata
+raw/CLIMAP/formatted_files/*.txt
