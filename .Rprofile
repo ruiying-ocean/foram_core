@@ -14,18 +14,17 @@ message("<<< DONE")
 
 USE_FORCENS = TRUE
 USE_MARGO = TRUE
-USE_EPILOG = FALSE
-USE_GLAMAP = FALSE
-USE_CLIMAP = FALSE ## This is 18 ka, that differs from MARGO's 19-23 ka
-USE_MIX1999 = FALSE ## this should be Holocene not LGM
+USE_EPILOG = TRUE
+USE_GLAMAP = TRUE
+USE_CLIMAP = TRUE
 
 
-delete_files <- function(folder_path,except_file="foram_sp_db.csv"){
+delete_files <- function(folder_path, exclude_file="foram_sp_db.csv"){
     library(fs)
     ## Get a list of all files in the folder
     file_list <- dir_ls(folder_path)
     ## Filter out the "a.csv" file
-    files_to_delete <- file_list[!basename(file_list) == except_file]
+    files_to_delete <- file_list[!basename(file_list) == exclude_file]
 
     ## Delete the files
     for (file in files_to_delete) {
@@ -39,14 +38,19 @@ add_sst <- function(){
     ## Set the path to the Python script    
     project_path <- file.path(getwd())
     
-    python_script_path <- paste(project_path, "code/add_sst.py", sep = "/")
+    add_sst_script_path <- paste(project_path, "code/add_sst.py", sep = "/")
     
-    ## Run the Python script
-    system(paste("python3", python_script_path, project_path))
+    ## sample efforts
+    samp_eff_script_path <- paste(project_path, "code/sample_efforts.py", sep = "/")
+    
+    ## Run the Python script to add SST data and plot sample efforts
+    ## Please ensure packages is installed in user's Python environment
+    system(paste("python3", add_sst_script_path, project_path))
+    system(paste("python3", samp_eff_script_path, project_path))
 }
 
 
-                                        # Define the function for interactive prompt using menu
+## Define the function for interactive prompt using menu
 customPrompt <- function() {
     ## Define the menu choices
     choices <- c("Yes", "No", "Exit")
