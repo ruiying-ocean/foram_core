@@ -67,7 +67,7 @@ fwrite(forcens_a, "sp/forcens_sp_a.csv")
 ## Check if all species are included
 find_missing_species(symbiosis_tbl$Species, (names(forcens)[22:62]))
 
-group_and_aggregate <- function(data, value_name){
+local_group_and_aggregate <- function(data, value_name){
 
     symbiosis_short_tbl <- symbiosis_tbl %>% select(!c(Species)) %>% distinct()
     ##join two tables                                    
@@ -88,21 +88,21 @@ group_and_aggregate <- function(data, value_name){
                                          `Device`, `Latitude`, `Longitude`,
                                          `Water depth`, `Ocean`,
                                          `Sample depth top`, `Sample depth bottom`, `Sample depth average`, 
-                                          `Symbiosis`, `Spinose`)]
+                                          `Symbiosis`, `Spine`)]
 
     # average different depth
     data_agg <-data_agg[, .(Prop = mean(Prop, na.rm=T)),
                                by = .(`Sample`, `Sample ID`, `Flag`,
                                       `Device`, `Latitude`, `Longitude`,
                                       `Water depth`, `Ocean`,
-                                       `Symbiosis`, `Spinose`)]
+                                       `Symbiosis`, `Spine`)]
 
     setnames(data_agg, "Prop", value_name)
     return(data_agg)    
 }
 
-forcens_r %>% group_and_aggregate("Relative Abundance") %>%
+forcens_r %>% local_group_and_aggregate("Relative Abundance") %>%
     dplyr::filter(`Relative Abundance`<1.1) %>%
     fwrite("fg/forcens_fg_r.csv")
 
-forcens_a %>% group_and_aggregate("Absolute Abundance") %>% fwrite("fg/forcens_fg_a.csv")
+forcens_a %>% local_group_and_aggregate("Absolute Abundance") %>% fwrite("fg/forcens_fg_a.csv")

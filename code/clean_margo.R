@@ -162,11 +162,11 @@ fwrite(margo_a,"sp/lgm_margo_sp_a.csv")
 ## aggregate into functional groups
 ## -----------------------------------
 
-group_and_aggregate <- function(data){
+local_group_and_aggregate <- function(data){
 
     symbiosis_short_tbl <- symbiosis_tbl %>% select(!c(Species)) %>% distinct()
     data_merged <- merge(data, symbiosis_short_tbl, by.x="Species",by.y="short_name") %>% select(!"Species")
-    data_merged <- data_merged %>% dplyr::filter(Symbiosis != "Undetermined" & Spinose != 'Undetermined')
+
     data_merged <- data_merged %>% remove_columns(c("sedimentation rate (cm/ky)",
                                       "added by (name)", "Species","short_name",
                                       "calendar age estimate (cal ky BP)",
@@ -176,18 +176,18 @@ group_and_aggregate <- function(data){
     
     data_merged <- data_merged %>% group_by(Core, `Coring device`, Latitude, Longitude,
                               `Water depth (m)`, Ocean, `Sample depth - upper (m)`,
-                              Symbiosis, Spinose) %>% 
+                              Symbiosis, Spine) %>% 
       summarise_all(.funs = sum, na.rm=T) %>% ungroup()
     
     # 2 average different `Depth [m]`
     data_merged <- data_merged %>% group_by(Core, `Coring device`, Latitude, Longitude, `Water depth (m)`,
-                              Ocean, Symbiosis, Spinose) %>%
+                              Ocean, Symbiosis, Spine) %>%
       summarise_all(.funs = mean, na.rm=T) %>% ungroup()
 
     return(data_merged)
 }
 
 ## covert them to long format, assign symbiosis and spine trait 
-margo_r %>% group_and_aggregate() %>% dplyr::filter(`Relative Abundance`<1.1) %>% 
+margo_r %>% local_group_and_aggregate() %>% dplyr::filter(`Relative Abundance`<1.1) %>% 
   fwrite( "fg/lgm_margo_fg_r.csv")
-margo_a %>% group_and_aggregate() %>% fwrite( "fg/lgm_margo_fg_a.csv")
+margo_a %>% local_group_and_aggregate() %>% fwrite( "fg/lgm_margo_fg_a.csv")

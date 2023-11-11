@@ -1,15 +1,17 @@
 library(stringr)
 
 ## read symbiosis table
-symbiosis_tbl <- fread('fg/foram_sp_db.csv')
-symbiosis_tbl[, "Name" := lapply(.SD, function(x) gsub(" ", "_", x)),
-              .SDcol="Name"] #replace white space by underscore(_)
-symbiosis_tbl <- symbiosis_tbl[, -("Remark")] #delete comment column
-symbiosis_tbl <- rbindlist(list(symbiosis_tbl, data.table(Name="Others",
-                                                          Spinose="Undetermined",
-                                                          Symbiosis="Undetermined")),
-                           use.names = TRUE)
-setnames(symbiosis_tbl, "Name", "Species")
+symbiosis_tbl <- fread('fg/foram_taxonomy.csv')
+
+setnames(symbiosis_tbl, "Species name","Species")
+
+## remove column
+symbiosis_tbl <- symbiosis_tbl[, -c('Author')]
+
+## replace white space by underscore (_)
+## symbiosis_tbl[, "Species" := lapply(.SD, function(x) gsub(" ", "_", x)),
+##              .SDcol="Species"]
+
 symbiosis_tbl$Species <- gsub("_", " ",  symbiosis_tbl$Species)
 
 ## Add a abbreviation column
@@ -41,5 +43,19 @@ find_missing_species <- function(all_species, species_to_check) {
   } else{
     print("All species included!")
   }
+}
+
+global_group_and_aggregate <- function(data, Depth){
+  
+  symbiosis_short_tbl <- symbiosis_tbl %>% select(!c(Species)) %>% distinct()
+  data <- merge(data, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
+  
+  data <- data %>% group_by(Event, Latitude, Longitude, !!sym(Depth), Symbiosis, Spine) %>% 
+    summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
+  
+  data <- data %>% group_by(Event, Latitude, Longitude, Symbiosis, Spine) %>%
+    summarise_all(.funs = mean, na.rm=T)  %>% ungroup()
+  
+  return(data)
 }
 

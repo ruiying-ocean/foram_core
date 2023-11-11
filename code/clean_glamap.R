@@ -26,6 +26,7 @@ glamap <- glamap %>% replace_column_name("G. menardii", "G. cultrata")
 glamap <- glamap %>% mutate_at(vars(`G. siphonifera`:`N. pachyderma`), ~ . /100)
 glamap <- glamap %>% pivot_longer(cols=c(`G. siphonifera`:`N. pachyderma`), names_to = "Species", values_to="Relative Abundance")
 glamap <- glamap %>% distinct()
+
 write_csv(glamap, "sp/lgm_glamap_sp_r.csv")
 
 ## -----------------
@@ -34,15 +35,13 @@ write_csv(glamap, "sp/lgm_glamap_sp_r.csv")
 symbiosis_short_tbl <- symbiosis_tbl %>% select(!c(Species)) %>% distinct()
 ##join two tables                                    
 glamap_merged <- merge(glamap, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
-glamap_merged <- glamap_merged %>% dplyr::filter(Symbiosis != "Undetermined" & Spinose != 'Undetermined')
-# aggregate functional group abundance and divided by 100
 
 ## 1 Each unique sample to be a group
-glamap_merged <- glamap_merged %>% group_by(Campaign, Event, Latitude, Longitude,  `Depth [m]`, `Date/Time`, `Elevation [m]`,  Symbiosis, Spinose) %>% 
+glamap_merged <- glamap_merged %>% group_by(Campaign, Event, Latitude, Longitude,  `Depth [m]`, `Date/Time`, `Elevation [m]`,  Symbiosis, Spine) %>% 
     summarise_all(.funs = sum, na.rm=T) %>% ungroup()
 
 ## 2 average different `Depth [m]`
-glamap_merged <- glamap_merged %>% group_by(Campaign, Event, Latitude, Longitude, `Date/Time`, `Elevation [m]`,  Symbiosis, Spinose) %>% 
+glamap_merged <- glamap_merged %>% group_by(Campaign, Event, Latitude, Longitude, `Date/Time`, `Elevation [m]`,  Symbiosis, Spine) %>% 
     summarise_all(.funs = mean, na.rm=T) %>% ungroup()
 
 ## export
