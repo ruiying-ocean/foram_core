@@ -39,8 +39,8 @@ Taxonomy in this project is as Brummer and Kucera (2022). And relative abundance
 #+END_QUOTE
 
 * Use the repository
-+ All the data are availble to use under the `tidy/` folder
-+ Re-compile the data: open foram_core.Rproject and follow the prompt
++ The ready-to-use data are under the `tidy/` folder
++ Re-compile the data: open foram_core.Rproject in RStudio and follow the prompt
 
 * License
 This project is under protection of Attribution-NonCommercial 4.0 International (CC BY NC 4.0) license, which means you can share and adapt the code but you also must give appropriate credit (citation to the paper or this repository) to this project.
