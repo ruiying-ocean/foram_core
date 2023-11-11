@@ -6,6 +6,6 @@ Data Clean
 5 Add SST in each data lgm data
 
 Others
-Taxanomy: Brummer and Kucera (2022)
+Taxonomy: Brummer and Kucera (2022)
 Relative abundance: all in decimal format (0-1)
-NA: replace NA with 0 (absence is still information)
+NA: replace NA with 0 (absence is still useful information)
