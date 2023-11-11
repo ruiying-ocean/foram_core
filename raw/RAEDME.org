@@ -21,7 +21,7 @@
 
 * Data sources
 ** [[https://doi.org/10.1594/PANGAEA.873570][ForCenS/Modern]]
-** [[https://www.ncei.noaa.gov/access/paleo-search/study/2516][CLIMAP]]
+** [[https://www.ncei.noaa.gov/pub/data/paleo/paleocean/climap/climap18/][CLIMAP]]
 ** [[https://doi.org/10.1594/PANGAEA.57027][EPILOG/LGM]]
 ** [[https://doi.org/10.1594/PANGAEA.55156][GLAMAP/LGM]]
 ** MARGO

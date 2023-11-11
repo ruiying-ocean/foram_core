@@ -38,7 +38,7 @@ def main():
     data['Longitude'] = pd.to_numeric(data['Longitude'])
     data['Water Depth (m)'] = pd.to_numeric(data['Water Depth (m)'])
 
-    data.to_csv('formatted_site_info.csv', index=False)
+    data.to_csv('extracted_site_info.csv', index=False)
 
 if __name__ == '__main__':
     main()
