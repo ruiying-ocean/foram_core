@@ -53,8 +53,10 @@ global_group_and_aggregate <- function(data, Depth){
   data <- data %>% group_by(Event, Latitude, Longitude, !!sym(Depth), Symbiosis, Spine) %>% 
     summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
   
+  ## get the max count if there are multiple records of sediment depths
+  ## this is for the build of max thermal performance curve
   data <- data %>% group_by(Event, Latitude, Longitude, Symbiosis, Spine) %>%
-    summarise_all(.funs = mean, na.rm=T)  %>% ungroup()
+    summarise_all(.funs = max, na.rm=T)  %>% ungroup()
   
   return(data)
 }

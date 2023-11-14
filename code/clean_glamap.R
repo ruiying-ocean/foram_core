@@ -42,7 +42,7 @@ glamap_merged <- glamap_merged %>% group_by(Campaign, Event, Latitude, Longitude
 
 ## 2 average different `Depth [m]`
 glamap_merged <- glamap_merged %>% group_by(Campaign, Event, Latitude, Longitude, `Date/Time`, `Elevation [m]`,  Symbiosis, Spine) %>% 
-    summarise_all(.funs = mean, na.rm=T) %>% ungroup()
+    summarise_all(.funs = max, na.rm=T) %>% ungroup()
 
 ## export
 write_csv(glamap_merged, "fg/lgm_glamap_fg_r.csv")

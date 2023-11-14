@@ -179,10 +179,10 @@ local_group_and_aggregate <- function(data){
                               Symbiosis, Spine) %>% 
       summarise_all(.funs = sum, na.rm=T) %>% ungroup()
     
-    # 2 average different `Depth [m]`
+    # get maximum if different `Depth [m]` exist
     data_merged <- data_merged %>% group_by(Core, `Coring device`, Latitude, Longitude, `Water depth (m)`,
                               Ocean, Symbiosis, Spine) %>%
-      summarise_all(.funs = mean, na.rm=T) %>% ungroup()
+      summarise_all(.funs = max, na.rm=T) %>% ungroup()
 
     return(data_merged)
 }
