@@ -1,0 +1,490 @@
+Event	Method/Device	Latitude	Longitude	Elevation [m]	Age [ka BP]	Depth sed [m]	CaCO3 [%]	Reference
+30-285	Drilling/drill rig	-26.8193	175.8040	-4658	21		0	Andrews and Packham et al., 1975
+A152-118		35.1167	-44.6667	-4334	21	0.60	18	Balsam and McCoy, 1987
+A156-3		31.0000	-76.0000	-3220	21	1.10	15	Balsam and McCoy, 1987
+A156-4	Piston corer	34.8167	-74.6833	-3100	21	7.50	9	Balsam and McCoy, 1987
+A164-24	Piston corer	36.4833	-69.0000	-4389	21	0.75	3	Balsam and McCoy, 1987
+A164-5	Piston corer	37.7667	-71.2500	-3329	21	1.71	5	Balsam and McCoy, 1987
+A164-6	Piston corer	38.1333	-69.8667	-3676	21	1.09	12	Balsam and McCoy, 1987
+A164-61	Piston corer	39.5333	-68.7833	-2725	21	1.00	8	Balsam and McCoy, 1987
+A167-13	Piston corer	31.6500	-75.3500	-2880	21	1.40	15	Balsam and McCoy, 1987
+A167-14	Piston corer	31.4667	-76.4667	-2633	21	1.00	14	Balsam and McCoy, 1987
+A173-13	Piston corer	41.8333	-62.3833	-2925	21	0.89	11	Balsam and McCoy, 1987
+A173-4	Piston corer	33.8667	-62.5333	-3932	21	0.71	12	Balsam and McCoy, 1987
+A179-15	Trigger corer	24.8000	-75.9333	-3109	21	1.49	68	Balsam and McCoy, 1987
+A180-15	Piston corer	39.2670	-36.7000	-4610	21	0.60	75	Balsam and McCoy, 1987
+A180-16	Piston corer	38.3500	-32.4833	-2268	21	0.70	75	Balsam and McCoy, 1987
+A180-32	Piston corer	29.1167	-26.2500	-5200	21	0.60	41	Balsam and McCoy, 1987
+A180-39	Piston corer	25.8330	-19.2998	-3470	21	0.30	66	Balsam and McCoy, 1987
+A180-47	Piston corer	15.3333	-17.9333	-2195	21	3.50	15	Balsam and McCoy, 1987
+A180-48	Piston corer	15.3167	-18.1000	-1450	21	5.29	15	Balsam and McCoy, 1987
+A180-56	Piston corer	12.2350	-17.7670	-2597	21	1.00	6	Balsam and McCoy, 1987
+A180-72	Piston corer	0.6000	-21.7833	-3841	21	0.46	67	Balsam and McCoy, 1987
+A180-73	Piston corer	0.1667	-23.0000	-3749	21	0.60	71	Balsam and McCoy, 1987
+A180-74	Piston corer	-0.0500	-24.1667	-3329	21	0.50	62	Balsam and McCoy, 1987
+A180-76	Piston corer	-0.7667	-26.0333	-3512	21	0.60	67	Balsam and McCoy, 1987
+A180-9	Piston corer	39.4500	-45.9500	-4060	21	0.60	13	Balsam and McCoy, 1987
+RC08-145	Piston corer	33.5830	-62.3800	-2743	21	0.35	54	Balsam and McCoy, 1987
+RC08-18	Piston corer	-24.0700	-15.1200	-3977	21	0.20	79	Balsam and McCoy, 1987
+RC09-225	Piston corer	54.9830	-15.4000	-2334	21	1.35	18	Balsam and McCoy, 1987
+RC09-49	Piston corer	11.1840	-58.5850	-1851	21	0.70	31	Balsam and McCoy, 1987
+RC10-288	Piston corer	35.5330	-73.4200	-3678	21	1.50	12	Balsam and McCoy, 1987
+RC10-289	Piston corer	37.0330	-72.5200	-3173	21	1.10	5	Balsam and McCoy, 1987
+RC11-21	Piston corer	-17.2700	-35.9700	-4021	21	0.30	37	Balsam and McCoy, 1987
+RC11-26	Piston corer	-28.5800	-30.0700	-2349	21	0.30	85	Balsam and McCoy, 1987
+RC11-86	Piston corer	-35.7800	18.4500	-2829	21	0.45	74	Balsam and McCoy, 1987
+RC12-234	Piston corer	-55.1500	-64.0000	-2027	21	0.70	5	Balsam and McCoy, 1987
+RC12-241	Piston corer	-43.4700	-57.6700	-3499	21	0.70	24	Balsam and McCoy, 1987
+RC12-267	Piston corer	-38.6800	-25.7800	-4144	21	0.60	15	Balsam and McCoy, 1987
+RC12-291	Piston corer	-42.5800	-17.8000	-3508	21	0.80	49	Balsam and McCoy, 1987
+RC12-294	Piston corer	-37.2700	-10.1000	-3308	21	0.40	73	Balsam and McCoy, 1987
+RC13-189	Piston corer	1.8630	-30.0000	-3233	21	0.65	55	Balsam and McCoy, 1987
+RC13-205	Piston corer	-2.2880	5.1830	-3731	21	0.50	34	Balsam and McCoy, 1987
+RC13-210	Piston corer	-9.1420	-10.6100	-3658	21	0.40	84	Balsam and McCoy, 1987
+RC13-227	Piston corer	-21.8800	8.8720	-4301	21	0.40	66	Balsam and McCoy, 1987
+RC13-229	Piston corer	-25.4900	11.3070	-4191	21	0.80	38	Balsam and McCoy, 1987
+RC15-94	Piston corer	-42.9800	-20.8600	-3762	21	1.20	15	Balsam and McCoy, 1987
+RE5-034		42.3833	-21.9667	-3750	21	0.40	44	Balsam and McCoy, 1987
+RE5-036		46.9167	-18.5833	-4500	21	0.70	11	Balsam and McCoy, 1987
+RE5-054		25.8667	-19.0500	-3295	21	0.10	59	Balsam and McCoy, 1987
+SP8-4	Box corer	32.8250	-18.5250	-3365	21	0.30	60	Balsam and McCoy, 1987
+V04-1	Piston corer	38.8830	-70.9200	-2867	21	1.50	2	Balsam and McCoy, 1987
+V04-32	Piston corer	35.0500	-11.6200	-2296	21	0.30	76	Balsam and McCoy, 1987
+V04-8	Piston corer	37.2330	-33.1300	-1697	21	0.50	82	Balsam and McCoy, 1987
+V15-157	Piston corer	-33.1700	-49.7800	-1123	21	0.50	2	Balsam and McCoy, 1987
+V15-168	Piston corer	0.2000	-39.9000	-4219	21	1.45	14	Balsam and McCoy, 1987
+V16-205	Piston corer	15.4000	-43.4000	-4043	21	0.19	70	Balsam and McCoy, 1987
+V16-25	Piston corer	5.0670	-36.8000	-4254	21	0.55	31	Balsam and McCoy, 1987
+V16-36	Piston corer	-19.3700	-11.4300	-3329	21	0.40	85	Balsam and McCoy, 1987
+V17-165	Piston corer	32.7500	-41.9000	-3924	21	0.50	61	Balsam and McCoy, 1987
+V17-178	Piston corer	43.3830	-54.8700	-4006	21	4.00	7	Balsam and McCoy, 1987
+V18-110	Piston corer	-53.5800	-44.7000	-2610	21	0.70	0	Balsam and McCoy, 1987
+V19-240	Piston corer	-30.5800	13.2830	-3103	21	0.60	72	Balsam and McCoy, 1987
+V19-248	Piston corer	-24.5700	4.8330	-3321	21	0.27	84	Balsam and McCoy, 1987
+V19-281	Piston corer	-3.3170	4.6500	-4566	21	0.50	4	Balsam and McCoy, 1987
+V19-282	Piston corer	-2.7500	4.5830	-4356	21	0.80	6	Balsam and McCoy, 1987
+V19-283	Piston corer	-1.2830	5.5330	-3442	21	0.80	38	Balsam and McCoy, 1987
+V19-291	Piston corer	2.0000	-5.2500	-4956	21	0.80	14	Balsam and McCoy, 1987
+V19-309	Piston corer	31.1670	-45.1300	-4544	21	0.31	44	Balsam and McCoy, 1987
+V20-212	Piston corer	-28.2200	-10.0300	-3523	21	0.20	77	Balsam and McCoy, 1987
+V20-227	Piston corer	-4.2330	-34.6300	-3812	21	0.80	40	Balsam and McCoy, 1987
+V20-228	Piston corer	-2.4830	-36.4200	-3676	21	0.60	3	Balsam and McCoy, 1987
+V20-241	Piston corer	22.1330	-41.5000	-4372	21	0.30	52	Balsam and McCoy, 1987
+V20-242	Piston corer	23.3670	-43.6500	-4565	21	0.29	59	Balsam and McCoy, 1987
+V22-168	Piston corer	-17.4700	-5.1830	-4625	21	0.30	85	Balsam and McCoy, 1987
+V22-171	Piston corer	-13.1000	-9.3330	-4155	21	0.20	87	Balsam and McCoy, 1987
+V22-172	Piston corer	-12.6700	-9.8170	-4127	21	0.20	86	Balsam and McCoy, 1987
+V22-174	Piston corer	-10.0700	-12.8200	-2630	21	0.57	82	Balsam and McCoy, 1987
+V22-177	Piston corer	-7.7500	-14.6000	-3290	21	0.70	86	Balsam and McCoy, 1987
+V22-182	Piston corer	-0.5330	-17.2700	-3776	21	0.70	77	Balsam and McCoy, 1987
+V22-186	Piston corer	3.3830	-20.1200	-4471	21	0.30	45	Balsam and McCoy, 1987
+V22-188	Piston corer	4.6670	-20.9200	-2600	21	0.30	65	Balsam and McCoy, 1987
+V22-196	Piston corer	13.8330	-18.9700	-3728	21	0.70	6	Balsam and McCoy, 1987
+V22-197	Piston corer	14.1670	-18.5800	-3167	21	0.72	2	Balsam and McCoy, 1987
+V22-219	Piston corer	27.9170	-43.6300	-2582	21	0.45	82	Balsam and McCoy, 1987
+V22-222	Piston corer	28.9330	-43.6500	-3197	21	0.55	75	Balsam and McCoy, 1987
+V22-234	Piston corer	36.6330	-60.5500	-5123	21	2.00	4	Balsam and McCoy, 1987
+V22-26	Piston corer	8.7170	-41.2500	-3720	21	0.40	53	Balsam and McCoy, 1987
+V22-38	Piston corer	-9.5500	-34.2500	-3797	21	0.40	26	Balsam and McCoy, 1987
+V22-83	Piston corer	-37.8200	-52.9000	-4074	21	0.49	39	Balsam and McCoy, 1987
+V23-100	Piston corer	21.3000	-22.6800	-4579	21	0.42	59	Balsam and McCoy, 1987
+V23-145	Piston corer	37.0830	-69.6000	-4349	21	1.40	4	Balsam and McCoy, 1987
+V23-23	Piston corer	56.0830	-44.5500	-3292	21	0.86	10	Balsam and McCoy, 1987
+V23-42	Piston corer	62.1830	-27.9300	-1514	21	0.70	14	Balsam and McCoy, 1987
+V23-58	Piston corer	65.7670	-7.1170	-1796	21	0.60	10	Balsam and McCoy, 1987
+V23-59	Piston corer	68.0333	0.0167	-3083	21	0.50	10	Balsam and McCoy, 1987
+V23-60	Piston corer	70.0500	8.3170	-2974	21	1.00	8	Balsam and McCoy, 1987
+V23-74	Piston corer	68.1830	-9.6000	-1926	21	0.90	10	Balsam and McCoy, 1987
+V23-81	Piston corer	54.2500	-16.8300	-2393	21	2.95	16	Balsam and McCoy, 1987
+V23-82	Piston corer	52.5830	-21.9300	-3974	21	1.10	19	Balsam and McCoy, 1987
+V23-83	Piston corer	49.8670	-24.2500	-3871	21	0.99	93	Balsam and McCoy, 1987
+V23-84	Piston corer	46.0000	-16.9200	-4513	21	0.81	17	Balsam and McCoy, 1987
+V23-91	Piston corer	29.5830	-28.5700	-2758	21	0.30	72	Balsam and McCoy, 1987
+V23-98	Piston corer	23.1170	-19.3000	-3506	21	0.70	51	Balsam and McCoy, 1987
+V24-1	Piston corer	36.5000	-73.5000	-3012	21	2.65	15	Balsam and McCoy, 1987
+V24-221	Piston corer	-32.0300	-2.8170	-4204	21	0.30	42	Balsam and McCoy, 1987
+V24-229	Piston corer	-34.4500	-10.6000	-4202	21	0.30	75	Balsam and McCoy, 1987
+V24-235	Piston corer	-33.2500	-19.5500	-3722	21	0.10	75	Balsam and McCoy, 1987
+V24-237	Piston corer	-32.2000	-26.7330	-4193	21	0.10	58	Balsam and McCoy, 1987
+V24-240	Piston corer	-31.7300	-28.2000	-4327	21	0.20	45	Balsam and McCoy, 1987
+V25-21	Piston corer	26.4000	-45.4500	-3693	21	0.45	68	Balsam and McCoy, 1987
+V25-42	Piston corer	12.5500	-50.6500	-4707	21	0.60	25	Balsam and McCoy, 1987
+V25-44	Piston corer	11.5000	-45.1500	-4049	21	0.30	61	Balsam and McCoy, 1987
+V25-56	Piston corer	-3.5500	-35.2300	-3512	21	0.99	35	Balsam and McCoy, 1987
+V25-59	Piston corer	1.3670	-33.4800	-3824	21	0.70	54	Balsam and McCoy, 1987
+V25-60	Piston corer	3.2830	-34.8300	-3749	21	0.40	48	Balsam and McCoy, 1987
+V26-104	Piston corer	-0.0830	-41.7800	-3864	21	1.55	17	Balsam and McCoy, 1987
+V26-175	Piston corer	33.9330	-74.4300	-3995	21	1.50	6	Balsam and McCoy, 1987
+V26-176	Piston corer	36.0500	-72.3800	-3942	21	4.40	13	Balsam and McCoy, 1987
+V26-177	Piston corer	37.5500	-72.5700	-2979	21	1.70	16	Balsam and McCoy, 1987
+V26-37	Piston corer	16.6330	-31.1000	-4898	21	0.25	49	Balsam and McCoy, 1987
+V26-41	Piston corer	19.3330	-26.1200	-4341	21	0.43	60	Balsam and McCoy, 1987
+V26-46	Piston corer	9.5670	-18.1800	-2898	21	0.45	28	Balsam and McCoy, 1987
+V26-63	Piston corer	-23.9700	-37.9500	-3619	21	0.30	31	Balsam and McCoy, 1987
+V26-82	Piston corer	-27.7700	-37.2500	-3878	21	0.20	61	Balsam and McCoy, 1987
+V27-110	Piston corer	56.9000	-18.5000	-1264	21	0.47	26	Balsam and McCoy, 1987
+V27-116	Piston corer	52.8330	-30.3300	-3202	21	0.60	20	Balsam and McCoy, 1987
+V27-17	Piston corer	50.1000	-37.3000	-2165	21	0.35	16	Balsam and McCoy, 1987
+V27-171	Piston corer	21.7330	-32.5700	-4693	21	0.20	56	Balsam and McCoy, 1987
+V27-175	Piston corer	8.8000	-22.1200	-4548	21	0.50	13	Balsam and McCoy, 1987
+V27-178	Piston corer	5.1000	-26.6500	-4327	21	0.55	43	Balsam and McCoy, 1987
+V27-19	Piston corer	52.1000	-38.8000	-3466	21	0.35	16	Balsam and McCoy, 1987
+V27-20	Piston corer	54.0000	-46.2000	-3510	21	0.80	8	Balsam and McCoy, 1987
+V27-228	Piston corer	-10.0700	11.4500	-2392	21	0.90	17	Balsam and McCoy, 1987
+V27-232	Piston corer	-0.2330	7.5500	-2615	21	0.60	33	Balsam and McCoy, 1987
+V27-238	Piston corer	-6.4670	-3.7170	-4813	21	0.52	39	Balsam and McCoy, 1987
+V27-239	Piston corer	-7.8330	-1.5170	-4464	21	0.20	74	Balsam and McCoy, 1987
+V27-240	Piston corer	-2.0500	-5.0000	-5115	21	0.70	33	Balsam and McCoy, 1987
+V27-248	Piston corer	3.0500	-11.8200	-4543	21	0.82	16	Balsam and McCoy, 1987
+V27-263	Piston corer	35.0170	-40.9200	-3704	21	0.20	57	Balsam and McCoy, 1987
+V27-264	Piston corer	36.5170	-43.7200	-4801	21	1.60	14	Balsam and McCoy, 1987
+V27-265	Piston corer	36.1000	-43.6800	-4945	21	1.20	12	Balsam and McCoy, 1987
+V27-267	Piston corer	35.6330	-44.2800	-4722	21	1.00	15	Balsam and McCoy, 1987
+V27-269	Piston corer	37.0330	-56.6700	-5066	21	1.50	0	Balsam and McCoy, 1987
+V27-46	Piston corer	67.5830	-11.5200	-1728	21	0.70	6	Balsam and McCoy, 1987
+V27-47	Piston corer	68.4670	-13.5500	-1717	21	0.50	5	Balsam and McCoy, 1987
+V27-60	Piston corer	72.1830	8.5830	-2525	21	1.10	6	Balsam and McCoy, 1987
+V27-84	Piston corer	68.6330	-1.6000	-3404	21	0.60	14	Balsam and McCoy, 1987
+V27-85	Piston corer	67.3670	4.0330	-1227	21	0.40	10	Balsam and McCoy, 1987
+V27-86	Piston corer	66.6000	1.1170	-2900	21	0.80	8	Balsam and McCoy, 1987
+V28-108	Piston corer	26.7000	-72.2800	-5216	21	1.00	4	Balsam and McCoy, 1987
+V28-14	Piston corer	64.7830	-29.5700	-1855	21	1.60	5	Balsam and McCoy, 1987
+V28-35	Piston corer	67.1170	-9.5670	-1376	21	0.50	13	Balsam and McCoy, 1987
+V28-38	Piston corer	69.3830	-4.4000	-3411	21	1.60	10	Balsam and McCoy, 1987
+V28-56	Piston corer	68.0330	-6.1170	-2941	21	0.70	8	Balsam and McCoy, 1987
+V28-59	Piston corer	64.8670	-7.8670	-2622	21	0.50	3	Balsam and McCoy, 1987
+V28-89	Piston corer	44.5330	-32.5800	-3643	21	0.72	16	Balsam and McCoy, 1987
+V29-144	Piston corer	-0.2000	6.0500	-2685	21	0.85	52	Balsam and McCoy, 1987
+V29-153	Piston corer	0.9670	0.1670	-4872	21	0.60	5	Balsam and McCoy, 1987
+V29-173	Piston corer	33.7000	-29.3800	-3278	21	0.25	76	Balsam and McCoy, 1987
+V29-174	Piston corer	36.3000	-29.3700	-3420	21	0.40	59	Balsam and McCoy, 1987
+V29-177	Piston corer	41.5330	-25.7200	-3391	21	0.41	59	Balsam and McCoy, 1987
+V29-178	Piston corer	42.8500	-25.1500	-3448	21	0.49	62	Balsam and McCoy, 1987
+V29-179	Piston corer	44.0170	-24.5300	-3331	21	0.73	37	Balsam and McCoy, 1987
+V29-180	Piston corer	45.3000	-23.8700	-3179	21	0.57	37	Balsam and McCoy, 1987
+V29-206	Piston corer	64.9000	-29.2800	-1624	21	1.70	7	Balsam and McCoy, 1987
+V29-210	Piston corer	66.7330	-6.7330	-2460	21	0.60	10	Balsam and McCoy, 1987
+V29-219	Piston corer	68.3833	-5.4500	-3384	21	0.50	7	Balsam and McCoy, 1987
+V30-100	Piston corer	44.1170	-32.5000	-3519	21	0.65	38	Balsam and McCoy, 1987
+V30-101	Piston corer	44.1170	-32.5000	-3504	21	0.45	27	Balsam and McCoy, 1987
+V30-36	Piston corer	5.3500	-27.3200	-4245	21	0.40	41	Balsam and McCoy, 1987
+V30-40	Piston corer	-0.2000	-23.1500	-3706	21	0.68	79	Balsam and McCoy, 1987
+V30-41	Piston corer	0.2170	-23.0700	-3874	21	0.45	70	Balsam and McCoy, 1987
+V30-49	Piston corer	18.4330	-21.0800	-3093	21	0.78	48	Balsam and McCoy, 1987
+V30-51	Piston corer	19.8670	-19.9200	-3409	21	0.55	34	Balsam and McCoy, 1987
+V30-96	Piston corer	39.9500	-33.1300	-3188	21	0.63	65	Balsam and McCoy, 1987
+V30-97	Piston corer	41.0000	-32.9300	-3371	21	0.75	53	Balsam and McCoy, 1987
+V30-99	Piston corer	43.1500	-32.4500	-3594	21	0.32	59	Balsam and McCoy, 1987
+V31-166	Piston corer	28.9170	-63.4700	-2777	21	0.50	3	Balsam and McCoy, 1987
+V31-178	Piston corer	35.2000	-70.0300	-4874	21	5.40	7	Balsam and McCoy, 1987
+MD82-424	Piston corer	-54.0600	-0.2200	-2350	21		2	Bareille, 1991
+MD84-551	Piston corer	-55.0083	73.2817	-2230	21		10	Bareille, 1991
+MD88-787	Piston corer	-56.3787	145.2927	-3020	21		5	Bareille, 1991
+113-694	Composite Core	-66.8470	-33.4466	-4665	21		0	Barker et al., 1988
+113-697	Composite Core	-61.8105	-40.2918	-3492	21		0	Barker et al., 1988
+119-737	Composite Core	-50.2280	73.0324	-575	21		0	Barron et al., 1989
+119-739	Composite Core	-67.2850	75.0818	-423	21		0	Barron et al., 1989
+119-740	Composite Core	-68.7640	76.6819	-822	21		0	Barron et al., 1989
+119-741	Composite Core	-68.3870	76.3825	-562	21		0	Barron et al., 1989
+119-742	Composite Core	-67.5530	75.4090	-426	21		0	Barron et al., 1989
+119-743	Composite Core	-66.9160	74.6905	-999	21		0	Barron et al., 1989
+119-745	Composite Core	-59.5950	85.8542	-4093	21		0	Barron et al., 1989
+280	Piston corer	35.0000	-44.0000	-4300	21		35	Broecker, 1962
+A240-ML		15.4333	-68.5000	-4180	21		64	Broecker, 1962
+IC-5		2.0000	78.0000	-4300	21		37	Broecker, 1962
+V12-122	Piston corer	17.0000	-74.4000	-2800	21		67	Broecker, 1962
+V28-177	Piston corer	4.8170	-136.5000	-4709	21		60	Broecker, 1991
+V28-185	Piston corer	2.9170	-146.7000	-4656	21		75	Broecker, 1991
+V32-102	Piston corer	2.5450	-136.2000	-4276	21		76	Broecker, 1991
+V32-109	Piston corer	3.4330	-148.1000	-4816	21		70	Broecker, 1991
+RC15-23	Piston corer	-0.5370	-133.6000	-4254	21	0.50	88	Burckle, personal communication
+21-204	Drilling/drill rig	-24.9545	-174.1115	-5354	21		0	Burns and Andrews et al., 1973
+RC08-89	Piston corer	-36.3800	-118.1000	-3900	21	0.41	32	CaCO3 stratigraphy
+RC12-227	Piston corer	-55.2300	-111.9000	-3802	21	0.31	3	CaCO3 stratigraphy
+RC17-184	Piston corer	6.8020	165.4100	-5158	21		0	CaCO3 stratigraphy
+RC17-194	Piston corer	-25.9800	-169.6000	-5699	21		0	CaCO3 stratigraphy
+RC17-196	Piston corer	-29.4500	-160.5000	-5328	21		0	CaCO3 stratigraphy
+RC17-197	Piston corer	-25.2200	-159.6000	-5231	21		0	CaCO3 stratigraphy
+V27-221	Piston corer	-23.6300	-1.9670	-5834	21		0	CaCO3 stratigraphy
+RC08-92	Piston corer	-31.5500	-108.5000	-2710	21	0.29	73	CaCO3 stratigraphy; Cwienk, 1986
+114-699	Composite Core	-51.5420	-30.6770	-3716	21		0	Ciesielski et al., 1988
+114-701	Composite Core	-51.9850	-23.2121	-4647	21		0	Ciesielski et al., 1988
+114-702	Composite Core	-50.9460	-26.3687	-3094	21		0	Ciesielski et al., 1988
+RC08-43	Piston corer	-48.6800	57.3670	-4319	21	0.40	0	CLIMAP
+RC08-48	Piston corer	-53.2700	76.9170	-1099	21	0.41	23	CLIMAP
+RC08-63	Piston corer	-51.0800	129.9700	-3442	21	0.21	43	CLIMAP
+RC08-79	Piston corer	-46.3200	-172.9000	-4949	21	0.11	21	CLIMAP
+RC09-124	Piston corer	-28.7500	172.6000	-2540	21	0.37	80	CLIMAP
+RC09-139	Piston corer	-47.7700	123.1000	-4158	21	0.50	27	CLIMAP
+RC09-161	Piston corer	19.5670	59.6000	-3332	21	0.17	34	CLIMAP
+RC10-50	Piston corer	11.7670	-81.1000	-2072	21	0.60	47	CLIMAP
+RC10-97	Piston corer	-0.9170	-134.3000	-4305	21	0.46	87	CLIMAP
+RC11-114	Piston corer	-32.9500	65.2670	-4709	21	0.21	93	CLIMAP
+RC11-118	Piston corer	-37.8000	71.5330	-4354	21	0.40	75	CLIMAP
+RC11-119	Piston corer	-40.3000	74.5670	-3709	21	0.40	85	CLIMAP
+RC11-120	Piston corer	-43.5200	79.8670	-3193	21	0.80	36	CLIMAP
+RC11-121	Piston corer	-39.7200	82.2500	-3426	21	0.80	88	CLIMAP
+RC11-96	Piston corer	-50.4700	59.5830	-4839	21	1.00	0	CLIMAP
+RC11-97	Piston corer	-50.3200	61.2000	-4638	21	1.20	0	CLIMAP
+RC12-107	Piston corer	-26.0000	169.2000	-3115	21	0.42	79	CLIMAP
+RC12-225	Piston corer	-53.6700	-123.1000	-2964	21	0.40	80	CLIMAP
+RC13-113	Piston corer	-1.6520	-103.6000	-3195	21	0.51	83	CLIMAP
+RC13-151	Piston corer	15.8570	-74.7900	-2792	21	0.60	58	CLIMAP
+RC13-152	Piston corer	16.7080	-75.4400	-2027	21	0.60	60	CLIMAP
+RC13-153	Piston corer	15.0650	-75.9500	-3334	21	0.60	49	CLIMAP
+RC13-159	Piston corer	14.6950	-77.1700	-4027	21	0.85	35	CLIMAP
+RC14-11	Piston corer	-38.0000	51.1830	-3268	21	0.80	69	CLIMAP
+RC15-52	Piston corer	-29.2400	-85.9900	-3780	21	0.12	33	CLIMAP
+RC15-61	Piston corer	-45.6000	-77.2000	-3771	21	0.68	22	CLIMAP
+RC17-113	Piston corer	15.0330	66.0970	-3874	21	0.30	45	CLIMAP
+RC17-60	Piston corer	-44.5000	31.1820	-5227	21	0.11	1	CLIMAP
+RC17-61	Piston corer	-52.2000	54.4620	-3947	21	0.26	8	CLIMAP
+RC17-63	Piston corer	-45.6600	48.2870	-2947	21	0.24	36	CLIMAP
+RC17-69	Piston corer	-31.5000	32.6070	-3380	21	0.50	48	CLIMAP
+RC17-73	Piston corer	-32.1100	36.0100	-2021	21	0.20	87	CLIMAP
+RC17-98	Piston corer	-13.2200	65.6170	-3409	21	0.53	89	CLIMAP
+V14-101	Piston corer	8.6500	58.5670	-2849	21	0.70	81	CLIMAP
+V14-102	Piston corer	10.2500	57.1830	-3915	21	0.40	66	CLIMAP
+V14-77	Piston corer	-29.6300	32.8670	-1818	21	0.29	0	CLIMAP
+V14-81	Piston corer	-28.4300	43.7830	-3634	21	0.35	71	CLIMAP
+V16-114	Piston corer	-49.6000	138.2200	-3116	21	0.50	84	CLIMAP
+V16-115	Piston corer	-55.6800	141.2800	-3147	21	0.10	34	CLIMAP
+V18-68	Piston corer	-54.5500	-77.8500	-3982	21	0.10	42	CLIMAP
+V19-188	Piston corer	6.8670	60.6670	-3356	21	0.50	75	CLIMAP
+V19-19	Piston corer	13.2330	-78.3700	-3760	21	0.80	38	CLIMAP
+V19-202	Piston corer	-6.9830	41.1830	-2589	21	0.30	75	CLIMAP
+V19-204	Piston corer	-10.2300	43.8170	-3524	21	0.20	67	CLIMAP
+V19-21	Piston corer	11.8000	-79.0700	-3168	21	0.60	33	CLIMAP
+V19-27	Piston corer	-0.4670	-82.0700	-1373	21	0.10	30	CLIMAP
+V20-175	Piston corer	-22.3000	68.0000	-3526	21	0.20	87	CLIMAP
+V21-212	Piston corer	2.8330	-85.1300	-3338	21	0.60	46	CLIMAP
+V21-29	Piston corer	0.9500	-89.3500	-712	21	0.16	80	CLIMAP
+V21-59	Piston corer	20.9170	-158.1000	-2992	21	0.16	59	CLIMAP
+V24-166	Piston corer	-16.5200	150.7800	-781	21	0.46	94	CLIMAP
+V24-203	Piston corer	-36.9800	59.9830	-4997	21	0.21	0	CLIMAP
+V28-129	Piston corer	11.1170	-80.4000	-3400	21	0.80	22	CLIMAP
+V28-203	Piston corer	0.9500	-179.4000	-3243	21	0.42	92	CLIMAP
+V28-235	Piston corer	-5.4500	160.4800	-1746	21	0.35	81	CLIMAP
+V19-185	Piston corer	6.7000	59.3330	-2867	21	0.30	78	CLIMAP; Brown University, unpublished data
+V19-201	Piston corer	-5.3330	40.4330	-1864	21	0.70	66	CLIMAP; Brown University, unpublished data
+V20-170	Piston corer	-21.8000	69.2330	-2479	21	0.20	86	CLIMAP; Brown University, unpublished data
+V29-29	Piston corer	5.1170	77.5830	-2673	21	0.80	63	CLIMAP; Brown University, unpublished data
+V29-30	Piston corer	3.0830	76.2500	-3651	21	0.80	47	CLIMAP; Brown University, unpublished data
+V29-48	Piston corer	-6.2670	63.4330	-3882	21	0.30	79	CLIMAP; Brown University, unpublished data
+RC09-126	Piston corer	-33.2300	168.7300	-2060	21	0.22	82	CLIMAP; Cwienk, 1986
+RC09-162	Piston corer	19.0830	60.4170	-3092	21	0.50	57	CLIMAP; Cwienk, 1986
+V17-42	Piston corer	3.5330	-81.1800	-1814	21	0.90	53	CLIMAP; Cwienk, 1986
+V17-43	Piston corer	1.8670	-82.6200	-3147	21	0.75	47	CLIMAP; Cwienk, 1986
+V17-44	Piston corer	-3.5670	-85.1200	-3358	21	0.77	63	CLIMAP; Cwienk, 1986
+V18-222	Piston corer	-38.5700	140.6200	-1904	21	0.39	56	CLIMAP; Cwienk, 1986
+V19-25	Piston corer	2.4670	-81.7000	-2404	21	0.80	58	CLIMAP; Cwienk, 1986
+V19-30	Piston corer	-3.3830	-83.5200	-3091	21	0.17	34	CLIMAP; Cwienk, 1986
+V19-41	Piston corer	-14.1000	-96.2000	-3248	21	0.30	92	CLIMAP; Cwienk, 1986
+V21-146	Piston corer	37.6830	163.0300	-3968	21	0.68	29	CLIMAP; Cwienk, 1986
+V21-30	Piston corer	-1.2170	-89.6800	-617	21	0.25	77	CLIMAP; Cwienk, 1986
+V24-109	Piston corer	0.4330	158.8000	-2367	21	0.50	82	CLIMAP; Cwienk, 1986
+RC11-91	Piston corer	-56.5700	34.1830	-5373	21	0.20	0	CLIMAP; Howard, unpublished data
+RC14-35	Piston corer	-0.8333	89.9500	-3021	21	0.35	80	CLIMAP; Leinen, 1986
+V19-178	Piston corer	8.1170	73.2500	-2188	21	0.40	60	CLIMAP; Leinen, 1986
+V19-55	Piston corer	-17.0000	-114.2000	-3177	21	0.22	76	CLIMAP; Leinen, 1986
+V20-103	Piston corer	33.9830	-177.8000	-3442	21	0.24	78	CLIMAP; Leinen, 1986
+V21-214	Piston corer	3.8330	-80.6300	-2246	21	0.10	34	CLIMAP; Leinen, 1986
+V28-238	Piston corer	1.0170	160.4800	-3120	21	0.27	80	CLIMAP; Leinen, 1986
+V28-255	Piston corer	20.1000	142.4500	-3261	21	0.15	39	CLIMAP; Leinen, 1986
+RC11-230	Piston corer	-8.8000	-110.8000	-3259	21		82	CLIMAP; Luz and Shackleton, 1973
+RC11-94	Piston corer	-54.4800	53.0500	-4303	21	4.81	0	Cooke and Hays, 1982
+V29-86	Piston corer	-49.5700	30.0170	-5614	21	1.80	0	Cooke and Hays, 1982
+19-183	Drilling/drill rig	52.5717	-161.2055	-4708	21		0	Creager, Scholl et al., 1973
+19-193	Drilling/drill rig	45.8033	155.8712	-4811	21		0	Creager, Scholl et al., 1973
+26-256	Drilling/drill rig	-23.4558	100.7743	-5361	21		0	Davies, Luyendyk et al., 1974
+26-257	Drilling/drill rig	-30.9860	108.3498	-5278	21		0	Davies, Luyendyk et al., 1974
+115-716B	Drilling/drill rig	4.9333	73.2833	-544	21	0.90	82	Droxler et al., 1990
+85-572A	Drilling/drill rig	1.4348	-113.8420	-3893	21		81	Farrell, 1990
+85-574	Drilling/drill rig	4.2087	-133.3302	-4561	21		85	Farrell, 1990
+PLDS-130P	Piston corer	4.0050	-136.0050	-4469	21		89	Farrell, 1990
+RC11-209	Piston corer	3.6500	-140.1000	-4400	21		89	Farrell, 1990
+RC11-210	Piston corer	1.8170	-140.1000	-4420	21		83	Farrell, 1990
+RC12-63	Piston corer	5.9670	-142.7000	-4949	21		0	Farrell, 1990
+RC12-65	Piston corer	4.6500	-145.0000	-4868	21		21	Farrell, 1990
+RC12-66	Piston corer	2.6170	-148.2000	-4755	21		87	Farrell, 1990
+SDSE_090	Gravity corer	3.0833	-133.1000	-4370	21		84	Farrell, 1990
+SDSE_092	Gravity corer	1.5833	-134.9500	-4540	21		75	Farrell, 1990
+V24-55	Piston corer	2.0500	-134.6000	-4189	21		92	Farrell, 1990
+V24-58	Gravity corer	2.2670	-141.6670	-1140	21		89	Farrell, 1990
+V24-59	Gravity corer	2.5670	-145.5330	-1250	21		92	Farrell, 1990
+V24-62	Gravity corer	3.0670	-153.5830	-1334	21		75	Farrell, 1990
+V28-179	Piston corer	4.6170	-139.6000	-4502	21		77	Farrell, 1990
+W8402A-14	Gravity corer	0.9530	-138.9550	-4287	21		87	Farrell, 1990
+6-45A	Drilling/drill rig	24.2650	-178.5083	-5508	21		0	Fisher et al., 1971
+6-46	Drilling/drill rig	27.8833	171.4383	-5769	21		0	Fisher et al., 1971
+6-52	Drilling/drill rig	27.7717	147.1300	-5744	21		0	Fisher et al., 1971
+6-59	Drilling/drill rig	11.7800	147.5817	-5554	21		0	Fisher et al., 1971
+114-704	Composite Core	-46.8795	7.4207	-2542	21		45	Froelich, personal communication
+ELT17.009-PC	Piston corer	-63.0830	-135.1170	-4935	21		0	Froelich, personal communication
+IO1578-4		-19.7100	-59.2300	-4217	21		0	Froelich, personal communication
+RC11-76	Piston corer	-54.3800	-22.1300	-5229	21		0	Froelich, personal communication
+RC11-77	Piston corer	-53.0500	-16.4500	-4098	21		0	Froelich, personal communication
+RC11-78	Piston corer	-50.8700	-9.8670	-3115	21		0	Froelich, personal communication
+RC13-254	Piston corer	-48.5700	5.1270	-3636	21		2	Froelich, personal communication
+RC13-259	Piston corer	-53.8800	-4.9300	-1754	21	1.65	1	Froelich, personal communication
+RC13-271	Piston corer	-51.9900	4.5220	-3634	21	8.50	0	Froelich, personal communication
+RC15-93	Piston corer	-46.1000	-13.2300	-2714	21		16	Froelich, personal communication
+V22-108	Piston corer	-43.1800	-3.2500	-4171	21		16	Froelich, personal communication
+V29-105	Piston corer	-48.0800	17.6830	-4350	21		0	Froelich, personal communication
+28-267	Drilling/drill rig	-59.2623	104.4883	-4522	21		0	Hayes, Frakes et al., 1975
+28-268	Drilling/drill rig	-63.9498	105.1557	-3529	21		0	Hayes, Frakes et al., 1975
+28-269	Drilling/drill rig	-61.6762	140.0702	-4282	21		0	Hayes, Frakes et al., 1975
+28-270	Drilling/drill rig	-77.4413	-178.5032	-633	21		0	Hayes, Frakes et al., 1975
+RC13-251	Piston corer	-42.5100	11.6720	-4341	21	0.20	36	Hays et al., 1976
+RC13-253	Piston corer	-46.6000	7.6250	-2494	21	0.40	74	Hays et al., 1976
+RC13-261	Piston corer	-56.1200	-8.6870	-4221	21	0.80	0	Hays et al., 1976
+RC13-263	Piston corer	-53.8100	-8.2170	-3389	21	1.80	0	Hays et al., 1976
+RC13-273	Piston corer	-55.0667	11.5667	-4967	21	0.60	0	Hays et al., 1976
+V29-84	Piston corer	-43.8500	27.6000	-5451	21	1.20	0	Hays et al., 1976
+V29-87	Piston corer	-49.1000	27.3830	-5314	21	0.20	0	Hays et al., 1976
+V29-89	Piston corer	-45.7300	25.6500	-5945	21	1.20	0	Hays et al., 1976
+V29-90	Piston corer	-43.7000	25.7330	-5148	21	0.60	0	Hays et al., 1976
+86-576	Drilling/drill rig	32.3560	164.2757	-6217	21		0	Heath et al., 1982
+86-578	Drilling/drill rig	33.9260	151.6290	-6010	21		0	Heath et al., 1982
+86-579	Drilling/drill rig	38.6280	153.8362	-5737	21		0	Heath et al., 1982
+86-580	Drilling/drill rig	41.6245	153.9763	-5375	21		0	Heath et al., 1982
+86-581	Drilling/drill rig	43.9270	159.7960	-5476	21		0	Heath et al., 1982
+20-194	Drilling/drill rig	33.9780	148.8107	-5754	21		0	Heezen, MacGregor et al.1973
+20-195	Drilling/drill rig	32.7733	146.9788	-5968	21		0	Heezen, MacGregor et al.1973
+20-196	Drilling/drill rig	30.1162	148.5748	-6194	21		0	Heezen, MacGregor et al.1973
+ELT49.017-PC	Piston corer	-48.2800	90.2470	-3546	21		7	Howard and Prell, 1994
+ELT45.029-PC	Piston corer	-44.8770	106.5180	-3867	21		42	Howard and Prell, 1994
+ELT49.018-PC	Piston corer	-46.0500	90.1550	-3282	21		43	Howard and Prell, 1994
+ELT49.021-PC	Piston corer	-42.1850	94.8850	-3319	21		94	Howard and Prell, 1994
+ELT49.023-PC	Piston corer	-47.1280	95.0800	-3285	21		12	Howard and Prell, 1994
+MD84-529	Piston corer	-48.5400	62.0000	-2600	21		20	Howard and Prell, 1994
+MD84-527	Piston corer	-43.8217	51.3183	-3262	21		10	Howard, unpublished data
+MD84-562	Piston corer	-51.5500	68.1400	-3553	21		2	Howard, unpublished data
+MD88-769	Piston corer	-46.0693	90.1112	-3420	21		12	Howard, unpublished data
+MD88-770	Piston corer	-46.0220	96.4607	-3290	21		10	Howard, unpublished data
+MD88-773	Piston corer	-52.9005	109.8697	-2460	21		2	Howard, unpublished data
+RC12-328	Piston corer	-3.9500	60.6000	-3087	21	0.30	87	Howard, unpublished data
+RC12-340	Piston corer	12.7000	90.0170	-3012	21	0.70	18	Howard, unpublished data
+RC12-341	Piston corer	13.0500	89.5830	-2988	21	0.60	7	Howard, unpublished data
+RC12-343	Piston corer	15.1670	90.5670	-2666	21	0.60	12	Howard, unpublished data
+RC12-344	Piston corer	12.7670	96.0670	-2140	21	2.90	7	Howard, unpublished data
+RC13-228	Piston corer	-22.3300	11.1980	-3204	21		67	Howard, unpublished data
+RC14-39	Piston corer	-5.8570	90.5200	-2952	21	0.70	53	Howard, unpublished data
+V29-15	Piston corer	11.9500	88.7330	-3173	21	0.70	9	Howard, unpublished data
+V34-111	Piston corer	17.6170	63.8830	-3623	21	0.60	36	Howard, unpublished data
+60-452	Drilling/drill rig	17.6698	148.6288	-5858	21		0	Hussong, Uyeda et al., 1981
+60-460	Drilling/drill rig	17.6690	147.5987	-6452	21		0	Hussong, Uyeda et al., 1981
+60-461	Drilling/drill rig	17.7675	147.6863	-7034	21		0	Hussong, Uyeda et al., 1981
+31-290	Drilling/drill rig	17.7475	133.4680	-6062	21		0	Karig, Ingle et al., 1975
+31-291	Drilling/drill rig	12.8072	127.8308	-5217	21		0	Karig, Ingle et al., 1975
+31-298	Drilling/drill rig	31.7155	133.6037	-4628	21		0	Karig, Ingle et al., 1975
+NGR9		43.0100	-126.3400	-3092	21		5	Karlin et al., 1992
+W12		39.2700	-127.3900	-4226	21		5	Karlin et al., 1992
+W26	Sampling river	18.8488	80.3491	0	21		10	Karlin et al., 1992
+W48K		39.2600	-128.1200	-4171	21		7	Karlin et al., 1992
+W53K		39.2100	-127.0500	-4313	21		2	Karlin et al., 1992
+WW21		39.1600	-130.0200	-4411	21		0	Karlin et al., 1992
+RAMA-44P	Piston corer	53.0120	164.6480	-2980	21		0	Keigwin et al., 1992
+32-307	Drilling/drill rig	28.5877	161.0047	-5696	21		0	Larson, Moberley et al.1975
+32-311	Drilling/drill rig	28.1243	179.7375	-5775	21		0	Larson, Moberley et al.1975
+V19-53	Piston corer	-17.0200	-113.5000	-3058	21		62	Luz and Shackleton, 1973
+V21-33	Piston corer	-3.8000	-92.0800	-3726	21		60	Luz and Shackleton, 1973
+V19-28	Piston corer	-2.3670	-84.6500	-2720	21		65	Lyle et al., 1988
+VNTR01-49GC	Gravity corer	6.3200	-92.4600	-3580	21		18	Lyle et al., 1988
+W8709A-1	Piston corer	41.5420	-131.2620	-3680	21		30	Lyle et al., 1988
+W8709A-13	Piston corer	42.1170	-125.7500	-2712	21		3	Lyle et al., 1988
+W8709A-8	Piston corer	42.2620	-127.6780	-3111	21		10	Lyle et al., 1988
+120-751A	Drilling/drill rig	-57.7260	79.8148	-1644	21	0.74	9	Mackensen et al., 1992
+5-32	Drilling/drill rig	37.1272	-127.5563	-4758	21		0	McManus et al., 1970
+RC11-172	Piston corer	51.2500	-164.9000	-4808	21	0.71	0	Moore et al., 1980
+RC11-179	Piston corer	53.5000	-145.7000	-4067	21	0.41	9	Moore et al., 1980
+RC11-213	Piston corer	-6.1330	-140.9000	-4343	21	0.19	91	Moore et al., 1980
+RC11-220	Piston corer	-14.8200	-140.0000	-2950	21	0.34	89	Moore et al., 1980
+RC12-103	Piston corer	-26.0000	179.7300	-2401	21	0.42	81	Moore et al., 1980
+RC12-109	Piston corer	-25.8800	157.8700	-2930	21	0.22	78	Moore et al., 1980
+RC12-179	Piston corer	52.4830	-157.1000	-4601	21	0.62	0	Moore et al., 1980
+RC12-361	Piston corer	15.1000	124.1300	-3528	21	0.22	18	Moore et al., 1980
+RC12-401	Piston corer	40.8330	148.1300	-5415	21	2.62	0	Moore et al., 1980
+RC13-38	Piston corer	-14.5200	177.1000	-2867	21	0.35	63	Moore et al., 1980
+RC13-63	Piston corer	1.3500	-153.1000	-4420	21	0.55	88	Moore et al., 1980
+RC13-81	Piston corer	-19.0200	-124.2000	-3751	21	0.11	88	Moore et al., 1980
+RC14-106	Piston corer	45.8280	155.7100	-4823	21	0.83	0	Moore et al., 1980
+RC14-99	Piston corer	36.9650	147.9300	-5652	21	0.99	0	Moore et al., 1980
+V16-122	Piston corer	-46.7000	171.5000	-1265	21	0.32	48	Moore et al., 1980
+V18-312	Piston corer	-2.8500	-126.2000	-4614	21	0.25	79	Moore et al., 1980
+V19-65	Piston corer	-16.6500	-124.4000	-3867	21	0.20	91	Moore et al., 1980
+V20-121	Piston corer	46.9670	164.2700	-5859	21	0.59	0	Moore et al., 1980
+V20-122	Piston corer	46.5670	161.6800	-5563	21	0.81	0	Moore et al., 1980
+V28-249	Piston corer	14.5830	147.8700	-2569	21	0.21	87	Moore et al., 1980
+V28-304	Piston corer	28.5330	134.1300	-2942	21	0.72	22	Moore et al., 1980
+V32-126	Piston corer	35.3180	177.9200	-3870	21	0.40	51	Moore et al., 1980
+RC08-78	Piston corer	-44.7800	-175.8000	-1756	21	0.45	38	Moore et al., 1980; Cwienk, 1986
+RC08-94	Piston corer	-17.2800	-35.9833	-4021	21	0.19	88	Moore et al., 1980; Cwienk, 1986
+RC09-110	Piston corer	-42.8700	-172.0000	-1917	21	0.31	64	Moore et al., 1980; Cwienk, 1986
+RC09-129	Piston corer	-39.5200	163.1300	-2836	21	0.35	86	Moore et al., 1980; Cwienk, 1986
+RC10-139	Piston corer	-3.0330	156.4300	-1781	21	0.33	72	Moore et al., 1980; Cwienk, 1986
+RC10-140	Piston corer	-2.6500	156.9800	-1679	21	0.35	83	Moore et al., 1980; Cwienk, 1986
+RC10-216	Piston corer	50.9670	-151.2000	-4989	21	0.11	0	Moore et al., 1980; Cwienk, 1986
+RC12-121	Piston corer	-3.7330	168.3800	-3519	21	0.33	82	Moore et al., 1980; Cwienk, 1986
+RC12-413	Piston corer	43.2830	166.9000	-5015	21	0.41	0	Moore et al., 1980; Cwienk, 1986
+V18-318	Piston corer	3.1670	-118.5000	-4191	21	0.18	80	Moore et al., 1980; Cwienk, 1986
+V18-337	Piston corer	14.5170	-96.3000	-3891	21	2.22	0	Moore et al., 1980; Cwienk, 1986
+V20-123	Piston corer	46.2500	157.9200	-4903	21	0.81	0	Moore et al., 1980; Cwienk, 1986
+V20-124	Piston corer	45.8330	154.5000	-5534	21	0.79	0	Moore et al., 1980; Cwienk, 1986
+V20-126	Piston corer	42.1500	155.8700	-5515	21	1.09	1	Moore et al., 1980; Cwienk, 1986
+V20-129	Piston corer	37.6830	156.5800	-5766	21	1.42	0	Moore et al., 1980; Cwienk, 1986
+V21-151	Piston corer	52.2670	163.6300	-5055	21	0.15	0	Moore et al., 1980; Cwienk, 1986
+V21-171	Piston corer	49.8830	-165.0000	-5013	21	0.19	0	Moore et al., 1980; Cwienk, 1986
+RC11-170	Piston corer	44.4830	-163.4000	-5451	21	0.13	0	Moore et al., 1980; Leinen, 1986
+RC12-412	Piston corer	40.6830	166.9800	-5656	21	0.41	0	Moore et al., 1980; Leinen, 1986
+RC12-416	Piston corer	36.4000	166.7300	-5319	21	0.26	0	Moore et al., 1980; Leinen, 1986
+RC12-419	Piston corer	40.1000	171.5000	-6179	21	0.61	0	Moore et al., 1980; Leinen, 1986
+V28-229	Piston corer	-8.4000	167.7700	-3669	21	0.44	72	Moore et al., 1980; Leinen, 1986
+V28-230	Piston corer	-5.5000	166.7500	-2992	21	0.20	83	Moore et al., 1980; Leinen, 1986
+V28-294	Piston corer	28.4330	139.9700	-2308	21	0.16	51	Moore et al., 1980; Leinen, 1986
+RC11-80	Piston corer	-46.7500	-0.0500	-3656	21		0	Morley and Hays, 1979
+RC11-83	Piston corer	-41.6000	9.7170	-4718	21		22	Morley and Hays, 1979
+RC12-289	Piston corer	-47.9000	-23.7000	-4484	21		0	Morley and Hays, 1979
+RC13-243	Piston corer	-35.9000	1.3300	-4790	21		12	Morley and Hays, 1979
+RC13-255	Piston corer	-50.5400	2.8950	-3332	21		0	Morley and Hays, 1979
+RC13-256	Piston corer	-53.1800	-0.3550	-2525	21		0	Morley and Hays, 1979
+RC13-275	Piston corer	-50.7167	13.4333	-1984	21		15	Morley and Hays, 1979
+RC15-98	Piston corer	-42.9400	-29.7800	-4416	21		0	Morley and Hays, 1979
+ELT14.006-PC	Piston corer	-57.0150	-160.0930	-4591	21		0	Mortlock, personal communication
+117-722B	Drilling/drill rig	16.6218	59.7953	-2033	21	1.41	64	Murray and Prell, 1990
+V34-34	Piston corer	18.1500	117.3800	-3907	21	0.30	77	Peterson and Prell, 1985
+V34-48	Piston corer	-6.2500	90.5500	-3678	21	0.30	83	Peterson and Prell, 1985
+V34-51	Piston corer	-6.1920	89.9670	-4390	21	0.30	55	Peterson and Prell, 1985
+V34-53	Piston corer	-6.1170	89.5830	-3808	21	0.20	84	Peterson and Prell, 1985
+V34-54	Piston corer	-6.1000	88.3500	-3250	21	0.30	77	Peterson and Prell, 1985
+V34-55	Piston corer	-6.0400	88.9570	-2996	21	0.31	87	Peterson and Prell, 1985
+MD77-202	Piston corer	19.2217	60.6817	-2427	21	1.24	46	Prell et al., 1990
+V34-101	Piston corer	17.4880	67.4230	-3038	21	0.40	43	Prell et al., 1990
+V34-109	Piston corer	19.7330	66.0830	-2742	21	0.80	30	Prell et al., 1990
+V34-87	Piston corer	13.2730	57.3480	-2144	21	1.00	61	Prell et al., 1990
+V34-89	Piston corer	17.8030	61.8800	-3760	21	0.75	50	Prell et al., 1990
+V34-91	Piston corer	20.9370	64.0330	-3393	21	0.70	41	Prell et al., 1990
+V34-92	Piston corer	21.1480	65.1180	-3166	21	0.85	40	Prell et al., 1990
+RC13-190	Piston corer	1.7830	-25.4300	-3797	21	0.60	69	Ruddiman and Farrell, 1992
+V23-73	Piston corer	68.5500	2.7170	-2970	21	0.27	7	Ruddiman and Farrell, 1992
+V25-75	Piston corer	8.5830	-53.1700	-2743	21	1.20	19	Ruddiman and Farrell, 1992
+V29-183	Piston corer	49.1330	-25.5000	-3643	21	0.40	20	Ruddiman and Farrell, 1992
+V29-192	Piston corer	54.2670	-16.7800	-2365	21	0.50	46	Ruddiman and Farrell, 1992
+56-434	Drilling/drill rig	39.7460	144.1020	-5986	21		0	Shipboard Scientific Party, 1980
+117-728A	Drilling/drill rig	17.6802	57.8257	-1433	21	1.16	66	Steens et al., 1991
+22-211	Drilling/drill rig	-9.7755	102.6992	-5518	21		0	von der Borch et al., 1974
+22-213	Drilling/drill rig	-10.2118	93.8962	-5601	21		0	von der Borch et al., 1974
+22-215	Drilling/drill rig	-8.1217	86.7917	-5309	21		0	von der Borch et al., 1974
+7-65	Drilling/drill rig	4.3535	176.9857	-6142	21		0	Winterer et al., 1971
+7-66	Drilling/drill rig	2.3935	-166.1218	-5310	21		0	Winterer et al., 1971
+7-67	Drilling/drill rig	24.3760	-157.6480	-4486	21		0	Winterer et al., 1971
+RC23-50BX1	Box corer	1.0300	-104.4000	-3552	21		80	Yang, 1990
+RC23-52BX1	Box corer	1.0070	-118.2000	-3949	21		83	Yang, 1990
+RC23-53BX1	Box corer	0.9842	-124.6333	-4516	21		81	Yang, 1990
+RC23-54BX1	Box corer	1.0083	-133.6967	-4212	21		86	Yang, 1990
+RC23-61BX1	Box corer	0.9067	-140.0367	-4328	21		86	Yang, 1990
+63-472	Drilling/drill rig	23.0058	-113.9952	-3831	21		0	Yeats et al., 1981
+63-473	Drilling/drill rig	20.9653	-107.0635	-3249	21		0	Yeats et al., 1981
+34-321	Drilling/drill rig	-12.0215	-81.9040	-4817	21		0	Yeats, Hart et al., 1976
+EN77-29		48.5700	-133.9500	-3695	21		65	Zahn et al., 1991
+Y70-5-64	Piston corer	49.4270	-132.7670	-2944	21		53	Zahn et al., 1991

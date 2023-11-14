@@ -1,0 +1,46 @@
+Species
+O. universa
+G. conglobatus
+G. ruber ruber
+G. ruber albus
+G. ruber total
+G. tenellus
+T. sacculifer wo sac
+T. sacculifer w sac
+T. sacculifer total
+S. dehiscens
+G. adamsi
+G. siphonifera
+G. calida
+G. bulloides
+G. falconensis
+B. digitata
+G. rubescens
+T. humilis
+T. quinqueloba
+N. pachyderma left
+N. pachyderma right
+N. dutertrei
+G. conglomerata
+G. hexagona
+P. obliquiloculata
+G. inflata
+G. truncatulinodes left
+G. truncatulinodes right
+G. crassaformis
+N. pachyderma--N. dutertrei
+G. hirsuta
+G. scitula
+D. anfracta
+G. cultrata
+G. tumida
+G. tumida+flexuosa
+G. cultrata+tumida+flexuosa
+C. nitida
+G. glutinata
+T. iota
+G. uvula
+B. pumilio
+H. pelagica
+H. digitata
+Others

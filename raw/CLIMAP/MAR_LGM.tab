@@ -1,0 +1,108 @@
+Event	Method/Device	Latitude	Longitude	Elevation [m]	Age [ka BP]	CaCO3 [%]	bSiO2 [%]	MAR [g/cm**2/ka]	Acc rate non CaCO3 [g/cm**2/ka]	Reference
+RC13-227	Piston corer	-21.8800	8.8720	-4301	21	66.0		0.60	0.21	Balsam, 1988
+RE5-036		46.9167	-18.5833	-4500	21	11.0		1.40	1.25	Balsam, 1988
+ERDC-079BX	Box corer	2.7850	156.2300	-2766	21	83.0		1.15	0.19	Berger and Killingly, 1982
+ERDC-092BX	Box corer	-2.2250	156.9980	-1598	21	82.0		0.62	0.11	Berger and Killingly, 1982
+ERDC-102BX	Box corer	-3.6050	161.3180	-2300	21	87.0		0.84	0.11	Berger and Killingly, 1982
+ERDC-129BX	Box corer	-0.0070	161.9750	-4169	21	80.0		0.71	0.14	Berger and Killingly, 1982
+RC17-69	Piston corer	-31.5000	32.6070	-3380	21	48.0		0.20	0.10	CLIMAP, 1976; Cwienk, 1986
+RC14-35	Piston corer	-0.8333	89.9500	-3021	21	80.0		1.00	0.20	CLIMAP, 1976; Cwienk, 1986; Leinen, 1986
+KS7703	Piston corer	57.0000	-29.0000		21	33.0			1.00	Cremer et al., 1993
+EN066-10GGC	Gravity corer	6.6700	-21.9000	-3527	21	57.0		0.67	0.29	Curry and Lohmann, 1986
+EN066-16GGC	Gravity corer	6.6500	-21.1400	-3152	21	48.0		1.09	0.57	Curry and Lohmann, 1986
+EN066-17GGC	Gravity corer	5.4500	-21.0900	-3050	21	53.0		0.76	0.36	Curry and Lohmann, 1986
+EN066-21GGC	Gravity corer	4.2330	-20.6250	-3995	21	43.0		0.63	0.36	Curry and Lohmann, 1986
+EN066-23PG	Gravity corer	4.2300	-20.5400	-4105	21	41.0		0.44	0.26	Curry and Lohmann, 1986
+EN066-24PG	Gravity corer	3.8470	-20.3670	-4504	21	45.0		0.76	0.42	Curry and Lohmann, 1986
+EN066-26GGC	Gravity corer	3.0850	-20.0150	-4745	21	40.0		0.78	0.47	Curry and Lohmann, 1986
+EN066-32GGC	Gravity corer	2.4720	-19.7330	-5003	21	35.0		1.07	0.70	Curry and Lohmann, 1986
+EN066-36GGC	Gravity corer	2.4700	-20.2100	-4270	21	41.0		0.83	0.49	Curry and Lohmann, 1986
+EN066-39GGC	Gravity corer	5.0720	-20.8670	-2818	21	58.0		0.60	0.25	Curry and Lohmann, 1986
+EN066-43GGC	Gravity corer	5.0700	-21.6400	-3197	21	56.0		0.27	0.12	Curry and Lohmann, 1986
+EN066-44GGC	Gravity corer	5.2630	-21.7120	-3428	21	53.0		0.70	0.33	Curry and Lohmann, 1986
+EN066-47PG	Gravity corer	5.3130	-22.1970	-3951	21	41.0		0.85	0.50	Curry and Lohmann, 1986
+280	Piston corer	35.0000	-44.0000	-4300	21	35.0		3.75	2.45	Curry and Lohmann, 1990
+A152-118		35.1167	-44.6667	-4334	21	18.0		2.03	1.66	Curry and Lohmann, 1990
+V04-1	Piston corer	38.8830	-70.9200	-2867	21	2.0		0.90	0.89	Curry and Lohmann, 1990
+V17-165	Piston corer	32.7500	-41.9000	-3924	21	61.0		1.43	0.55	Curry and Lohmann, 1990
+V27-263	Piston corer	35.0170	-40.9200	-3704	21	57.0		0.68	0.29	Curry and Lohmann, 1990
+V27-264	Piston corer	36.5170	-43.7200	-4801	21	14.0		8.48	7.32	Curry and Lohmann, 1990
+V27-265	Piston corer	36.1000	-43.6800	-4945	21	12.0		5.18	4.58	Curry and Lohmann, 1990
+V27-267	Piston corer	35.6330	-44.2800	-4722	21	15.0		5.40	4.58	Curry and Lohmann, 1990
+V30-88	Piston corer	34.9830	-35.2500	-2945	21	75.0		1.65	0.41	Curry and Lohmann, 1990
+V30-93	Piston corer	35.6830	-38.6200	-4080	21	50.0		3.75	1.88	Curry and Lohmann, 1990
+RC11-170	Piston corer	44.4830	-163.4000	-5451	21	0.0				Cwienk, 1986
+RC13-113	Piston corer	-1.6520	-103.6000	-3195	21	83.0		0.80	0.14	Cwienk, 1986
+RC17-98	Piston corer	-13.2200	65.6170	-3409	21	89.0				Cwienk, 1986
+V19-185	Piston corer	6.7000	59.3330	-2867	21	78.0				Cwienk, 1986
+V29-48	Piston corer	-6.2670	63.4330	-3882	21	79.0				Cwienk, 1986
+V34-53	Piston corer	-6.1170	89.5830	-3808	21	84.0				Cwienk, 1986
+RC11-210	Piston corer	1.8170	-140.1000	-4420	21	83.0		1.81	0.31	Cwienk, 1986; Rea et al., 1991; Keigwin et al., 1992
+85-572_Site	Composite Core	1.4348	-113.8420	-3893	21	81.0		1.35	0.32	Farrell, 1990
+SDSE_092	Gravity corer	1.5833	-134.9500	-4540	21	75.0		0.90	0.39	Farrell, 1990
+W8402A-14	Gravity corer	0.9530	-138.9550	-4287	21	87.0		1.42	0.20	Farrell, 1990
+AT_II-107_65		-32.0300	-36.1800	-2795	21	59.5		0.82	0.33	Francois and Bacon, 1991
+CHN82-15		43.3700	-28.2300	-2153	21	49.5		4.21	2.12	Francois and Bacon, 1991
+CHN82-20		43.5000	-29.8700	-3070	21	40.6		6.50	3.86	Francois and Bacon, 1991
+EN066-29GGC	Gravity corer	2.4600	-19.7620	-5104	21	21.0		0.68	0.54	Francois and Bacon, 1991
+EN066-39PG	Gravity corer	4.9180	-20.4980	-2931	21	50.0		1.28	0.64	Francois and Bacon, 1991
+KNR110-55	Gravity corer	4.9480	-42.8920	-4556	21	20.0		1.58	1.26	Francois and Bacon, 1991
+KNR110-82	Gravity corer	4.3370	-43.4870	-2816	21	27.0		1.86	1.35	Francois and Bacon, 1991
+KNR110-91	Gravity corer	4.7600	-43.3070	-3810	21	23.0		1.45	1.12	Francois and Bacon, 1991
+RC12-294	Piston corer	-37.2700	-10.1000	-3308	21	76.8		1.26	0.29	Francois and Bacon, 1991
+V19-240	Piston corer	-30.5800	13.2830	-3103	21	82.6		1.39	0.24	Francois and Bacon, 1991
+V22-174	Piston corer	-10.0700	-12.8200	-2630	21	94.0		0.67	0.04	Francois and Bacon, 1991
+V22-197	Piston corer	14.1670	-18.5800	-3167	21	17.0		2.00	1.66	Francois and Bacon, 1991
+V23-100	Piston corer	21.3000	-22.6800	-4579	21	68.0		1.68	0.54	Francois and Bacon, 1991
+V25-59	Piston corer	1.3670	-33.4800	-3824	21	63.0		1.60	0.59	Francois and Bacon, 1991
+V29-179	Piston corer	44.0170	-24.5300	-3331	21	49.7				Francois and Bacon, 1991
+V30-40	Piston corer	-0.2000	-23.1500	-3706	21	71.0		1.49	0.43	Francois and Bacon, 1991
+V30-49	Piston corer	18.4330	-21.0800	-3093	21	55.0		1.76	0.80	Francois and Bacon, 1991
+V26-176	Piston corer	36.0500	-72.3800	-3942	21	13.0				Howard and Prell, 1994
+V30-97	Piston corer	41.0000	-32.9300	-3371	21	53.0				Howard and Prell, 1994
+RC11-120	Piston corer	-43.5200	79.8670	-3193	21	36.0		2.50		Howard and Prell, 1994; Kent, 1982
+RC12-225	Piston corer	-53.6700	-123.1000	-2964	21	80.0				Howard and Prell, 1994; Luz, 1977
+Y70-5-64	Piston corer	49.4270	-132.7670	-2944	21	53.0		0.47	0.22	Keigwin et al., 1992
+RC12-413	Piston corer	43.2830	166.9000	-5015	21	0.0		1.40	1.40	Luz, 1977; Cwienk, 1986; Leinen, 1986
+RC12-416	Piston corer	36.4000	166.7300	-5319	21	0.0		0.55	0.55	Moore, 1980; Cwienk, 1986
+RC14-106	Piston corer	45.8280	155.7100	-4823	21	0.0		0.80	0.80	Moore, 1980; Cwienk, 1986
+RC12-412	Piston corer	40.6830	166.9800	-5656	21	0.0		0.70	0.70	Moore, 1980; Leinen, 1986
+RC13-229	Piston corer	-25.4900	11.3070	-4191	21	41.0		1.00	0.59	Morley and Shackleton, 1984
+RC13-228	Piston corer	-22.3300	11.1980	-3204	21	69.0		7.58		Morley and Shackleton, 1984; Howard and Prell, 1994
+W8803B-51GC	Gravity corer	1.3000	-133.6000	-4420	21	83.0		0.87	0.15	Murray et al., 1993
+115-708A	Drilling/drill rig	-5.4558	59.9438	-4107	21	85.0		1.05	0.15	Peterson and Backman, 1990
+85-574	Drilling/drill rig	4.2087	-133.3302	-4561	21	85.0		0.90	0.13	Peterson and Backman, 1990
+PLDS-130PG	Gravity corer	4.0050	-136.0050	-4469	21	89.0		0.64	0.07	Peterson and Backman, 1990
+RC11-209	Piston corer	3.6500	-140.1000	-4400	21	89.0		1.23	0.14	Peterson and Backman, 1990
+RC12-63	Piston corer	5.9670	-142.7000	-4949	21	0.0		0.07	0.07	Peterson and Backman, 1990
+RC12-65	Piston corer	4.6500	-145.0000	-4868	21	21.0		0.14	0.06	Peterson and Backman, 1990
+RC12-66	Piston corer	2.6170	-148.2000	-4755	21	87.0		0.66	0.13	Peterson and Backman, 1990
+SDSE_090	Gravity corer	3.0833	-133.1000	-4370	21	84.0		0.60	0.10	Peterson and Backman, 1990
+V24-55	Piston corer	2.0500	-134.6000	-4189	21	92.0		0.85	0.10	Peterson and Backman, 1990
+V24-58	Gravity corer	2.2670	-141.6670	-1140	21	89.0		0.92	0.11	Peterson and Backman, 1990
+V24-59	Gravity corer	2.5670	-145.5330	-1250	21	92.0		0.62	0.08	Peterson and Backman, 1990
+V24-62	Gravity corer	3.0670	-153.5830	-1334	21	75.0		0.33	0.06	Peterson and Backman, 1990
+ELT45.027-PC	Piston corer	-43.3080	105.5480	-3823	21	79.0	3.0	0.63	0.12	Yu , 1994
+ELT45.029-PC	Piston corer	-44.8770	106.5180	-3867	21	62.0	14.0	0.62	0.15	Yu , 1994
+ELT45.063-PC	Piston corer	-53.4370	114.2570	-3969	21	2.0	69.0	1.32	0.38	Yu , 1994
+ELT45.064-PC	Piston corer	-52.4830	114.0900	-3871	21	1.0	61.0	1.06	0.40	Yu , 1994
+ELT45.071-PC	Piston corer	-48.0250	114.4870	-3700	21	65.0	21.0	1.03	0.14	Yu , 1994
+ELT45.074-PC	Piston corer	-47.5520	114.4400	-3852	21	66.0	15.0	0.53	0.10	Yu , 1994
+ELT45.074-PC	Piston corer	-47.5520	114.4400	-3852	21	68.0	17.0	0.61	0.09	Yu , 1994
+ELT48.006-PC	Piston corer	-34.0050	97.5430	-4343	21	2.0	74.0	1.70	0.40	Yu , 1994
+ELT48.022-PC	Piston corer	-39.8950	85.4100	-3410	21	91.0	2.0	1.04	0.09	Yu , 1994
+ELT48.027-PC	Piston corer	-38.5420	79.8980	-3312	21	89.0	3.0	0.92	0.10	Yu , 1994
+ELT48.029-PC	Piston corer	-36.4930	80.0250	-2350	21	4.0	66.0	2.53	0.76	Yu , 1994
+ELT49.008-PC	Piston corer	-55.0700	110.0180	-3728	21	2.0	49.0	0.99	0.48	Yu , 1994
+ELT50.013-PC	Piston corer	-59.9970	105.0000	-4270	21	2.0	47.0	0.95	0.49	Yu , 1994
+ELT50.017-PC	Piston corer	-63.0020	120.0500	-4138	21	6.0	12.0	3.26	2.69	Yu , 1994
+MD84-527	Piston corer	-43.8217	51.3183	-3262	21	13.0	43.0	0.98	0.43	Yu , 1994
+MD84-552	Piston corer	-54.5500	75.8300	-1780	21	11.0	35.0	1.06	0.57	Yu , 1994
+MD88-773	Piston corer	-52.9005	109.8697	-2460	21	9.0	67.0	0.88	0.21	Yu , 1994
+RC11-76	Piston corer	-54.3800	-22.1300	-5229	21		36.0	2.31	1.48	Yu , 1994
+RC13-254	Piston corer	-48.5700	5.1270	-3636	21	0.0	60.0	3.32	1.33	Yu , 1994; Murray et al., 1993
+RC13-259	Piston corer	-53.8800	-4.9300	-1754	21	0.0	50.0	1.05	0.52	Yu , 1994; Murray et al., 1993
+RC13-271	Piston corer	-51.9900	4.5220	-3634	21	0.0	53.0	1.50	0.70	Yu , 1994; Murray et al., 1993
+RC15-93	Piston corer	-46.1000	-13.2300	-2714	21	0.0	53.0	2.30	1.08	Yu , 1994; Murray et al., 1993
+RC15-94	Piston corer	-42.9800	-20.8600	-3762	21	0.0	8.5	1.37	1.25	Yu , 1994; Murray et al., 1993
+V22-108	Piston corer	-43.1800	-3.2500	-4171	21	0.0	15.0	0.90	0.77	Yu , 1994; Murray et al., 1993
