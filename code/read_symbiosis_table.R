@@ -50,13 +50,9 @@ global_group_and_aggregate <- function(data, Depth){
   symbiosis_short_tbl <- symbiosis_tbl %>% select(!c(Species)) %>% distinct()
   data <- merge(data, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
   
+  # allow different `Depth [m]` in one core sample to exist        
   data <- data %>% group_by(Event, Latitude, Longitude, !!sym(Depth), Symbiosis, Spine) %>% 
     summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
-  
-  ## get the max count if there are multiple records of sediment depths
-  ## this is for the build of max thermal performance curve
-  data <- data %>% group_by(Event, Latitude, Longitude, Symbiosis, Spine) %>%
-    summarise_all(.funs = max, na.rm=T)  %>% ungroup()
   
   return(data)
 }

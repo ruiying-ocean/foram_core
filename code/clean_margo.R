@@ -173,17 +173,13 @@ local_group_and_aggregate <- function(data){
                                       "Chronostratigraphic quality (chronozone level)",
                                       "Laboratory", "Sample depth - lower (m)",
                                       "date of addition","Publication"))
-    
+
+    # allow different `Depth [m]` in one core sample to exist        
     data_merged <- data_merged %>% group_by(Core, `Coring device`, Latitude, Longitude,
                               `Water depth (m)`, Ocean, `Sample depth - upper (m)`,
                               Symbiosis, Spine) %>% 
       summarise_all(.funs = sum, na.rm=T) %>% ungroup()
     
-    # get maximum if different `Depth [m]` exist
-    data_merged <- data_merged %>% group_by(Core, `Coring device`, Latitude, Longitude, `Water depth (m)`,
-                              Ocean, Symbiosis, Spine) %>%
-      summarise_all(.funs = max, na.rm=T) %>% ungroup()
-
     return(data_merged)
 }
 

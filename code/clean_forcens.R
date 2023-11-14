@@ -88,20 +88,14 @@ local_group_and_aggregate <- function(data, value_name){
     data[, c("Abundance") := lapply(.SD, as.numeric), 
                    .SDcols=c("Abundance")]
 
-    ## group each sample and sum up functional type's abundance
+    ## group each sample (each sample depth in each core sample) and sum up functional type's abundance
+    ## allow same sediment depths in one sample to co-exist
     data_agg <- data[, .(Prop = sum(Abundance, na.rm=T)),
                                   by = .(`Sample`, `Sample ID`, `Flag`,
                                          `Device`, `Latitude`, `Longitude`,
                                          `Water depth`, `Ocean`,
                                          `Sample depth top`, `Sample depth bottom`, `Sample depth average`, 
                                           `Symbiosis`, `Spine`)]
-
-    # average different depth
-    data_agg <-data_agg[, .(Prop = mean(Prop, na.rm=T)),
-                               by = .(`Sample`, `Sample ID`, `Flag`,
-                                      `Device`, `Latitude`, `Longitude`,
-                                      `Water depth`, `Ocean`,
-                                       `Symbiosis`, `Spine`)]
 
     setnames(data_agg, "Prop", value_name)
     return(data_agg)

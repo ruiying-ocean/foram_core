@@ -36,13 +36,10 @@ symbiosis_short_tbl <- symbiosis_tbl %>% select(!c(Species)) %>% distinct()
 ##join two tables                                    
 glamap_merged <- merge(glamap, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
 
-## 1 Each unique sample to be a group
+## Each unique sample and sediment depth as a group
+## i.e., allow different depths in one sample to exist
 glamap_merged <- glamap_merged %>% group_by(Campaign, Event, Latitude, Longitude,  `Depth [m]`, `Date/Time`, `Elevation [m]`,  Symbiosis, Spine) %>% 
     summarise_all(.funs = sum, na.rm=T) %>% ungroup()
-
-## 2 average different `Depth [m]`
-glamap_merged <- glamap_merged %>% group_by(Campaign, Event, Latitude, Longitude, `Date/Time`, `Elevation [m]`,  Symbiosis, Spine) %>% 
-    summarise_all(.funs = max, na.rm=T) %>% ungroup()
 
 ## export
 write_csv(glamap_merged, "fg/lgm_glamap_fg_r.csv")
