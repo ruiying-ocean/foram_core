@@ -3,3 +3,4 @@
 .RData
 .Ruserdata
 raw/CLIMAP/formatted_files/*.txt
+.DS_Store

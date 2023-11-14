@@ -3,6 +3,7 @@ message("This project is to generate clean data based on planktic foraminifera f
 
 suppressPackageStartupMessages(library(tidyverse))
 suppressPackageStartupMessages(library(data.table))
+library(rnaturalearth)
 
 message(">>> read symbiosis table")
 source("code/read_symbiosis_table.R")
@@ -19,7 +20,25 @@ USE_GLAMAP = TRUE
 USE_CLIMAP = TRUE
 
 
-delete_files <- function(folder_path, exclude_file="foram_sp_db.csv"){
+# Create a ggplot object with the land and ocean mask
+quick_map <- function(data, lon, lat){
+    ## if data not exist, then download
+    if (!file.exists("code/world_map.rds")) {
+        world <- ne_download(scale = "small", type = "land", category = "physical", returnclass = "sf")
+        saveRDS(world, "world_map.rds")
+    } else {
+        world <- readRDS("code/world_map.rds")
+    }
+    
+    p <- ggplot() +
+        geom_sf(data = world, color = "black") +
+        geom_point(data = data, aes(x = !!sym(lon), y = !!sym(lat)), color = "red", size = 2)
+    
+    return(p)
+}
+
+
+delete_files <- function(folder_path, exclude_file="foram_taxonomy.csv"){
     library(fs)
     ## Get a list of all files in the folder
     file_list <- dir_ls(folder_path)
@@ -74,7 +93,6 @@ customPrompt <- function() {
         if (USE_MARGO) source("code/clean_margo.R")
         if (USE_EPILOG) source("code/clean_epilog.R")
         if (USE_GLAMAP) source("code/clean_glamap.R")
-        if (USE_MIX1999) source("code/clean_mix1999.R")
         source("code/tidy_all.R")
         ## Add your specific code here
     } else if (selection == "no") {

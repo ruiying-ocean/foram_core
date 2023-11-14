@@ -51,7 +51,7 @@ def main():
     gdf_pi.plot(ax=ax_map2, markersize=5, label='PI', color=pi_color)
 
     # Add histograms to the four subplots on the right
-    cols = pi.columns.drop(["Symbiont-facultative Non-Spinose", "Latitude", "Longitude"])
+    cols = pi.columns.drop(["symbiont-facultative non-spinose", "Latitude", "Longitude"])
 
     for i, col in enumerate(cols):
         ax_hs[i].hist(pi[col], bins=30, label='PI', color=pi_color)

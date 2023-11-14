@@ -25,8 +25,14 @@ colnames(forcens) <- gsub("_", " ", colnames(forcens), fixed = TRUE)
 
 ## rename species
 forcens <- forcens %>% replace_column_name("Globigerinoides white", "Globigerinoides ruber albus")
+forcens <- forcens %>% replace_column_name("Globorotalia theyeri", "Globorotalia eastropacia")
 forcens <- forcens %>% replace_column_name("Globigerinoides ruber", "Globigerinoides ruber ruber")
 forcens <- forcens %>% replace_column_name("Globorotalia menardii", "Globorotalia cultrata")
+forcens <- forcens %>% replace_column_name("Tenuitella iota", "Tenuitellita iota")
+
+## ignore the returned G. inflata with different genus name
+## it will be the same when use abbreviation
+find_missing_species(symbiosis_tbl$Species,(names(forcens)[22:62]))
 
 ## using abbreviation
 names(forcens)[22:62] <- map_vec(names(forcens)[22:62],species_abbrev)
@@ -98,7 +104,7 @@ local_group_and_aggregate <- function(data, value_name){
                                        `Symbiosis`, `Spine`)]
 
     setnames(data_agg, "Prop", value_name)
-    return(data_agg)    
+    return(data_agg)
 }
 
 forcens_r %>% local_group_and_aggregate("Relative Abundance") %>%
