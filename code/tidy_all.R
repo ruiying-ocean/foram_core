@@ -176,11 +176,12 @@ pi_rw %>% fwrite("tidy/forcens_fg_r_tidy.csv")
 #--------------------
 # Plot example
 #--------------------
-# library(sf)
-# library(tmap)
-# land <- read_sf("tidy/ne_50m_land/ne_50m_land.shp")
-# p_land <- tm_shape(land)+ tm_polygons()
-# 
-# df_lgm <- fread("tidy/lgm_fg_a_tidy.csv") %>% st_as_sf(coords = c("Longitude", "Latitude"), crs=4326) #WGS84
-# p_lgm <- tm_shape(df_lgm) + tm_symbols(col="symbiont-facultative spinose",size=0.5)
-# p_land + p_lgm
+library(sf)
+library(tmap)
+land <- read_sf("tidy/ne_50m_land/ne_50m_land.shp")
+p_land <- tm_shape(land)+ tm_polygons()
+
+df_lgm <- fread("tidy/lgm_sp_a_tidy.csv") %>% st_as_sf(coords = c("Longitude", "Latitude"), crs=4326) #WGS84
+p_lgm <- tm_shape(df_lgm) + tm_symbols(col="N. pachyderma",size=0.3,
+                                       palette = "viridis")
+p_land + p_lgm
