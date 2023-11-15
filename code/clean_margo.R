@@ -18,15 +18,6 @@ med <- med %>% mutate(`Sample depth - upper (m)` = `Sample depth - lower (m)`)
 ## only for convenience when select species
 pacific <- pacific %>% mutate(`Globigerinita uvula` = 0, .after = `Globigerinita glutinata`)
 
-## combine North Atlantic with manually picked cores (with absolute abundance)
-n_atlantic_cores <- read_csv("raw/MARGO/clean format/LGM_MARGO_NAtlantic_manual_picked.csv")
-n_atlantic_cores <- rename(n_atlantic_cores, `Sample depth - upper (m)`=`Sediment depth [m]`)
-n_atlantic_cores <- n_atlantic_cores %>% select(-c("References", "Age model [ka]"))
-n_atlantic <- left_join(n_atlantic, n_atlantic_cores)
-n_atlantic <- n_atlantic %>% select(-`Total Planktics`) %>%
-  rename(`Total Planktics` = `Foram plankt [#/g]`) %>%
-  mutate(Datatype = ifelse(is.na(`Total Planktics`), 1, 3))
-
 ## -----------------------------------
 ## Clean Species Name
 ## -----------------------------------
