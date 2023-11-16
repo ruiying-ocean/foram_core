@@ -55,7 +55,7 @@ RC13-153,15.065,-75.95,0.6,symbiont-facultative,non-spinose,74
 RC13-153,15.065,-75.95,0.6,symbiont-facultative,spinose,0
 RC13-153,15.065,-75.95,0.6,symbiont-obligate,spinose,197
 RC13-153,15.065,-75.95,0.6,undetermined,non-spinose,0
-RC14-35,-0.8333,89.95,0.35,symbiont-barren,non-spinose,116
+RC14-35,-0.8333,89.95,0.35,symbiont-barren,non-spinose,132
 RC14-35,-0.8333,89.95,0.35,symbiont-barren,spinose,96
 RC14-35,-0.8333,89.95,0.35,symbiont-bearing,non-spinose,0
 RC14-35,-0.8333,89.95,0.35,symbiont-bearing,spinose,40
@@ -63,7 +63,7 @@ RC14-35,-0.8333,89.95,0.35,symbiont-facultative,non-spinose,1284
 RC14-35,-0.8333,89.95,0.35,symbiont-facultative,spinose,0
 RC14-35,-0.8333,89.95,0.35,symbiont-obligate,spinose,296
 RC14-35,-0.8333,89.95,0.35,undetermined,non-spinose,180
-RC17-113,15.033,66.097,0.3,symbiont-barren,non-spinose,8
+RC17-113,15.033,66.097,0.3,symbiont-barren,non-spinose,13
 RC17-113,15.033,66.097,0.3,symbiont-barren,spinose,17
 RC17-113,15.033,66.097,0.3,symbiont-bearing,non-spinose,0
 RC17-113,15.033,66.097,0.3,symbiont-bearing,spinose,3
@@ -87,7 +87,7 @@ RC17-73,-32.11,36.01,0.2,symbiont-facultative,non-spinose,123
 RC17-73,-32.11,36.01,0.2,symbiont-facultative,spinose,0
 RC17-73,-32.11,36.01,0.2,symbiont-obligate,spinose,43
 RC17-73,-32.11,36.01,0.2,undetermined,non-spinose,0
-RC17-98,-13.22,65.617,0.53,symbiont-barren,non-spinose,30
+RC17-98,-13.22,65.617,0.53,symbiont-barren,non-spinose,31
 RC17-98,-13.22,65.617,0.53,symbiont-barren,spinose,10
 RC17-98,-13.22,65.617,0.53,symbiont-bearing,non-spinose,0
 RC17-98,-13.22,65.617,0.53,symbiont-bearing,spinose,10
@@ -95,7 +95,7 @@ RC17-98,-13.22,65.617,0.53,symbiont-facultative,non-spinose,114
 RC17-98,-13.22,65.617,0.53,symbiont-facultative,spinose,0
 RC17-98,-13.22,65.617,0.53,symbiont-obligate,spinose,55
 RC17-98,-13.22,65.617,0.53,undetermined,non-spinose,1
-V14-101,8.65,58.567,0.7,symbiont-barren,non-spinose,25
+V14-101,8.65,58.567,0.7,symbiont-barren,non-spinose,28
 V14-101,8.65,58.567,0.7,symbiont-barren,spinose,28
 V14-101,8.65,58.567,0.7,symbiont-bearing,non-spinose,0
 V14-101,8.65,58.567,0.7,symbiont-bearing,spinose,7
@@ -103,7 +103,7 @@ V14-101,8.65,58.567,0.7,symbiont-facultative,non-spinose,148
 V14-101,8.65,58.567,0.7,symbiont-facultative,spinose,0
 V14-101,8.65,58.567,0.7,symbiont-obligate,spinose,21
 V14-101,8.65,58.567,0.7,undetermined,non-spinose,0
-V14-102,10.25,57.183,0.4,symbiont-barren,non-spinose,28
+V14-102,10.25,57.183,0.4,symbiont-barren,non-spinose,35
 V14-102,10.25,57.183,0.4,symbiont-barren,spinose,30
 V14-102,10.25,57.183,0.4,symbiont-bearing,non-spinose,0
 V14-102,10.25,57.183,0.4,symbiont-bearing,spinose,6
@@ -127,7 +127,7 @@ V14-81,-28.43,43.783,0.35,symbiont-facultative,non-spinose,115
 V14-81,-28.43,43.783,0.35,symbiont-facultative,spinose,1
 V14-81,-28.43,43.783,0.35,symbiont-obligate,spinose,36
 V14-81,-28.43,43.783,0.35,undetermined,non-spinose,0
-V16-205,15.4,-43.4,0.19,symbiont-barren,non-spinose,53
+V16-205,15.4,-43.4,0.19,symbiont-barren,non-spinose,55
 V16-205,15.4,-43.4,0.19,symbiont-barren,spinose,15
 V16-205,15.4,-43.4,0.19,symbiont-bearing,non-spinose,0
 V16-205,15.4,-43.4,0.19,symbiont-bearing,spinose,8
@@ -151,7 +151,7 @@ V17-165,32.75,-41.9,0.5,symbiont-facultative,non-spinose,99
 V17-165,32.75,-41.9,0.5,symbiont-facultative,spinose,0
 V17-165,32.75,-41.9,0.5,symbiont-obligate,spinose,147
 V17-165,32.75,-41.9,0.5,undetermined,non-spinose,0
-V19-178,8.117,73.25,0.4,symbiont-barren,non-spinose,8
+V19-178,8.117,73.25,0.4,symbiont-barren,non-spinose,18
 V19-178,8.117,73.25,0.4,symbiont-barren,spinose,30
 V19-178,8.117,73.25,0.4,symbiont-bearing,non-spinose,0
 V19-178,8.117,73.25,0.4,symbiont-bearing,spinose,24
@@ -159,7 +159,7 @@ V19-178,8.117,73.25,0.4,symbiont-facultative,non-spinose,131
 V19-178,8.117,73.25,0.4,symbiont-facultative,spinose,2
 V19-178,8.117,73.25,0.4,symbiont-obligate,spinose,27
 V19-178,8.117,73.25,0.4,undetermined,non-spinose,6
-V19-185,6.7,59.333,0.3,symbiont-barren,non-spinose,14
+V19-185,6.7,59.333,0.3,symbiont-barren,non-spinose,21
 V19-185,6.7,59.333,0.3,symbiont-barren,spinose,36
 V19-185,6.7,59.333,0.3,symbiont-bearing,non-spinose,0
 V19-185,6.7,59.333,0.3,symbiont-bearing,spinose,8
@@ -167,7 +167,7 @@ V19-185,6.7,59.333,0.3,symbiont-facultative,non-spinose,121
 V19-185,6.7,59.333,0.3,symbiont-facultative,spinose,0
 V19-185,6.7,59.333,0.3,symbiont-obligate,spinose,23
 V19-185,6.7,59.333,0.3,undetermined,non-spinose,4
-V19-188,6.867,60.667,0.5,symbiont-barren,non-spinose,30
+V19-188,6.867,60.667,0.5,symbiont-barren,non-spinose,39
 V19-188,6.867,60.667,0.5,symbiont-barren,spinose,35
 V19-188,6.867,60.667,0.5,symbiont-bearing,non-spinose,0
 V19-188,6.867,60.667,0.5,symbiont-bearing,spinose,13
@@ -183,7 +183,7 @@ V19-19,13.233,-78.37,0.8,symbiont-facultative,non-spinose,37
 V19-19,13.233,-78.37,0.8,symbiont-facultative,spinose,0
 V19-19,13.233,-78.37,0.8,symbiont-obligate,spinose,226
 V19-19,13.233,-78.37,0.8,undetermined,non-spinose,0
-V19-201,-5.333,40.433,0.7,symbiont-barren,non-spinose,18
+V19-201,-5.333,40.433,0.7,symbiont-barren,non-spinose,20
 V19-201,-5.333,40.433,0.7,symbiont-barren,spinose,18
 V19-201,-5.333,40.433,0.7,symbiont-bearing,non-spinose,0
 V19-201,-5.333,40.433,0.7,symbiont-bearing,spinose,17
@@ -191,7 +191,7 @@ V19-201,-5.333,40.433,0.7,symbiont-facultative,non-spinose,130
 V19-201,-5.333,40.433,0.7,symbiont-facultative,spinose,2
 V19-201,-5.333,40.433,0.7,symbiont-obligate,spinose,32
 V19-201,-5.333,40.433,0.7,undetermined,non-spinose,0
-V19-202,-6.983,41.183,0.3,symbiont-barren,non-spinose,15
+V19-202,-6.983,41.183,0.3,symbiont-barren,non-spinose,17
 V19-202,-6.983,41.183,0.3,symbiont-barren,spinose,28
 V19-202,-6.983,41.183,0.3,symbiont-bearing,non-spinose,0
 V19-202,-6.983,41.183,0.3,symbiont-bearing,spinose,17
@@ -199,7 +199,7 @@ V19-202,-6.983,41.183,0.3,symbiont-facultative,non-spinose,119
 V19-202,-6.983,41.183,0.3,symbiont-facultative,spinose,2
 V19-202,-6.983,41.183,0.3,symbiont-obligate,spinose,52
 V19-202,-6.983,41.183,0.3,undetermined,non-spinose,1
-V19-204,-10.23,43.817,0.2,symbiont-barren,non-spinose,39
+V19-204,-10.23,43.817,0.2,symbiont-barren,non-spinose,40
 V19-204,-10.23,43.817,0.2,symbiont-barren,spinose,27
 V19-204,-10.23,43.817,0.2,symbiont-bearing,non-spinose,0
 V19-204,-10.23,43.817,0.2,symbiont-bearing,spinose,1
@@ -223,7 +223,7 @@ V19-291,2,-5.25,0.8,symbiont-facultative,non-spinose,95
 V19-291,2,-5.25,0.8,symbiont-facultative,spinose,0
 V19-291,2,-5.25,0.8,symbiont-obligate,spinose,216
 V19-291,2,-5.25,0.8,undetermined,non-spinose,0
-V20-170,-21.8,69.233,0.2,symbiont-barren,non-spinose,15
+V20-170,-21.8,69.233,0.2,symbiont-barren,non-spinose,16
 V20-170,-21.8,69.233,0.2,symbiont-barren,spinose,4
 V20-170,-21.8,69.233,0.2,symbiont-bearing,non-spinose,0
 V20-170,-21.8,69.233,0.2,symbiont-bearing,spinose,23
@@ -231,7 +231,7 @@ V20-170,-21.8,69.233,0.2,symbiont-facultative,non-spinose,60
 V20-170,-21.8,69.233,0.2,symbiont-facultative,spinose,2
 V20-170,-21.8,69.233,0.2,symbiont-obligate,spinose,58
 V20-170,-21.8,69.233,0.2,undetermined,non-spinose,1
-V20-175,-22.3,68,0.2,symbiont-barren,non-spinose,20
+V20-175,-22.3,68,0.2,symbiont-barren,non-spinose,21
 V20-175,-22.3,68,0.2,symbiont-barren,spinose,9
 V20-175,-22.3,68,0.2,symbiont-bearing,non-spinose,0
 V20-175,-22.3,68,0.2,symbiont-bearing,spinose,17
@@ -399,7 +399,7 @@ V29-219,68.3833,-5.45,0.5,symbiont-facultative,non-spinose,0
 V29-219,68.3833,-5.45,0.5,symbiont-facultative,spinose,0
 V29-219,68.3833,-5.45,0.5,symbiont-obligate,spinose,0
 V29-219,68.3833,-5.45,0.5,undetermined,non-spinose,0
-V29-29,5.117,77.583,0.8,symbiont-barren,non-spinose,4
+V29-29,5.117,77.583,0.8,symbiont-barren,non-spinose,10
 V29-29,5.117,77.583,0.8,symbiont-barren,spinose,47
 V29-29,5.117,77.583,0.8,symbiont-bearing,non-spinose,0
 V29-29,5.117,77.583,0.8,symbiont-bearing,spinose,9
@@ -407,7 +407,7 @@ V29-29,5.117,77.583,0.8,symbiont-facultative,non-spinose,180
 V29-29,5.117,77.583,0.8,symbiont-facultative,spinose,0
 V29-29,5.117,77.583,0.8,symbiont-obligate,spinose,28
 V29-29,5.117,77.583,0.8,undetermined,non-spinose,1
-V29-30,3.083,76.25,0.8,symbiont-barren,non-spinose,10
+V29-30,3.083,76.25,0.8,symbiont-barren,non-spinose,19
 V29-30,3.083,76.25,0.8,symbiont-barren,spinose,20
 V29-30,3.083,76.25,0.8,symbiont-bearing,non-spinose,0
 V29-30,3.083,76.25,0.8,symbiont-bearing,spinose,5
@@ -415,7 +415,7 @@ V29-30,3.083,76.25,0.8,symbiont-facultative,non-spinose,191
 V29-30,3.083,76.25,0.8,symbiont-facultative,spinose,0
 V29-30,3.083,76.25,0.8,symbiont-obligate,spinose,26
 V29-30,3.083,76.25,0.8,undetermined,non-spinose,3
-V29-48,-6.267,63.433,0.3,symbiont-barren,non-spinose,32
+V29-48,-6.267,63.433,0.3,symbiont-barren,non-spinose,39
 V29-48,-6.267,63.433,0.3,symbiont-barren,spinose,14
 V29-48,-6.267,63.433,0.3,symbiont-bearing,non-spinose,0
 V29-48,-6.267,63.433,0.3,symbiont-bearing,spinose,3

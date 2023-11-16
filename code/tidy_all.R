@@ -20,11 +20,10 @@ wdf <- ldf %>%
     values_fill = NA, 
     values_fn = list
   ) %>%
-  unnest(cols = c(`O. universa`:`G. crassa`))
+  unnest(cols = c(`O. universa`:`G. adamsi`))
 
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
-
 wdf %>% fwrite("tidy/lgm_sp_r_tidy.csv")
 
 #---------------------------------------------------
@@ -50,10 +49,11 @@ wdf <- ldf %>%
     values_fn = list
   )
 
-wdf <- wdf  %>% unnest(`G. bulloides`:`G. crassa`)
+wdf <- wdf  %>% unnest(`G. bulloides`:`G. elongatus`)
 
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
+
 wdf %>% write_csv("tidy/lgm_sp_a_tidy.csv")
 
 #---------------------------------------------------
@@ -174,16 +174,3 @@ pi_rw %>% fwrite("tidy/forcens_fg_r_tidy.csv")
 ## forcens species data already exported in clean_forcens.R
 ## so ignore here
 
-#--------------------
-# Plot example
-#--------------------
-library(sf)
-library(tmap)
-
-land <- read_sf("tidy/ne_50m_land/ne_50m_land.shp")
-p_land <- tm_shape(land)+ tm_polygons()
-
-df_lgm <- fread("tidy/lgm_sp_a_tidy.csv") %>% st_as_sf(coords = c("Longitude", "Latitude"), crs=4326) #WGS84
-p_lgm <- tm_shape(df_lgm) + tm_dots(col="G. ruber albus",size=0.3,
-                                    palette = "viridis")
-p_land + p_lgm

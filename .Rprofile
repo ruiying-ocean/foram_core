@@ -3,7 +3,8 @@ message("This project is to generate clean data based on planktic foraminifera f
 
 suppressPackageStartupMessages(library(tidyverse))
 suppressPackageStartupMessages(library(data.table))
-library(rnaturalearth)
+library(sf)
+library(tmap)
 
 message(">>> read symbiosis table")
 source("code/read_symbiosis_table.R")
@@ -20,22 +21,21 @@ USE_GLAMAP = TRUE
 USE_CLIMAP = TRUE
 USE_ADDITIONAL=TRUE
 
-# Create a ggplot object with the land and ocean mask
-quick_map <- function(data, lon, lat){
-    ## if data not exist, then download
-    if (!file.exists("code/world_map.rds")) {
-        world <- ne_download(scale = "small", type = "land", category = "physical", returnclass = "sf")
-        saveRDS(world, "world_map.rds")
-    } else {
-        world <- readRDS("code/world_map.rds")
-    }
+
+plot_map <- function(data, lon, lat, var, ...){
     
-    p <- ggplot() +
-        geom_sf(data = world, color = "black") +
-        geom_point(data = data, aes(x = !!sym(lon), y = !!sym(lat)), color = "red", size = 2)
+    land <- read_sf("tidy/ne_50m_land/ne_50m_land.shp")
+    p_land <- tm_shape(land)+ tm_polygons()
+
+    data <- data %>% st_as_sf(coords = c(lon, lat), crs=4326) #WGS84
+    
+    p_data <- tm_shape(data) + tm_dots(col=var, palette = "viridis", ...)
+
+    p <- p_land + p_data
     
     return(p)
 }
+
 
 
 delete_files <- function(folder_path, exclude_file="foram_taxonomy.csv"){
