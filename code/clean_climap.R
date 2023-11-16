@@ -69,6 +69,8 @@ foram_dat <- foram_dat %>% select(-c('G. ruber total', 'T. sacculifer wo sac', '
 foram_dat <- foram_dat %>% replace_column_name('N. pachyderma left', 'N. pachyderma')
 foram_dat <- foram_dat %>% replace_column_name('N. pachyderma right', 'N. incompta')
 foram_dat <- foram_dat %>% replace_column_name('T. sacculifer total', 'T. sacculifer')
+foram_dat <- foram_dat %>% replace_column_name('G. hexagona', 'G. hexagonus')
+
 ## combine G. trunc sin/dex
 foram_dat <- foram_dat %>% 
   mutate(`G. truncatulinoides` = `G. truncatulinodes left` + `G. truncatulinodes right`) %>%
@@ -137,14 +139,15 @@ climap_lgm_a <- climap_lgm_a %>%
 
 ## wide to long data format
 climap_lgm_a <- climap_lgm_a %>% pivot_longer(cols=c(`O. universa`:`G. truncatulinoides`), 
-                                    names_to = "Species", values_to="Absolute Abundance")
+                                    names_to = "Species", values_to="Absolute Abundance") %>%
+  drop_na(`Absolute Abundance`)
 
 ## save to csv
 fwrite(climap_lgm_a, "sp/lgm_climap1_sp_a.csv")
-
 ## -----------------
 ## group spcies
 ## -----------------
 
 climap_lgm_r %>% global_group_and_aggregate(Depth='Depth sed') %>% write_csv(., "fg/lgm_climap1_fg_r.csv")
 climap_lgm_a %>% global_group_and_aggregate(Depth='Depth sed') %>% write_csv(., "fg/lgm_climap1_fg_a.csv")
+
