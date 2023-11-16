@@ -48,8 +48,9 @@ wdf <- ldf %>%
     names_from = "Species",
     values_fill = NA,
     values_fn = list
-  ) %>%
-  unnest(cols = c(`O. universa`:`G. crassa`))
+  )
+
+wdf <- wdf  %>% unnest(c(`G. bulloides`, `T. quinqueloba`, `G. scitula`, `G. uvula`, `N. pachyderma`, `N. incompta`))
 
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
@@ -79,7 +80,7 @@ wdf <- ldf %>% pivot_wider(
   names_from = "Functional Group",
   values_fill = NA,
   values_fn = list
-) %>% unnest(cols=`symbiont-barren non-spinose`:`symbiont-facultative spinose`)
+) %>% unnest(cols=`symbiont-barren non-spinose`:`undetermined spinose`)
 
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
@@ -118,7 +119,7 @@ wdf <- wdf[-521,]
 tmp2 <- wdf[536,]
 wdf <- wdf[-536,]
 
-wdf <- wdf %>% unnest(`symbiont-barren non-spinose`:`symbiont-facultative spinose`)
+wdf <- wdf %>% unnest(cols = c(`symbiont-barren non-spinose`:`symbiont-facultative spinose`))
 
 ## putting back the deleted rows
 ## the number is based on calculation that all groups sum up to 1
@@ -184,7 +185,7 @@ land <- read_sf("tidy/ne_50m_land/ne_50m_land.shp")
 p_land <- tm_shape(land)+ tm_polygons()
 
 df_lgm <- fread("tidy/lgm_sp_a_tidy.csv") %>% st_as_sf(coords = c("Longitude", "Latitude"), crs=4326) #WGS84
-p_lgm <- tm_shape(df_lgm) + tm_dots(col="N. incompta",size=0.3,
+p_lgm <- tm_shape(df_lgm) + tm_dots(col="N. pachyderma",size=0.3,
                                     palette = "viridis")
 
 p_land + p_lgm
