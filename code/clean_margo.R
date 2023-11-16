@@ -50,14 +50,18 @@ clean_sp_name <- function(data) {
   data <- data %>% replace_column_name("Dentagloborotalia anfracta", "Dentigloborotalia anfracta")
   data <- data %>% replace_column_name("Neogloboquadrina pachyderma L", "Neogloboquadrina pachyderma")
   data <- data %>% replace_column_name("Neogloboquadrina pachyderma R", "Neogloboquadrina incompta")
-  data <- data %>% replace_column_name("Globorotalia crassula", "Globorotalia crassa")
+  data <- data %>% replace_column_name("Globorotalia crassula", "Globorotalia crassaformis")
   data <- data %>% replace_column_name("Globorotalia menardii flexuosa", "Globorotalia tumida")
   data <- data %>% replace_column_name("Globigerinoides ruber (white)", "Globigerinoides ruber albus")
   data <- data %>% replace_column_name("Globigerinoides ruber (pink)", "Globigerinoides ruber ruber")
   data <- data %>% replace_column_name("Globigerinella siphonifera (=aequilateralis)", "Globigerinella siphonifera")
   data <- data %>% replace_column_name("Globorotalia truncatulinoides total", "Globorotalia truncatulinoides")
   data <- data %>% replace_column_name("Tenuitella iota", "Tenuitellita iota")
-
+  data <- data %>% replace_column_name("Globoturborotalita tenella", "Globigerinoides tenellus")
+  data <- data %>% replace_column_name("Globigerinella digitata", "Beella digitata")
+  data <- data %>% replace_column_name("Globorotalia theyeri", "Globorotalia eastropacia")
+  data <- data %>% replace_column_name("Globorotalia menardii", "Globorotalia cultrata")
+  
   return(data)
 }
 
