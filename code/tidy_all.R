@@ -50,7 +50,7 @@ wdf <- ldf %>%
     values_fn = list
   )
 
-wdf <- wdf  %>% unnest(c(`G. bulloides`, `T. quinqueloba`, `G. scitula`, `G. uvula`, `N. pachyderma`, `N. incompta`))
+wdf <- wdf  %>% unnest(`G. bulloides`:`G. crassa`)
 
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
@@ -86,7 +86,6 @@ wdf <- ldf %>% pivot_wider(
 wdf <- wdf[!duplicated(wdf), ]
 
 wdf %>% write_csv("tidy/lgm_fg_a_tidy.csv")
-
 #---------------------------------------------------
 # merge all relative abundance (LGM Functional Group)
 #---------------------------------------------------
@@ -185,7 +184,6 @@ land <- read_sf("tidy/ne_50m_land/ne_50m_land.shp")
 p_land <- tm_shape(land)+ tm_polygons()
 
 df_lgm <- fread("tidy/lgm_sp_a_tidy.csv") %>% st_as_sf(coords = c("Longitude", "Latitude"), crs=4326) #WGS84
-p_lgm <- tm_shape(df_lgm) + tm_dots(col="N. pachyderma",size=0.3,
+p_lgm <- tm_shape(df_lgm) + tm_dots(col="G. ruber albus",size=0.3,
                                     palette = "viridis")
-
 p_land + p_lgm
