@@ -22,11 +22,12 @@ glamap <- glamap %>% replace_column_name("G. truncatulinoides s", "G. truncatuli
 glamap <- glamap %>% replace_column_name("N. pachyderma s", "N. pachyderma")
 glamap <- glamap %>% replace_column_name("G. ruber w", "G. ruber albus")
 glamap <- glamap %>% replace_column_name("G. menardii", "G. cultrata")
+glamap <- glamap %>% replace_column_name("G. sacculifer", "T. sacculifer")
+glamap <- glamap %>% select(-"G. clavaticamerata")
 
 glamap <- glamap %>% mutate_at(vars(`G. siphonifera`:`N. pachyderma`), ~ . /100)
 glamap <- glamap %>% pivot_longer(cols=c(`G. siphonifera`:`N. pachyderma`), names_to = "Species", values_to="Relative Abundance")
 glamap <- glamap %>% distinct()
-
 write_csv(glamap, "sp/lgm_glamap_sp_r.csv")
 
 ## -----------------
