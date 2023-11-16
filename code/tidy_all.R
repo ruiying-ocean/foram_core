@@ -53,7 +53,7 @@ wdf <- ldf %>%
 
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
-wdf %>% fwrite("tidy/lgm_sp_a_tidy.csv")
+wdf %>% write_csv("tidy/lgm_sp_a_tidy.csv")
 
 #---------------------------------------------------
 # merge all absolute abundance (LGM Functional Group)
@@ -63,6 +63,7 @@ filenames <- list.files("fg", pattern = "^lgm.*_a\\.csv$", full.names = TRUE)
 
 ldf <- lapply(filenames, function(file) {
   df <- read_csv(file)
+  print(file)
   df <- df %>% select(c("Latitude", "Longitude", "Spine", "Symbiosis", "Absolute Abundance"))
   df <- df %>% mutate(Data_Source = str_extract(basename(file), "(?<=lgm_).*?(?=_fg_a\\.csv)"))  
   return(df)
@@ -83,7 +84,7 @@ wdf <- ldf %>% pivot_wider(
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
 
-wdf %>% fwrite("tidy/lgm_fg_a_tidy.csv")
+wdf %>% write_csv("tidy/lgm_fg_a_tidy.csv")
 
 #---------------------------------------------------
 # merge all relative abundance (LGM Functional Group)
@@ -181,7 +182,7 @@ library(tmap)
 land <- read_sf("tidy/ne_50m_land/ne_50m_land.shp")
 p_land <- tm_shape(land)+ tm_polygons()
 
-df_lgm <- fread("tidy/lgm_sp_a_tidy.csv") %>% st_as_sf(coords = c("Longitude", "Latitude"), crs=4326) #WGS84
-p_lgm <- tm_shape(df_lgm) + tm_symbols(col="N. pachyderma",size=0.3,
+df_lgm <- fread("tidy/lgm_fg_a_tidy.csv") %>% st_as_sf(coords = c("Longitude", "Latitude"), crs=4326) #WGS84
+p_lgm <- tm_shape(df_lgm) + tm_symbols(col="symbiont-barren spinose",size=0.3,
                                        palette = "viridis")
 p_land + p_lgm

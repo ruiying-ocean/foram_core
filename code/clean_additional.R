@@ -1,4 +1,8 @@
-## This script add the cores to the compilation
+## This script adds more cores with absolute abundance (LGM) to the compilation
+## it includes:
+## MD95-2040, MD95-2042, V26-124
+## Fr194-GC3, SS0206-GC15, JM05-085-GC
+## 341-U1421
 
 core1 <- read_tsv("raw/additional/MD95-2042_foram.tab")
 ## Latitude: 37.799833 * Longitude: -10.166500
@@ -14,12 +18,36 @@ core3 <- read_tsv("raw/additional/V26-124_foram.tab")
 core3 <- core3 %>% mutate(Latitude = 16.133000, Longitude = -74.450000, .before='Depth sed [m]')
 core3 <- core3 %>% dplyr::filter(`Depth sed [m]` == 0.6)
 
+core4 <- read_tsv("raw/additional/Fr194-GC3_foram.tab")
+core4 %>% dplyr::filter(`Age dated [ka]` == 18.30 | `Age dated [ka]` == 24.80) %>%
+  select(!contains("%")) -> core4
+## Latitude: −44.25, Longitude: 149.98
+core4 <- core4 %>% mutate(Latitude = -44.25, Longitude = 149.98, .before='Depth sed [m]')
+
+core5 <- read_tsv("raw/additional/SS0206-GC15_foram.tab")
+core5 %>% dplyr::filter(`Age [ka BP]`>19 & `Age [ka BP]` <21) -> core5
+## Latitude: -39.312830, Longitude: 142.683980
+core5 <- core5 %>% mutate(Latitude = -39.312830, Longitude = 142.683980, .before='Depth sed [m]')
+core5 <- core5 %>% select(-c("Depth corr [m]", "Foram plankt indet [%]",
+                             "Foram plankt tropical [%]", "Foram plankt subpolar [%]"))
+
+core6 <- read_tsv("raw/additional/JM05-085-GC_foram.tab")
+core6 <- core6 %>% select(-c("Age [ka BP]","Foram plankt [#/g]", "Foram plankt [#]", "Foram plankt flux [#/cm**2/ka]"))
+## Latitude: 71.621800, Longitude: 22.926100
+core6 <- core6 %>% mutate(Latitude = 71.621800, Longitude = 22.926100, .before='Depth sed [m]')
+
+core7 <- read_tsv("raw/additional/341-U1421_foram.tab") 
+core7 <- core7 %>% dplyr::filter(`Age [ka BP]` > 19 & `Age [ka BP]` < 21) %>%
+    select(`Depth top [m] (CSF-A, IODP Depth Scale Termi...)`,
+           `G. bulloides [#] (Counting >150 µm fraction)`:`O. universa [#] (Counting >150 µm fraction)`) %>%
+  rename(`Depth top [m]`=`Depth top [m] (CSF-A, IODP Depth Scale Termi...)`)
+core7 <- core7 %>% mutate(Latitude = 59.507200, Longitude =-144.045600, .before=1)
+
 ## -----------------
 ## clean species name
 ## -----------------
 ## Orbulina suturalis is Miocene species as Brummer and Kucera (2022)
-core1 <- core1 %>% select(-c("Foraminifera indet [#]", "Foram benth [#]", "Foram plankt fragm [#]",
-                             ))
+core1 <- core1 %>% select(-c("Foraminifera indet [#]", "Foram benth [#]", "Foram plankt fragm [#]"))
 names(core1) <- gsub(" [#]", "", names(core1), fixed=T)
 core1 <- core1 %>% replace_column_name("G. menardii", "G. cultrata")
 core1 <- core1 %>% replace_column_name("O. bilobata", "O. universa")
@@ -75,30 +103,110 @@ core3 <- core3 %>% replace_column_name("G. pumilio", "B. pumilio")
 core3 <- core3 %>% replace_column_name("G. hexagona", "G. hexagonus")
 core3 <- core3 %>% replace_column_name("G. tumida flexuosa", "G. tumida") ## as per Brummer & Kucera, 2022
 
+core4 <- core4 %>% select(-c(`G. bulloides [#] (Counting)...11`,`B. praeadamsi [#] (Counting)`,
+                             `D. conglomerata [#] (Counting)`,`D. pseudofoliata [#] (Counting)`))
+names(core4) <- gsub(" [#] (Counting)", "", names(core4), fixed=T)
 
-find_missing_species(symbiosis_tbl$short_name, names(core3))
+core4 <- core4 %>% replace_column_name("G. bulloides...10", "G. bulloides")
+core4 <- core4 %>% replace_column_name("G. quinqueloba", "T. quinqueloba")
+core4 <- core4 %>% replace_column_name("G. aequilateralis", "G. siphonifera")
+core4 <- core4 %>% replace_column_name("G. rubescens white", "G. rubescens")
+core4 <- core4 %>% replace_column_name("G. ruber w", "G. ruber albus")
+core4 <- core4 %>% replace_column_name("N. pachyderma d", "N. incompta")
+core4 <- core4 %>% replace_column_name("N. pachyderma s", "N. pachyderma")
+core4 <- core4 %>% replace_column_name("G. sacculifer", "T. sacculifer")
+core4 <- core4 %>% replace_column_name("G.umbilicata", "G. bulloides")
+core4 <- core4 %>% replace_column_name("G. hexagona", "G. hexagonus")
+core4 <- core4 %>% replace_column_name("G. clarkei", "T. clarkei")
+core4 <- core4 %>% replace_column_name("G. inflata d", "G. inflata")
+core4 <- core4 %>% replace_column_name("G. inflata s", "G. inflata")
+core4 <- core4 %>% replace_column_name("G. tenella", "G. tenellus")
+core4 <- core4 %>% replace_column_name("G. crassula", "G. crassaformis")
+core4 <- core4 %>% select(-c("G. obesa", "Foram", "G. praecalida", "G. umbilicata"))
 
+names(core5) <- gsub(" [%]", "", names(core5), fixed=T)
+core5 <- core5 %>% replace_column_name("T. quinqueloba d", "T. quinqueloba")
+core5 <- core5 %>% replace_column_name("T. quinqueloba s", "T. quinqueloba")
+core5 <- core5 %>% replace_column_name("T. crassaformis", "G. crassaformis")
+core5 <- core5 %>% replace_column_name("T. truncatulinoides", "G. truncatulinoides")
+core5 <- core5 %>% replace_column_name("G. sacculifer", "T. sacculifer")
+core5 <- core5 %>% replace_column_name("G. trilobus", "T. sacculifer")
+core5 <- core5 %>% replace_column_name("G. digitata", "B. digitata")
+core5 <- core5 %>% replace_column_name("N. pachyderma d", "N. incompta")
+core5 <- core5 %>% replace_column_name("N. pachyderma s", "N. pachyderma")
+core5 <- core5 %>% replace_column_name("G. tenella", "G. tenellus")
+core5 <- core5 %>% replace_column_name("G. ruber", "G. ruber albus") ## G. ruber ruber is not appearing in Pacific
+
+names(core6) <- gsub(" [#]", "", names(core6), fixed=T)
+core6 <- core6 %>% replace_column_name("N. pachyderma d", "N. incompta")
+core6 <- core6 %>% replace_column_name("N. pachyderma s", "N. pachyderma")
+
+names(core7) <- gsub(" [#] (Counting >150 µm fraction)", "", names(core7), fixed=T)
+core7 <- core7 %>% replace_column_name("N. pachyderma d", "N. incompta")
+core7 <- core7 %>% replace_column_name("N. pachyderma s", "N. pachyderma")
+core7 <- core7 %>% replace_column_name("G. quinqueloba", "T. quinqueloba")
+core7 <- core7 %>% replace_column_name("G. umbilicata", "G. bulloides")
+
+find_missing_species(symbiosis_tbl$short_name, names(core7))
 ## -----------------
 ## Just absolute abundance
 ## -----------------
 symbiosis_short_tbl <- symbiosis_tbl %>% select(!c(Species)) %>% distinct()
 
 core1_long <- core1 %>% pivot_longer(cols = -c("Latitude", "Longitude", "Depth sed [m]", "Age [ka BP]"), names_to = "Species", values_to = "Absolute Abundance")
-core1_long <- merge(core1_long %>% select(-'Age [ka BP]'), symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
-core1_long <- core1_long %>% group_by(Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>% 
-  summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
-
 core2_long <- core2 %>% pivot_longer(cols = -c("Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
-core2_long <- merge(core2_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
-core2_long <- core2_long %>% group_by(Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>% 
-  summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
 
 core3_long <- core3 %>% pivot_longer(cols = -c("Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
-core3_long <- merge(core3_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
-core3_long <- core3_long %>% group_by(Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>% 
-  summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
+
+core4_long <- core4 %>% select(-c('Sample ID',"Depth top [m] (Foram sample depths)", 'Age dated [ka]', "Depth bot [m] (Foram sample depths)")) %>%
+    pivot_longer(cols = -c("Latitude", "Longitude", "Depth sed [m]",), names_to = "Species", values_to = "Absolute Abundance")
+
+## convert relative abundance to absolute abundance (core5)
+core5 %>% mutate_at(vars(`G. bulloides`:`T. quinqueloba`), ~ as.integer(. * `Foram plankt [#]`/100)) %>% select(-c(`Foram plankt [#]`)) -> core5
+core5_long <- core5 %>% pivot_longer(cols = -c("Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
+
+core6_long <- core6 %>% pivot_longer(cols = -c("Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
+
+core7_long <- core7 %>% pivot_longer(cols = -c("Latitude", "Longitude", "Depth top [m]"), names_to = "Species", values_to = "Absolute Abundance")
+
+## save to sp
+write_csv(core1_long, "sp/lgm_MD952042_sp_a.csv")
+write_csv(core2_long, "sp/lgm_MD952040_sp_a.csv")
+write_csv(core3_long, "sp/lgm_V26-124_sp_a.csv")
+write_csv(core4_long, "sp/lgm_Fr194-GC3_sp_a.csv")
+write_csv(core5_long, "sp/lgm_SS0206-GC15_sp_a.csv")
+write_csv(core6_long, "sp/lgm_JM05-085-GC_sp_a.csv")
+write_csv(core7_long, "sp/lgm_341-U1421_sp_a.csv")
 
 ## save to fg
+core1_long <- merge(core1_long %>% select(-'Age [ka BP]'), symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
+core2_long <- merge(core2_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
+core3_long <- merge(core3_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
+core4_long <- merge(core4_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
+core5_long <- merge(core5_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
+core6_long <- merge(core6_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
+core7_long <- merge(core7_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
+
+core1_long <- core1_long %>% group_by(Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>% 
+  summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
+core2_long <- core2_long %>% group_by(Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>% 
+  summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
+core3_long <- core3_long %>% group_by(Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>% 
+  summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
+core4_long <- core4_long %>% group_by(Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>% 
+  summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
+core5_long <- core5_long %>% group_by(Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>% 
+  summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
+core6_long <- core6_long %>% group_by(Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>% 
+  summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
+core7_long <- core7_long %>% group_by(Latitude, Longitude, `Depth top [m]`, Symbiosis, Spine) %>% 
+  summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
+
 write_csv(core1_long, "fg/lgm_MD952042_fg_a.csv")
 write_csv(core2_long, "fg/lgm_MD952040_fg_a.csv")
 write_csv(core3_long, "fg/lgm_V26-124_fg_a.csv")
+write_csv(core4_long, "fg/lgm_Fr194-GC3_fg_a.csv")
+write_csv(core5_long, "fg/lgm_SS0206-GC15_fg_a.csv")
+write_csv(core6_long, "fg/lgm_JM05-085-GC_fg_a.csv")
+write_csv(core7_long, "fg/lgm_341-U1421_fg_a.csv")
+
