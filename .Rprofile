@@ -18,7 +18,7 @@ USE_MARGO = TRUE
 USE_EPILOG = TRUE
 USE_GLAMAP = TRUE
 USE_CLIMAP = TRUE
-
+USE_ADDITIONAL=TRUE
 
 # Create a ggplot object with the land and ocean mask
 quick_map <- function(data, lon, lat){
@@ -93,6 +93,7 @@ customPrompt <- function() {
         if (USE_MARGO) source("code/clean_margo.R")
         if (USE_EPILOG) source("code/clean_epilog.R")
         if (USE_GLAMAP) source("code/clean_glamap.R")
+        if (USE_ADDITIONAL) source("code/clean_additional.R")
         source("code/tidy_all.R")
         ## Add your specific code here
     } else if (selection == "no") {

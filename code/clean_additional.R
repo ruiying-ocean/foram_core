@@ -8,7 +8,11 @@ core1 <- core1 %>% dplyr::filter(`Age [ka BP]` > 19 & `Age [ka BP]` < 21)
 core2 <- read_tsv("raw/additional/MD95-2040_foram.tab")
 ## Latitude: 40.581833 * Longitude: -9.861167
 core2 <- core2 %>% mutate(Latitude = 40.581833, Longitude = -9.861167, .before='Depth sed [m]')
-core2 <- core2 %>% dplyr::filter(`Depth sed [m]` > 4.885 & `Depth sed [m]` < 5.305)
+core2 <- core2 %>% dplyr::filter(`Depth sed [m]` > 3.415 & `Depth sed [m]` < 4.885)
+
+core3 <- read_tsv("raw/additional/V26-124_foram.tab")
+core3 <- core3 %>% mutate(Latitude = 16.133000, Longitude = -74.450000, .before='Depth sed [m]')
+core3 <- core3 %>% dplyr::filter(`Depth sed [m]` == 0.6)
 
 ## -----------------
 ## clean species name
@@ -43,6 +47,10 @@ core2 <- core2 %>% replace_column_name("T. cristata", "T. humilis")
 core2 <- core2 %>% mutate(`G. hirsuta` = `G. hirsuta s` + `G. hirsuta d`) %>%
   select(-c(`G. hirsuta s`, `G. hirsuta d`))
 
+find_missing_species(symbiosis_tbl, names(core3))
+core3 <- core3 %>%   select(-c(`G. ruber [#] (sum of G. ruber pink and G. r...)`))
+core3 <- core3 %>% select(-c(`G. menardii [#] (sum of G. menardii, G. tumida...)`))
+
 ## -----------------
 ## Just absolute abundance
 ## -----------------
@@ -61,6 +69,7 @@ core2_long <- core2_long %>% group_by(Latitude, Longitude, `Depth sed [m]`, Symb
   summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
 core2_long <- core2_long %>% group_by(Latitude, Longitude,  Symbiosis, Spine) %>%
   summarise_all(.funs = mean, na.rm=T)  %>% ungroup()
+
 
 ## save to fg
 write_csv(core1_long, "fg/lgm_MD952042_fg_a.csv")

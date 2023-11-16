@@ -1,0 +1,9 @@
+Latitude,Longitude,Depth sed [m],Symbiosis,Spine,Absolute Abundance
+16.133,-74.45,0.6,symbiont-barren,non-spinose,11
+16.133,-74.45,0.6,symbiont-barren,spinose,9
+16.133,-74.45,0.6,symbiont-bearing,non-spinose,0
+16.133,-74.45,0.6,symbiont-bearing,spinose,18
+16.133,-74.45,0.6,symbiont-facultative,non-spinose,76
+16.133,-74.45,0.6,symbiont-facultative,spinose,0
+16.133,-74.45,0.6,symbiont-obligate,spinose,236
+16.133,-74.45,0.6,undetermined,non-spinose,0
