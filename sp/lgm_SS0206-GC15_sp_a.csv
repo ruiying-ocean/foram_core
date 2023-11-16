@@ -1,5 +1,4 @@
 Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
--39.31283,142.68398,3.32,Age [ka BP],19.03
 -39.31283,142.68398,3.32,G. bulloides,166
 -39.31283,142.68398,3.32,G. inflata,43
 -39.31283,142.68398,3.32,G. truncatulinoides,63
@@ -20,7 +19,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.32,B. digitata,0
 -39.31283,142.68398,3.32,G. conglobatus,0
 -39.31283,142.68398,3.32,T. quinqueloba,222
--39.31283,142.68398,3.34,Age [ka BP],19.06
 -39.31283,142.68398,3.34,G. bulloides,193
 -39.31283,142.68398,3.34,G. inflata,53
 -39.31283,142.68398,3.34,G. truncatulinoides,53
@@ -41,7 +39,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.34,B. digitata,0
 -39.31283,142.68398,3.34,G. conglobatus,0
 -39.31283,142.68398,3.34,T. quinqueloba,166
--39.31283,142.68398,3.36,Age [ka BP],19.1
 -39.31283,142.68398,3.36,G. bulloides,162
 -39.31283,142.68398,3.36,G. inflata,55
 -39.31283,142.68398,3.36,G. truncatulinoides,56
@@ -62,7 +59,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.36,B. digitata,0
 -39.31283,142.68398,3.36,G. conglobatus,0
 -39.31283,142.68398,3.36,T. quinqueloba,237
--39.31283,142.68398,3.38,Age [ka BP],19.14
 -39.31283,142.68398,3.38,G. bulloides,167
 -39.31283,142.68398,3.38,G. inflata,32
 -39.31283,142.68398,3.38,G. truncatulinoides,67
@@ -83,7 +79,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.38,B. digitata,0
 -39.31283,142.68398,3.38,G. conglobatus,0
 -39.31283,142.68398,3.38,T. quinqueloba,176
--39.31283,142.68398,3.4,Age [ka BP],19.17
 -39.31283,142.68398,3.4,G. bulloides,176
 -39.31283,142.68398,3.4,G. inflata,75
 -39.31283,142.68398,3.4,G. truncatulinoides,77
@@ -104,7 +99,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.4,B. digitata,0
 -39.31283,142.68398,3.4,G. conglobatus,0
 -39.31283,142.68398,3.4,T. quinqueloba,166
--39.31283,142.68398,3.44,Age [ka BP],19.24
 -39.31283,142.68398,3.44,G. bulloides,171
 -39.31283,142.68398,3.44,G. inflata,47
 -39.31283,142.68398,3.44,G. truncatulinoides,62
@@ -125,7 +119,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.44,B. digitata,0
 -39.31283,142.68398,3.44,G. conglobatus,0
 -39.31283,142.68398,3.44,T. quinqueloba,134
--39.31283,142.68398,3.46,Age [ka BP],19.28
 -39.31283,142.68398,3.46,G. bulloides,179
 -39.31283,142.68398,3.46,G. inflata,53
 -39.31283,142.68398,3.46,G. truncatulinoides,57
@@ -146,7 +139,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.46,B. digitata,0
 -39.31283,142.68398,3.46,G. conglobatus,0
 -39.31283,142.68398,3.46,T. quinqueloba,222
--39.31283,142.68398,3.5,Age [ka BP],19.35
 -39.31283,142.68398,3.5,G. bulloides,169
 -39.31283,142.68398,3.5,G. inflata,47
 -39.31283,142.68398,3.5,G. truncatulinoides,49
@@ -167,7 +159,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.5,B. digitata,0
 -39.31283,142.68398,3.5,G. conglobatus,0
 -39.31283,142.68398,3.5,T. quinqueloba,277
--39.31283,142.68398,3.51,Age [ka BP],19.37
 -39.31283,142.68398,3.51,G. bulloides,176
 -39.31283,142.68398,3.51,G. inflata,61
 -39.31283,142.68398,3.51,G. truncatulinoides,83
@@ -188,7 +179,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.51,B. digitata,0
 -39.31283,142.68398,3.51,G. conglobatus,0
 -39.31283,142.68398,3.51,T. quinqueloba,256
--39.31283,142.68398,3.52,Age [ka BP],19.39
 -39.31283,142.68398,3.52,G. bulloides,143
 -39.31283,142.68398,3.52,G. inflata,60
 -39.31283,142.68398,3.52,G. truncatulinoides,71
@@ -209,7 +199,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.52,B. digitata,0
 -39.31283,142.68398,3.52,G. conglobatus,0
 -39.31283,142.68398,3.52,T. quinqueloba,238
--39.31283,142.68398,3.56,Age [ka BP],19.48
 -39.31283,142.68398,3.56,G. bulloides,165
 -39.31283,142.68398,3.56,G. inflata,86
 -39.31283,142.68398,3.56,G. truncatulinoides,66
@@ -230,7 +219,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.56,B. digitata,0
 -39.31283,142.68398,3.56,G. conglobatus,0
 -39.31283,142.68398,3.56,T. quinqueloba,127
--39.31283,142.68398,3.6,Age [ka BP],19.57
 -39.31283,142.68398,3.6,G. bulloides,195
 -39.31283,142.68398,3.6,G. inflata,71
 -39.31283,142.68398,3.6,G. truncatulinoides,83
@@ -251,7 +239,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.6,B. digitata,0
 -39.31283,142.68398,3.6,G. conglobatus,0
 -39.31283,142.68398,3.6,T. quinqueloba,192
--39.31283,142.68398,3.62,Age [ka BP],19.61
 -39.31283,142.68398,3.62,G. bulloides,179
 -39.31283,142.68398,3.62,G. inflata,68
 -39.31283,142.68398,3.62,G. truncatulinoides,51
@@ -272,7 +259,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.62,B. digitata,0
 -39.31283,142.68398,3.62,G. conglobatus,0
 -39.31283,142.68398,3.62,T. quinqueloba,188
--39.31283,142.68398,3.66,Age [ka BP],19.7
 -39.31283,142.68398,3.66,G. bulloides,185
 -39.31283,142.68398,3.66,G. inflata,57
 -39.31283,142.68398,3.66,G. truncatulinoides,70
@@ -293,7 +279,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.66,B. digitata,0
 -39.31283,142.68398,3.66,G. conglobatus,0
 -39.31283,142.68398,3.66,T. quinqueloba,234
--39.31283,142.68398,3.68,Age [ka BP],19.75
 -39.31283,142.68398,3.68,G. bulloides,183
 -39.31283,142.68398,3.68,G. inflata,58
 -39.31283,142.68398,3.68,G. truncatulinoides,81
@@ -314,7 +299,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.68,B. digitata,0
 -39.31283,142.68398,3.68,G. conglobatus,0
 -39.31283,142.68398,3.68,T. quinqueloba,231
--39.31283,142.68398,3.7,Age [ka BP],19.79
 -39.31283,142.68398,3.7,G. bulloides,177
 -39.31283,142.68398,3.7,G. inflata,67
 -39.31283,142.68398,3.7,G. truncatulinoides,52
@@ -335,7 +319,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.7,B. digitata,0
 -39.31283,142.68398,3.7,G. conglobatus,0
 -39.31283,142.68398,3.7,T. quinqueloba,239
--39.31283,142.68398,3.74,Age [ka BP],19.88
 -39.31283,142.68398,3.74,G. bulloides,160
 -39.31283,142.68398,3.74,G. inflata,67
 -39.31283,142.68398,3.74,G. truncatulinoides,60
@@ -356,7 +339,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.74,B. digitata,0
 -39.31283,142.68398,3.74,G. conglobatus,0
 -39.31283,142.68398,3.74,T. quinqueloba,223
--39.31283,142.68398,3.76,Age [ka BP],19.93
 -39.31283,142.68398,3.76,G. bulloides,137
 -39.31283,142.68398,3.76,G. inflata,54
 -39.31283,142.68398,3.76,G. truncatulinoides,76
@@ -377,7 +359,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.76,B. digitata,0
 -39.31283,142.68398,3.76,G. conglobatus,0
 -39.31283,142.68398,3.76,T. quinqueloba,250
--39.31283,142.68398,3.78,Age [ka BP],19.97
 -39.31283,142.68398,3.78,G. bulloides,143
 -39.31283,142.68398,3.78,G. inflata,35
 -39.31283,142.68398,3.78,G. truncatulinoides,50
@@ -398,7 +379,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.78,B. digitata,0
 -39.31283,142.68398,3.78,G. conglobatus,0
 -39.31283,142.68398,3.78,T. quinqueloba,288
--39.31283,142.68398,3.8,Age [ka BP],20.02
 -39.31283,142.68398,3.8,G. bulloides,138
 -39.31283,142.68398,3.8,G. inflata,37
 -39.31283,142.68398,3.8,G. truncatulinoides,81
@@ -419,7 +399,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.8,B. digitata,0
 -39.31283,142.68398,3.8,G. conglobatus,0
 -39.31283,142.68398,3.8,T. quinqueloba,270
--39.31283,142.68398,3.82,Age [ka BP],20.06
 -39.31283,142.68398,3.82,G. bulloides,182
 -39.31283,142.68398,3.82,G. inflata,64
 -39.31283,142.68398,3.82,G. truncatulinoides,73
@@ -440,7 +419,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.82,B. digitata,0
 -39.31283,142.68398,3.82,G. conglobatus,0
 -39.31283,142.68398,3.82,T. quinqueloba,247
--39.31283,142.68398,3.86,Age [ka BP],20.15
 -39.31283,142.68398,3.86,G. bulloides,114
 -39.31283,142.68398,3.86,G. inflata,60
 -39.31283,142.68398,3.86,G. truncatulinoides,95
@@ -461,7 +439,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.86,B. digitata,0
 -39.31283,142.68398,3.86,G. conglobatus,0
 -39.31283,142.68398,3.86,T. quinqueloba,244
--39.31283,142.68398,3.88,Age [ka BP],20.2
 -39.31283,142.68398,3.88,G. bulloides,137
 -39.31283,142.68398,3.88,G. inflata,81
 -39.31283,142.68398,3.88,G. truncatulinoides,106
@@ -482,7 +459,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.88,B. digitata,0
 -39.31283,142.68398,3.88,G. conglobatus,0
 -39.31283,142.68398,3.88,T. quinqueloba,181
--39.31283,142.68398,3.9,Age [ka BP],20.24
 -39.31283,142.68398,3.9,G. bulloides,160
 -39.31283,142.68398,3.9,G. inflata,50
 -39.31283,142.68398,3.9,G. truncatulinoides,92
@@ -503,7 +479,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.9,B. digitata,0
 -39.31283,142.68398,3.9,G. conglobatus,0
 -39.31283,142.68398,3.9,T. quinqueloba,205
--39.31283,142.68398,3.92,Age [ka BP],20.29
 -39.31283,142.68398,3.92,G. bulloides,168
 -39.31283,142.68398,3.92,G. inflata,39
 -39.31283,142.68398,3.92,G. truncatulinoides,110
@@ -524,7 +499,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.92,B. digitata,0
 -39.31283,142.68398,3.92,G. conglobatus,0
 -39.31283,142.68398,3.92,T. quinqueloba,211
--39.31283,142.68398,3.94,Age [ka BP],20.33
 -39.31283,142.68398,3.94,G. bulloides,148
 -39.31283,142.68398,3.94,G. inflata,57
 -39.31283,142.68398,3.94,G. truncatulinoides,75
@@ -545,7 +519,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.94,B. digitata,0
 -39.31283,142.68398,3.94,G. conglobatus,0
 -39.31283,142.68398,3.94,T. quinqueloba,238
--39.31283,142.68398,3.96,Age [ka BP],20.38
 -39.31283,142.68398,3.96,G. bulloides,137
 -39.31283,142.68398,3.96,G. inflata,31
 -39.31283,142.68398,3.96,G. truncatulinoides,80
@@ -566,7 +539,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.96,B. digitata,0
 -39.31283,142.68398,3.96,G. conglobatus,0
 -39.31283,142.68398,3.96,T. quinqueloba,328
--39.31283,142.68398,3.98,Age [ka BP],20.43
 -39.31283,142.68398,3.98,G. bulloides,133
 -39.31283,142.68398,3.98,G. inflata,38
 -39.31283,142.68398,3.98,G. truncatulinoides,77
@@ -587,7 +559,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,3.98,B. digitata,0
 -39.31283,142.68398,3.98,G. conglobatus,0
 -39.31283,142.68398,3.98,T. quinqueloba,270
--39.31283,142.68398,4,Age [ka BP],20.47
 -39.31283,142.68398,4,G. bulloides,228
 -39.31283,142.68398,4,G. inflata,48
 -39.31283,142.68398,4,G. truncatulinoides,106
@@ -608,7 +579,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,4,B. digitata,0
 -39.31283,142.68398,4,G. conglobatus,0
 -39.31283,142.68398,4,T. quinqueloba,274
--39.31283,142.68398,4.04,Age [ka BP],20.56
 -39.31283,142.68398,4.04,G. bulloides,143
 -39.31283,142.68398,4.04,G. inflata,49
 -39.31283,142.68398,4.04,G. truncatulinoides,64
@@ -629,7 +599,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,4.04,B. digitata,0
 -39.31283,142.68398,4.04,G. conglobatus,0
 -39.31283,142.68398,4.04,T. quinqueloba,316
--39.31283,142.68398,4.08,Age [ka BP],20.65
 -39.31283,142.68398,4.08,G. bulloides,119
 -39.31283,142.68398,4.08,G. inflata,35
 -39.31283,142.68398,4.08,G. truncatulinoides,52
@@ -650,7 +619,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,4.08,B. digitata,0
 -39.31283,142.68398,4.08,G. conglobatus,0
 -39.31283,142.68398,4.08,T. quinqueloba,179
--39.31283,142.68398,4.1,Age [ka BP],20.71
 -39.31283,142.68398,4.1,G. bulloides,164
 -39.31283,142.68398,4.1,G. inflata,53
 -39.31283,142.68398,4.1,G. truncatulinoides,67
@@ -671,7 +639,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,4.1,B. digitata,0
 -39.31283,142.68398,4.1,G. conglobatus,0
 -39.31283,142.68398,4.1,T. quinqueloba,261
--39.31283,142.68398,4.12,Age [ka BP],20.78
 -39.31283,142.68398,4.12,G. bulloides,176
 -39.31283,142.68398,4.12,G. inflata,48
 -39.31283,142.68398,4.12,G. truncatulinoides,64
@@ -692,7 +659,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -39.31283,142.68398,4.12,B. digitata,0
 -39.31283,142.68398,4.12,G. conglobatus,0
 -39.31283,142.68398,4.12,T. quinqueloba,159
--39.31283,142.68398,4.16,Age [ka BP],20.92
 -39.31283,142.68398,4.16,G. bulloides,196
 -39.31283,142.68398,4.16,G. inflata,42
 -39.31283,142.68398,4.16,G. truncatulinoides,69

@@ -7,7 +7,7 @@
 core1 <- read_tsv("raw/additional/MD95-2042_foram.tab")
 ## Latitude: 37.799833 * Longitude: -10.166500
 core1 <- core1 %>% mutate(Latitude = 37.799833, Longitude = -10.166500, .before='Depth sed [m]')
-core1 <- core1 %>% dplyr::filter(`Age [ka BP]` > 19 & `Age [ka BP]` < 21)
+core1 <- core1 %>% dplyr::filter(`Age [ka BP]` > 19 & `Age [ka BP]` < 21) %>% select(-"Age [ka BP]")
 
 core2 <- read_tsv("raw/additional/MD95-2040_foram.tab")
 ## Latitude: 40.581833 * Longitude: -9.861167
@@ -28,7 +28,7 @@ core5 <- read_tsv("raw/additional/SS0206-GC15_foram.tab")
 core5 %>% dplyr::filter(`Age [ka BP]`>19 & `Age [ka BP]` <21) -> core5
 ## Latitude: -39.312830, Longitude: 142.683980
 core5 <- core5 %>% mutate(Latitude = -39.312830, Longitude = 142.683980, .before='Depth sed [m]')
-core5 <- core5 %>% select(-c("Depth corr [m]", "Foram plankt indet [%]",
+core5 <- core5 %>% select(-c("Depth corr [m]", "Foram plankt indet [%]", "Age [ka BP]",
                              "Foram plankt tropical [%]", "Foram plankt subpolar [%]"))
 
 core6 <- read_tsv("raw/additional/JM05-085-GC_foram.tab")
@@ -153,7 +153,7 @@ find_missing_species(symbiosis_tbl$short_name, names(core7))
 ## -----------------
 symbiosis_short_tbl <- symbiosis_tbl %>% select(!c(Species)) %>% distinct()
 
-core1_long <- core1 %>% pivot_longer(cols = -c("Latitude", "Longitude", "Depth sed [m]", "Age [ka BP]"), names_to = "Species", values_to = "Absolute Abundance")
+core1_long <- core1 %>% pivot_longer(cols = -c("Latitude", "Longitude", "Depth sed [m]",), names_to = "Species", values_to = "Absolute Abundance")
 core2_long <- core2 %>% pivot_longer(cols = -c("Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
 
 core3_long <- core3 %>% pivot_longer(cols = -c("Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
@@ -179,7 +179,7 @@ write_csv(core6_long, "sp/lgm_JM05-085-GC_sp_a.csv")
 write_csv(core7_long, "sp/lgm_341-U1421_sp_a.csv")
 
 ## save to fg
-core1_long <- merge(core1_long %>% select(-'Age [ka BP]'), symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
+core1_long <- merge(core1_long,  symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
 core2_long <- merge(core2_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
 core3_long <- merge(core3_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
 core4_long <- merge(core4_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
