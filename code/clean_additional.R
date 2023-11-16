@@ -47,9 +47,36 @@ core2 <- core2 %>% replace_column_name("T. cristata", "T. humilis")
 core2 <- core2 %>% mutate(`G. hirsuta` = `G. hirsuta s` + `G. hirsuta d`) %>%
   select(-c(`G. hirsuta s`, `G. hirsuta d`))
 
-find_missing_species(symbiosis_tbl, names(core3))
-core3 <- core3 %>%   select(-c(`G. ruber [#] (sum of G. ruber pink and G. r...)`))
-core3 <- core3 %>% select(-c(`G. menardii [#] (sum of G. menardii, G. tumida...)`))
+core3 <- core3 %>%   select(-c(`G. ruber [#] (sum of G. ruber pink and G. r...)`, 
+                               `Foram plankt oth [#]`,
+                               `G. menardii [#] (sum of G. menardii, G. tumida...)`,
+                               `G. sacculifer wo sac [#]`,
+                               `G. sacculifer sac [#]`,
+                               `G. pachyderma [#]`
+                               ))
+names(core3) <- gsub(" [#]", "", names(core3), fixed=T)
+core3 <- core3 %>% mutate(`G. truncatulinoides` = `G. truncatulinoides d` + `G. truncatulinoides s`) %>%
+  select(-c(`G. truncatulinoides d`, `G. truncatulinoides s`))
+core3 <- core3 %>% replace_column_name("G. ruber w", "G. ruber albus")
+core3 <- core3 %>% replace_column_name("G. ruber p", "G. ruber ruber")
+core3 <- core3 %>% replace_column_name("N. pachyderma d", "N. incompta")
+core3 <- core3 %>% replace_column_name("N. pachyderma s", "N. pachyderma")
+core3 <- core3 %>% replace_column_name("G. menardii", "G. cultrata")
+core3 <- core3 %>% replace_column_name("G. quinqueloba", "T. quinqueloba")
+core3 <- core3 %>% replace_column_name("G. sacculifer (sum of G. sacculifer no sac a...)", "T. sacculifer")
+core3 <- core3 %>% replace_column_name("G. aequilateralis", "G. siphonifera")
+core3 <- core3 %>% replace_column_name("G. dutertrei", "N. dutertrei")
+core3 <- core3 %>% replace_column_name("G. digitata", "B. digitata")
+core3 <- core3 %>% replace_column_name("G. humilis", "T. humilis")
+core3 <- core3 %>% replace_column_name("G. anfracta", "D. anfracta")
+core3 <- core3 %>% replace_column_name("G. iota", "T. iota")
+core3 <- core3 %>% replace_column_name("G. bradyi", "G. uvula")
+core3 <- core3 %>% replace_column_name("G. pumilio", "B. pumilio")
+core3 <- core3 %>% replace_column_name("G. hexagona", "G. hexagonus")
+core3 <- core3 %>% replace_column_name("G. tumida flexuosa", "G. tumida") ## as per Brummer & Kucera, 2022
+
+
+find_missing_species(symbiosis_tbl$short_name, names(core3))
 
 ## -----------------
 ## Just absolute abundance
@@ -60,17 +87,18 @@ core1_long <- core1 %>% pivot_longer(cols = -c("Latitude", "Longitude", "Depth s
 core1_long <- merge(core1_long %>% select(-'Age [ka BP]'), symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
 core1_long <- core1_long %>% group_by(Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>% 
   summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
-core1_long <- core1_long %>% group_by(Latitude, Longitude,  Symbiosis, Spine) %>% 
-  summarise_all(.funs = mean, na.rm=T)  %>% ungroup()
 
 core2_long <- core2 %>% pivot_longer(cols = -c("Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
 core2_long <- merge(core2_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
 core2_long <- core2_long %>% group_by(Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>% 
   summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
-core2_long <- core2_long %>% group_by(Latitude, Longitude,  Symbiosis, Spine) %>%
-  summarise_all(.funs = mean, na.rm=T)  %>% ungroup()
 
+core3_long <- core3 %>% pivot_longer(cols = -c("Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
+core3_long <- merge(core3_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
+core3_long <- core3_long %>% group_by(Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>% 
+  summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
 
 ## save to fg
 write_csv(core1_long, "fg/lgm_MD952042_fg_a.csv")
 write_csv(core2_long, "fg/lgm_MD952040_fg_a.csv")
+write_csv(core3_long, "fg/lgm_V26-124_fg_a.csv")
