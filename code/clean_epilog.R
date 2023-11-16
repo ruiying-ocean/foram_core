@@ -18,8 +18,12 @@ epilog <- epilog %>% replace_column_name( "G. truncatulinoides d" , "G. truncatu
 epilog <- epilog %>% replace_column_name( "G. sacculifer wo sac" , "T. sacculifer")
 epilog <- epilog %>% replace_column_name( "G. sacculifer sac" , "T. sacculifer")
 epilog <- epilog %>% replace_column_name( "G. menardii flexuosa" , "G. tumida")
+epilog <- epilog %>% replace_column_name( "G. menardii" , "G. cultrata")
 epilog <- epilog %>% replace_column_name( "G. bradyi" , "G. uvula")
 epilog <- epilog %>% replace_column_name( "G. quinqueloba", "T. quinqueloba")
+epilog <- epilog %>% replace_column_name( "G. digitata", "B. digitata")
+epilog <- epilog %>% replace_column_name( "G. theyeri", "G. eastropacia")
+epilog <- epilog %>% replace_column_name( "G. aequilateralis", "G. siphonifera")
 
 ## ---------------------------------
 ## Convert Relative Abundance to Absolute Abundance
