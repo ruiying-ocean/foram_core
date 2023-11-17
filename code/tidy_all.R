@@ -34,6 +34,7 @@ filenames <- list.files("sp", pattern = "^lgm.*_a\\.csv$", full.names = TRUE)
 
 ldf <- lapply(filenames, function(file) {
   df <- read_csv(file)
+  print(file)
   df <- df %>% select(c("Latitude", "Longitude", "Species", "Absolute Abundance"))
   df <- df %>% mutate(Data_Source = str_extract(basename(file), "(?<=lgm_).*?(?=_sp_a\\.csv)"))  
   return(df)
