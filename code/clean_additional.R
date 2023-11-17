@@ -3,6 +3,7 @@
 ## MD95-2040, MD95-2042, V26-124
 ## Fr194-GC3, SS0206-GC15, JM05-085-GC
 ## 341-U1421, OCE400-MC44, IODP_U1418
+## PS2644-5
 
 core1 <- read_tsv("raw/additional/MD95-2042_foram.tab")
 ## Latitude: 37.799833 * Longitude: -10.166500
@@ -54,6 +55,16 @@ core8 <- core8 %>% mutate(Latitude = 43.483033, Longitude = -67.882617)
 core9 <- read_tsv("https://www.ncei.noaa.gov/pub/data/paleo/contributions_by_author/payne2021/payne2021_SNW.txt", comment="#")
 core9 <- core9 %>% dplyr::filter(age>19000) %>% select(depth, Num_Npachy) %>% mutate(Latitude =58.8, Longitude=-144.13)
 core9 <- core9 %>% replace_column_name("Num_Npachy", "N. pachyderma")
+
+
+core10 <- read_tsv("raw/additional/PS2644-5_foram.tab")
+core10 <- core10 %>% select(c("Depth sed [m]", "N. pachyderma s [#]")) %>%
+  rename(`N. pachyderma` = `N. pachyderma s [#]`) %>%
+  mutate(Latitude = 67.866660, Longitude =-21.765000, .before=1)
+## age model: https://doi.pangaea.de/10.1594/PANGAEA.57797
+core10 <- core10 %>% dplyr::filter(`Depth sed [m]` >= 1.1 & `Depth sed [m]` <= 1.23)
+
+
 ## -----------------
 ## clean species name
 ## -----------------
@@ -190,6 +201,8 @@ core8_long <- core8 %>% pivot_longer(cols = -c("Latitude", "Longitude", "depth_c
 
 core9_long <- core9 %>% pivot_longer(cols = -c("Latitude", "Longitude", "depth"), names_to = "Species", values_to = "Absolute Abundance")
 
+core10_long <- core10 %>% pivot_longer(cols = -c("Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
+
 ## save to sp
 write_csv(core1_long, "sp/lgm_MD952042_sp_a.csv")
 write_csv(core2_long, "sp/lgm_MD952040_sp_a.csv")
@@ -200,6 +213,7 @@ write_csv(core6_long, "sp/lgm_JM05-085-GC_sp_a.csv")
 write_csv(core7_long, "sp/lgm_341-U1421_sp_a.csv")
 write_csv(core8_long, "sp/lgm_OCE400-MC44_sp_a.csv")
 write_csv(core9_long, "sp/lgm_IODP_U1418_sp_a.csv")
+write_csv(core10_long, "sp/lgm_PS2644-5_sp_a.csv")
 
 ## save to fg
 core1_long <- merge(core1_long,  symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
@@ -211,6 +225,7 @@ core6_long <- merge(core6_long, symbiosis_short_tbl, by.x="Species", by.y = "sho
 core7_long <- merge(core7_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
 core8_long <- merge(core8_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
 core9_long <- merge(core9_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
+core10_long <- merge(core10_long, symbiosis_short_tbl, by.x="Species", by.y = "short_name") %>% select(!c(Species))
 
 core1_long <- core1_long %>% group_by(Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>% 
   summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
@@ -230,6 +245,8 @@ core8_long <- core8_long %>% group_by(Latitude, Longitude, `depth_cm`, Symbiosis
   summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
 core9_long <- core9_long %>% group_by(Latitude, Longitude, `depth`, Symbiosis, Spine) %>% 
   summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
+core10_long <- core9_long %>% group_by(Latitude, Longitude, `depth`, Symbiosis, Spine) %>% 
+  summarise_all(.funs = sum, na.rm=T)  %>% ungroup()
 
 write_csv(core1_long, "fg/lgm_MD952042_fg_a.csv")
 write_csv(core2_long, "fg/lgm_MD952040_fg_a.csv")
@@ -240,3 +257,4 @@ write_csv(core6_long, "fg/lgm_JM05-085-GC_fg_a.csv")
 write_csv(core7_long, "fg/lgm_341-U1421_fg_a.csv")
 write_csv(core8_long, "fg/lgm_OCE400-MC44_fg_a.csv")
 write_csv(core9_long, "fg/lgm_IODP_U1418_fg_a.csv")
+write_csv(core10_long, "fg/lgm_PS2644-5_fg_a.csv")

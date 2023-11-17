@@ -2,11 +2,11 @@
 ## North Atlantic has only relative abundance
 
 ## manually labelled datatype
-## Datatype
+## >>> Datatype
 ## 1: species in relative, total in relative
 ## 2: species in absolute, total in absolute
 ## 3: species in relative, total in absolute
-## 4: species in absolute, total in relative (not exists)
+## 4: species in absolute, total in relative (currently not exists)
 
 n_atlantic <- read_csv("raw/MARGO/clean format/LGM_MARGO_NAtlantic.csv")
 s_atlantic <- read_csv("raw/MARGO/clean format/LGM_MARGO_SAtlantic.csv")

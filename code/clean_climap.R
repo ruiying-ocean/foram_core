@@ -1,4 +1,11 @@
 ## This script is to clean the CLIMAP data in the LGM section
+## It contains three data sources:
+## 1. Existing LGM relative abundance compilation and convert to absolute abundance
+## 2. All absolute abundance collection from NOAA/NCEI of climap 18k and
+##.   select the LGM set based on existing age model compilation
+## 3. Manually searched LGM sediment cores in pangaea.de (KEYWORD: CLIMAP, or age model compilation)
+
+## contact: rui.ying@bristol.ac.uk
 
 ## ----------------------------------
 ## Data source 1: 
@@ -150,4 +157,8 @@ fwrite(climap_lgm_a, "sp/lgm_climap1_sp_a.csv")
 
 climap_lgm_r %>% global_group_and_aggregate(Depth='Depth sed') %>% write_csv(., "fg/lgm_climap1_fg_r.csv")
 climap_lgm_a %>% global_group_and_aggregate(Depth='Depth sed') %>% write_csv(., "fg/lgm_climap1_fg_a.csv")
+
+## climap cores
+included_cores <- c(unique(climap_lgm_a$Event),unique(foram_dat_lgm$Event))
+'V04-8' %in% included_cores
 
