@@ -36,5 +36,5 @@
 
 * Collecting strategies
 Most sediment cores report relative abundance. I use two strategies to collect the absolute abundance data:
-+ Strategy A: find cores with absolute abundance data in PANGAEA and then search related age model
++ Strategy A: find cores with absolute abundance data in PANGAEA (e.g., CLIMAP project) and then search related age model
 + Strategy B: find age model or relative abundance data compilation with age models and then search absolute abundance
