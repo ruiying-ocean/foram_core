@@ -6,10 +6,11 @@
 
 ** 2. LGM downcore
 + CLIMAP (1970s, contains both 18ka and 120 ka, yielding a result that low-latitude have little change of SST in LGM)
-+ MIX1999 (Mix et al. 1999 Palaeoceanography, a subset of CLIMAP data and using different transfer function)
++ MIX1999 (Mix et al. 1999 Palaeoceanography, a subset of CLIMAP data [CLIMAP-OSU] for revised transfer function)
 + MARGO (Launched in 2002, includes both Modern and LGM. Kucera 2005 QSR, MARGO project member. 2009 Nat Geo)
 + EPILOG (An update on CLIMAP,  South Atlantic only, e.g., age model, 1999. Mix et al. 2001 QSR)
 + GLAMAP (aka ATL947, Similar to EPILOG, but just for Atlantic and different time slices)
++ Manually checked sediment cores
 
 * Data format  
 + ForCenS (relative + absolute abundance)
@@ -18,12 +19,14 @@
 + EPILOG (relative + absolute abundance)
 + GLAMAP (relative abundance only)
 + Mix1999 (relative abundance only)
++ Manually checked cores (only export absolute abundance)
 
-* Data sources
+* Raw data sources
 ** [[https://doi.org/10.1594/PANGAEA.873570][ForCenS/Modern]]
 ** [[https://doi.org/10.1594/PANGAEA.61208][CLIMA/LGM]]
 ** [[https://doi.org/10.1594/PANGAEA.57027][EPILOG/LGM]]
 ** [[https://doi.org/10.1594/PANGAEA.55156][GLAMAP/LGM]]
+** [[https://doi.pangaea.de/10.1594/PANGAEA.61208][Mix1999/LGM]]
 
 ** MARGO
 *** [[https://doi.org/10.1594/PANGAEA.227329][LGM Atlantic]] 
