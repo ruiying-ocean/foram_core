@@ -1,10 +1,10 @@
 #+TITLE: Foraminifer census data source
 
 * Foraminifera projects
-** 1. surface sediment (pre-industrial) (core sample depth < 0.03 m)
+** 1. surface sediment (pre-industrial)
 + ForCenS includes all the modern subset of CLIMAP, MARGO, GLAMAP and BUFD (Brown University Foraminiferal Database)
 
-** 2. LGM downcore (core sample depth 0.3~3.0 m) 
+** 2. LGM downcore
 + CLIMAP (1970s, contains both 18ka and 120 ka, yielding a result that low-latitude have little change of SST in LGM)
 + MIX1999 (Mix et al. 1999 Palaeoceanography, a subset of CLIMAP data and using different transfer function)
 + MARGO (Launched in 2002, includes both Modern and LGM. Kucera 2005 QSR, MARGO project member. 2009 Nat Geo)
@@ -17,6 +17,7 @@
 + CLIMAP (relative + absolute abundance)
 + EPILOG (relative + absolute abundance)
 + GLAMAP (relative abundance only)
++ Mix1999 (relative abundance only)
 
 * Data sources
 ** [[https://doi.org/10.1594/PANGAEA.873570][ForCenS/Modern]]
