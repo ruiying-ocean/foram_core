@@ -160,5 +160,10 @@ climap_lgm_a %>% global_group_and_aggregate(Depth='Depth sed') %>% write_csv(., 
 
 ## climap cores
 included_cores <- c(unique(climap_lgm_a$Event),unique(foram_dat_lgm$Event))
-'V04-8' %in% included_cores
+'A180-15' %in% included_cores
+
+## this file seems to be identical to the source1 (CLIMAP_LGM_foram_data.tab)
+mix1999 <- read_tsv("raw/CLIMAP/Mix_et_al_1999.tab")
+## filter out those not included in climap
+mix1999%>% dplyr::filter(!Event %in% included_cores) %>% pull(Event) %>% unique()
 
