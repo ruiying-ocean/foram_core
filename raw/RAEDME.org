@@ -21,12 +21,17 @@
 
 * Data sources
 ** [[https://doi.org/10.1594/PANGAEA.873570][ForCenS/Modern]]
-** [[https://doi.org/10.1594/PANGAEA.61208][CLIMAP]]
+** [[https://doi.org/10.1594/PANGAEA.61208][CLIMA/LGM]]
 ** [[https://doi.org/10.1594/PANGAEA.57027][EPILOG/LGM]]
 ** [[https://doi.org/10.1594/PANGAEA.55156][GLAMAP/LGM]]
+
 ** MARGO
 *** [[https://doi.org/10.1594/PANGAEA.227329][LGM Atlantic]] 
 *** [[https://doi.org/10.1594/PANGAEA.227327][LGM Pacific]]
 *** [[https://doi.org/10.1594/PANGAEA.227306][LGM Mediterranean]]
 *** [[https://doi.org/10.1594/PANGAEA.227319][LGM Indo-Pacific]]
 
+* Collecting strategies
+Most sediment cores report relative abundance. I use two strategies to collect the absolute abundance data:
++ Strategy A: find cores with absolute abundance data in PANGAEA and then search related age model
++ Strategy B: find age model or relative abundance data compilation with age models and then search absolute abundance
