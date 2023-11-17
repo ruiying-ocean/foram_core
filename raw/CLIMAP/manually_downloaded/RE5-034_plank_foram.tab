@@ -1,0 +1,102 @@
+/* DATA DESCRIPTION:
+Citation:	CLIMAP Project Members (2009): Planktic foraminifera counts of sediment core RE5-034. PANGAEA, https://doi.org/10.1594/PANGAEA.727334
+Related to:	CLIMAP Project Members (2005): NOAA/WDS Paleoclimatology - CLIMAP 18K Database. NOAA National Centers for Environmental Information, https://doi.org/10.25921/YXK7-3D97
+Project(s):	Climate: Long-Range Investigation, Mapping, and Prediction (CLIMAP) (URI: https://en.wikipedia.org/wiki/CLIMAP)
+Coverage:	LATITUDE: 42.383300 * LONGITUDE: -21.966700
+	MINIMUM DEPTH, sediment/rock: 0.00 m * MAXIMUM DEPTH, sediment/rock: 3.05 m
+Event(s):	RE5-034 * LATITUDE: 42.383300 * LONGITUDE: -21.966700 * ELEVATION: -3750.0 m
+Parameter(s):	DEPTH, sediment/rock [m] (Depth sed) * GEOCODE
+	Orbulina universa [#] (O. universa) * PI: CLIMAP Project Members
+	Globigerinoides conglobatus [#] (G. conglobatus) * PI: CLIMAP Project Members
+	Globigerinoides ruber pink [#] (G. ruber p) * PI: CLIMAP Project Members
+	Globigerinoides ruber white [#] (G. ruber w) * PI: CLIMAP Project Members
+	Globigerinoides ruber [#] (G. ruber) * PI: CLIMAP Project Members * COMMENT: sum of G. ruber pink and G. ruber white
+	Globigerinoides tenellus [#] (G. tenellus) * PI: CLIMAP Project Members
+	Globigerinoides sacculifer wo sac [#] (G. sacculifer wo sac) * PI: CLIMAP Project Members
+	Globigerinoides sacculifer sac [#] (G. sacculifer sac) * PI: CLIMAP Project Members
+	Globigerinoides sacculifer [#] (G. sacculifer) * PI: CLIMAP Project Members * COMMENT: sum of G. sacculifer no sac and G. sacculifer sac
+	Globigerinella aequilateralis [#] (G. aequilateralis) * PI: CLIMAP Project Members
+	Globigerinella calida [#] (G. calida) * PI: CLIMAP Project Members
+	Globigerina bulloides [#] (G. bulloides) * PI: CLIMAP Project Members
+	Globigerina falconensis [#] (G. falconensis) * PI: CLIMAP Project Members
+	Globigerina digitata [#] (G. digitata) * PI: CLIMAP Project Members
+	Globigerina rubescens [#] (G. rubescens) * PI: CLIMAP Project Members
+	Globigerina humilis [#] (G. humilis) * PI: CLIMAP Project Members
+	Globigerina quinqueloba [#] (G. quinqueloba) * PI: CLIMAP Project Members
+	Neogloboquadrina pachyderma sinistral [#] (N. pachyderma s) * PI: CLIMAP Project Members
+	Globoquadrina conglomerata [#] (G. conglomerata) * PI: CLIMAP Project Members
+	Globoquadrina hexagona [#] (G. hexagona) * PI: CLIMAP Project Members
+	Pulleniatina obliquiloculata [#] (P. obliquiloculata) * PI: CLIMAP Project Members
+	Globorotalia inflata [#] (G. inflata) * PI: CLIMAP Project Members
+	Globorotalia truncatulinoides sinistral [#] (G. truncatulinoides s) * PI: CLIMAP Project Members
+	Globorotalia truncatulinoides dextral [#] (G. truncatulinoides d) * PI: CLIMAP Project Members
+	Globorotalia crassaformis [#] (G. crassaformis) * PI: CLIMAP Project Members
+	Globigerina pachyderma [#] (G. pachyderma) * PI: CLIMAP Project Members
+	Globorotalia menardii [#] (G. menardii) * PI: CLIMAP Project Members * COMMENT: sum of G. menardii, G. tumida, and G. tumida flexuosa
+	Candeina nitida [#] (C. nitida) * PI: CLIMAP Project Members
+	Globigerinita bradyi [#] (G. bradyi) * PI: CLIMAP Project Members
+	Hastigerina pelagica [#] (H. pelagica) * PI: CLIMAP Project Members
+	Hastigerinella digitata [#] (H. digitata) * PI: CLIMAP Project Members
+License:	Creative Commons Attribution 3.0 Unported (CC-BY-3.0)
+Size:	1013 data points
+*/
+Depth sed [m]	O. universa [#]	G. conglobatus [#]	G. ruber p [#]	G. ruber w [#]	G. ruber [#]	G. tenellus [#]	G. sacculifer wo sac [#]	G. sacculifer sac [#]	G. sacculifer [#]	G. aequilateralis [#]	G. calida [#]	G. bulloides [#]	G. falconensis [#]	G. digitata [#]	G. rubescens [#]	G. humilis [#]	G. quinqueloba [#]	N. pachyderma s [#]	G. conglomerata [#]	G. hexagona [#]	P. obliquiloculata [#]	G. inflata [#]	G. truncatulinoides s [#]	G. truncatulinoides d [#]	G. crassaformis [#]	G. pachyderma [#]	G. menardii [#]	C. nitida [#]	G. bradyi [#]	H. pelagica [#]	H. digitata [#]
+0.00	6			18	18	4		1	1	11	3	80	60		2	9	4	69			63	11	23		10	5	32			20	
+0.05	6			24	24	9	2		2	7	2	54	56		2	5	12	73			60	10	26		9	13	40			19	
+0.10	11			26	26	4	1		1	8	5	53	60		2	6	6	43	1		71	8	25		4	9	22			14	
+0.15	7		3	36	39	7				15	1	55	65		2	16	13	54			73	6	19		4	13	38	2		19	
+0.20	2		1	33	34					3	1	68	54			31	27	56			51	4	15	3	6	9	27			14	
+0.25	2			17	17	7						100	49		2	64	50	94			64	1	8	1	13	4	35			16	
+0.30	4			9	9	3				1		118	22			59	55	108			42	1	5	1	11	2	36			21	
+0.35	3			9	9	1				1		81	9			43	51	82			32	1	2	1	7		29			13	
+0.40	2			10	10						1	105	10			32	42	108			51		1		22		34			7	
+0.50				8	8							101	3			20	34	81			29				8		27			9	
+0.55	3			2	2						1	118	21			25	51	91			46				17		31			14	
+0.60	2			5	5							97	14			48	31	112			39		1		9		41			23	
+0.65				5	5							89	17			46	46	63			39				7		29			14	
+0.70	3			5	5							117	36			70	59	87			23		1		7		35			12	
+0.75	4			10	10						1	129	27			80	44	92			39		2	1	7	1	62			13	
+0.80	4			6	6							136	25			107	37	83			54				9	1	53			28	
+0.85	2			1	1							110	12			63	28	85			59	1	2		15	2	58			19	
+0.90	8			9	9					2	2	119	16			118	42	135			125	1	3		14	8	88			28	
+0.95	3			5	5					2	2	72	6			74	15	77			54	3	16	1	8	2	51			10	
+1.02	3			6	6	1				1		99	17			114	29	85			87		2	3	15	3	53			12	
+1.05	1			3	3							103	9			91	20	91			70	2	5	2	5	6	54			22	
+1.10	5			15	15	1				2		62	11			101	25	141			49	4	16		16	5	53			24	
+1.15	4			7	7	1				3	1	76	19			75	27	103			41	2	2		15	1	59			24	
+1.20	3			16	16					1		80	19			87	19	107			34		7	1	15	2	64			28	
+1.25	10			11	11					1		124	16			35	69	130			38				16	6	37			16	
+1.30	6			15	15					2		83	24			42	49	115			26	2			24	4	30			16	
+1.35	9			17	17					2		83	26		1	22	27	168			70		4		25	4	37			20	
+1.40	7			13	13							74	17			26	16	141			49	1	4		13	4	19			16	
+1.45	6			25	25					3	3	89	25		1	48	11	158			51	3	9		13	3	72			26	
+1.48				32	32					2	1	72	21			31	7	111			73	3	25		18	11	71			14	
+1.55				21	21						1	70	22			29	3	87			35	1	18		13	6	51			19	
+1.60	1			20	20					4		93	34			47	8	133			52	5	21		13	12	55	3		14	
+1.65	7			14	14	1				2		111	26			71	19	113			37	2	36		16	1	60	2		28	
+1.70	7			24	24	1				4		92	36			84	7	142			44	6	43		19		55	4		29	
+1.75	4			13	13	1				1		132	13			121	5	227			34	3	52		23	1	61			40	
+1.80	5			13	13					4	4	71	25			89	2	145			30	5	44		14	3	42	7		27	
+1.85	6			6	6	1				1	4	57	17			74	6	174			52	1	42		18		49			27	
+1.90	4			10	10	4				1		53	22			80	7	164			35	2	29		15	3	44			37	
+1.95	3			16	16	6				2		81	44			38	10	165			83	8	30		20	4	57			45	
+2.00	3			7	7	3				2		52	28			57	11	132			56	8	30		11	4	32	2			29
+2.05	3			18	18	2				1		89	61			58	9	158			66	28	4		20	12	68			38	
+2.10	6			8	8	2				2	1	67	51			40	6	122			48	8	4		15	7	49			19	
+2.15	6			32	32	2				5		119	31			23	9	144			91	19	10		23	5	41			36	
+2.24	1			21	21					4		72	11			31	6	143			79	23	6	1	9	5	25			13	
+2.30	10		2	31	33					7	1	51	11		1	9	4	141			113	14	11		16	10	27			16	
+2.35	10		1	39	40	6				7	1	40	9			9	4	144		1	110	21	20		18	5	32			18	
+2.45	6	2	1	40	41	5	1		1	6	2	61	13			11	8	101			93	14	13		19	5	33			10	
+2.50	10	2	1	68	69	16	6	1	7	13	5	50	15			1	11	123			108	16	33	2	9	9	35			39	
+2.55	12	3	2	51	53	15	1		1	4	3	49	9			4	9	82			74	6	37		3	4	20	2	1	26	
+2.60	6	2	3	48	51	17				9	2	64	23	1		13	13	90			67	8	35	5	8	3	29	1		15	
+2.65	5	2		20	20	15		2	2	3		107	2		1	6	21	115		1	87	3	17	2	14	2	29	1		8	
+2.70	5	1		14	14	5				1		115				12	32	109			54		2		14	3	34			16	
+2.75	5			8	8					2		112	1			6	39	141			73		1	1	22	1	27			30	
+2.80	3			15	15	3						98	3			26	21	135			59	2			12	3	25			22	
+2.85	2			8	8		4		4	2		145	8			27	43	191			44	2		2	24	1	49			12	
+2.90	8			13	13	2				1		90	7			144	51	115			20			2	12	1	42	1		28	
+2.95	2			9	9	2						107	6			33	31	98			27	1	2	1	14	2	40			18	
+3.00	12			12	12							82	8			153	47	144			41		1		28	1	47			30	
+3.05	8			15	15					1		80	12			153	24	160			27	1	1		18		34			31	
