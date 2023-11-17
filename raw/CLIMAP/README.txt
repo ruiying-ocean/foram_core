@@ -1,3 +1,7 @@
-CLIMAP surface sediment data is not used:
+Collect LGM CLIMAP data
 
-https://doi.pangaea.de/10.1594/PANGAEA.51927
+Strategy A: find cores with absolute abundance data and then related age model
+Strategy B: find age model or relative abundance data compilation and then find absolute abundance
+
+Both are used in this project
+
