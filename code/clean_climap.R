@@ -162,7 +162,7 @@ fwrite(climap_lgm_a, "sp/lgm_climap1_sp_a.csv")
 ## ----------------
 ## Source 3: manually added cores
 ## ----------------
-source("more_climap_cores.R")
+source("code/more_climap_cores.R")
 
 ## -----------------
 ## group spcies
