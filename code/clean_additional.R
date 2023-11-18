@@ -202,8 +202,6 @@ core8_long <- core8 %>% pivot_longer(cols = -c("Latitude", "Longitude", "depth_c
 
 core9_long <- core9 %>% pivot_longer(cols = -c("Latitude", "Longitude", "depth"), names_to = "Species", values_to = "Absolute Abundance")
 
-core10_long <- core10 %>% pivot_longer(cols = -c("Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
-
 ## save to sp
 write_csv(core1_long, "sp/lgm_MD952042_sp_a.csv")
 write_csv(core2_long, "sp/lgm_MD952040_sp_a.csv")
