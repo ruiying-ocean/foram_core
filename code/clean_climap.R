@@ -112,11 +112,18 @@ foram_dat <- foram_dat %>%
   select(-CoreID)
 
 ## calcium carbonate concentrations data which contains the core ID and LGM depth
-lgm_co3 <- read_tsv("raw/CLIMAP/CaCO3_LGM.tab") %>% 
+lgm_co3.a <- read_tsv("raw/CLIMAP/CaCO3_LGM.tab") %>% 
   select(c("Event","Latitude","Longitude","Depth sed [m]",))
 
+lgm_co3.b <- read_tsv("raw/CLIMAP/surface_CaCO3_18k.tab") %>% 
+  select(c("Event","Latitude","Longitude","Depth sed [m]"))
+
+## merge two 
+lgm_co3 <- bind_rows(lgm_co3.a, lgm_co3.b) %>% distinct()
+
 ## merge both
-foram_dat_lgm <- left_join(lgm_co3, foram_dat, by=c("Event"="New_CoreID", "Depth sed [m]"="Depth"))
+foram_dat_lgm <- left_join(lgm_co3, foram_dat, by=c("Event"="New_CoreID", "Depth sed [m]"="Depth"), 
+                                                    relationship = "many-to-many")
 
 ## most cores don't have foram data, or just surface sediment data
 ## we need to drop these, and filter useful LGM samples out
@@ -151,19 +158,15 @@ climap_lgm_a <- climap_lgm_a %>% pivot_longer(cols=c(`O. universa`:`G. truncatul
 
 ## save to csv
 fwrite(climap_lgm_a, "sp/lgm_climap1_sp_a.csv")
+
+## ----------------
+## Source 3: manually added cores
+## ----------------
+source("more_climap_cores.R")
+
 ## -----------------
 ## group spcies
 ## -----------------
 
 climap_lgm_r %>% global_group_and_aggregate(Depth='Depth sed') %>% write_csv(., "fg/lgm_climap1_fg_r.csv")
 climap_lgm_a %>% global_group_and_aggregate(Depth='Depth sed') %>% write_csv(., "fg/lgm_climap1_fg_a.csv")
-
-## climap cores
-included_cores <- c(unique(climap_lgm_a$Event),unique(foram_dat_lgm$Event))
-'A180-15' %in% included_cores
-
-## this file seems to be identical to the source1 (CLIMAP_LGM_foram_data.tab)
-mix1999 <- read_tsv("raw/CLIMAP/Mix_et_al_1999.tab")
-## filter out those not included in climap
-mix1999%>% dplyr::filter(!Event %in% included_cores) %>% pull(Event) %>% unique()
-
