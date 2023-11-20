@@ -33,7 +33,7 @@ margo_remove_columns <- function(data, column_names) {
 
 margo_clean_taxa <- function(data) {
   data <- data %>% dplyr::filter(!is.na(Longitude) & !is.na(Latitude))
-  data <- data %>% margo_remove_columns(c(    
+  data <- data %>% margo_remove_columns(c(
     "Berggrenia pumilio + T. humilis",
     "Globorotalia menardii + tumida",
     "Globigerinoides sacculifer w/o sac",
@@ -61,7 +61,7 @@ margo_clean_taxa <- function(data) {
   data <- data %>% revise_sp_name("Globorotalia theyeri", "Globorotalia eastropacia")
   data <- data %>% revise_sp_name("Globorotalia menardii flexuosa", "Globorotalia cultrata")
   data <- data %>% revise_sp_name("Globorotalia menardii", "Globorotalia cultrata")
-  
+
   return(data)
 }
 
@@ -79,20 +79,19 @@ med <- margo_clean_taxa(med)
 
 ## convert all data into relative abundance
 margo_relative_abundance <- function(data) {
-  
-    perc_data <- data %>% dplyr::filter(`Datatype` == 1)
-    raw_data <- data %>% dplyr::filter(`Datatype` == 2)
-    fake_raw_data <- data %>% dplyr::filter(`Datatype` == 3)
-    
+  perc_data <- data %>% dplyr::filter(`Datatype` == 1)
+  raw_data <- data %>% dplyr::filter(`Datatype` == 2)
+  fake_raw_data <- data %>% dplyr::filter(`Datatype` == 3)
+
   ## 2 convert absolute abundance to relative abundance
   raw_data <- raw_data %>% mutate_at(
     vars(`Orbulina universa`:`Globigerinita uvula`),
     ~ . / `Total Planktics` * 100
-    )
-    
+  )
+
   ## 3 merge together
-    new_data <- rbind(perc_data, raw_data, fake_raw_data)
-    
+  new_data <- rbind(perc_data, raw_data, fake_raw_data)
+
   ## 4 remove the last column, it'll be unuseful
   new_data <- new_data %>% margo_remove_columns(c("Datatype", "Total Planktics"))
   ## 5 convert relative abundance in decimal format
@@ -106,21 +105,20 @@ margo_relative_abundance <- function(data) {
 
 ## convert all data into abs abundance
 margo_abs_abundance <- function(data) {
-  
   raw_data <- data %>% dplyr::filter(`Datatype` == 2)
-    perc_data <- data %>% dplyr::filter(`Datatype` == 1)
-    fake_raw_data <- data %>% dplyr::filter(`Datatype` == 3)
+  perc_data <- data %>% dplyr::filter(`Datatype` == 1)
+  fake_raw_data <- data %>% dplyr::filter(`Datatype` == 3)
 
-    ## convert fake raw data to real raw data
-    fake_raw_data <- fake_raw_data %>% mutate_at(
-      vars(`Orbulina universa`:`Globigerinita uvula`),
-      ~ ceiling(. * `Total Planktics` / 100)
-    )
- 
-  
+  ## convert fake raw data to real raw data
+  fake_raw_data <- fake_raw_data %>% mutate_at(
+    vars(`Orbulina universa`:`Globigerinita uvula`),
+    ~ ceiling(. * `Total Planktics` / 100)
+  )
+
+
   perc_data <- perc_data %>%
-      drop_na(`Total Planktics`)
-    
+    drop_na(`Total Planktics`)
+
   new_data <- rbind(raw_data, fake_raw_data)
 
   new_data <- new_data %>% margo_remove_columns(c("Datatype", "Total Planktics"))
