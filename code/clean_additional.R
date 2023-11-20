@@ -177,13 +177,10 @@ core5 <- core5 %>% revise_sp_name("G. tenella", "G. tenellus")
 core5 <- core5 %>% revise_sp_name("G. ruber", "G. ruber albus") ## G. ruber ruber is not appearing in Pacific
 ## -----------------
 names(core6) <- gsub(" [#]", "", names(core6), fixed = T)
-core6 <- core6 %>% revise_sp_name("N. pachyderma d", "N. incompta")
-core6 <- core6 %>% revise_sp_name("N. pachyderma s", "N. pachyderma")
+core6 <- core6 %>% clean_species()
 ## -----------------
 names(core7) <- gsub(" [#] (Counting >150 µm fraction)", "", names(core7), fixed = T)
-core7 <- core7 %>% revise_sp_name("N. pachyderma d", "N. incompta")
-core7 <- core7 %>% revise_sp_name("N. pachyderma s", "N. pachyderma")
-core7 <- core7 %>% revise_sp_name("G. quinqueloba", "T. quinqueloba")
+core7 <- core7 %>% clean_species()
 core7 <- core7 %>% revise_sp_name("G. umbilicata", "G. bulloides")
 ## -----------------
 core8 <- core8 %>% revise_sp_name("n.pachy", "N. pachyderma")
