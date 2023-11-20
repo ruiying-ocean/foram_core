@@ -50,7 +50,7 @@ ELT48.027 <- clean_species(ELT48.027) %>%
 ## ------------------
 
 ELT45.029 <- read_tsv("raw/CLIMAP/manually_downloaded/ELT45.029-PC.tab") %>%
-  mutate(Event = "ELT48.027-PC", Latitude = -44.877000, Longitude = 106.518000, .before = 1)
+  mutate(Event = "ELT48.029-PC", Latitude = -44.877000, Longitude = 106.518000, .before = 1)
 
 ELT45.029 <- ELT45.029 %>% select(1:4, 7, 15:33)
 names(ELT45.029) <- gsub(" [%]", "", names(ELT45.029), fixed = T)
