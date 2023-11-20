@@ -24,18 +24,18 @@ forcens[, (species_idx) := lapply(.SD, nafill, fill=0), .SDcols = species_idx]
 colnames(forcens) <- gsub("_", " ", colnames(forcens), fixed = TRUE)
 
 ## rename species
-forcens <- forcens %>% replace_column_name("Globigerinoides white", "Globigerinoides ruber albus")
-forcens <- forcens %>% replace_column_name("Globorotalia theyeri", "Globorotalia eastropacia")
-forcens <- forcens %>% replace_column_name("Globigerinoides ruber", "Globigerinoides ruber ruber")
-forcens <- forcens %>% replace_column_name("Globorotalia menardii", "Globorotalia cultrata")
-forcens <- forcens %>% replace_column_name("Tenuitella iota", "Tenuitellita iota")
-
-## ignore the returned G. inflata with different genus name
-## it will be the same when use abbreviation
-find_missing_species(symbiosis_tbl$Species,(names(forcens)[22:62]))
+forcens <- forcens %>% revise_sp_name("Globigerinoides white", "Globigerinoides ruber albus")
+forcens <- forcens %>% revise_sp_name("Globorotalia theyeri", "Globorotalia eastropacia")
+forcens <- forcens %>% revise_sp_name("Globigerinoides ruber", "Globigerinoides ruber ruber")
+forcens <- forcens %>% revise_sp_name("Globorotalia menardii", "Globorotalia cultrata")
+forcens <- forcens %>% revise_sp_name("Tenuitella iota", "Tenuitellita iota")
 
 ## using abbreviation
 names(forcens)[22:62] <- map_vec(names(forcens)[22:62],species_abbrev)
+
+## ignore the returned G. inflata with different genus name
+## it will be the same when use abbreviation
+find_missing_species(symbiosis_tbl$short_name,(names(forcens)[22:62]))
 
 ## -----------------------------------------
 ## convert relative abundance to absolute abundance

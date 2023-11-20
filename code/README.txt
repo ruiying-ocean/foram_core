@@ -8,4 +8,18 @@ Data Clean
 Others
 Taxonomy: Brummer and Kucera (2022)
 Relative abundance: all in decimal format (0-1)
-NA: replace NA with 0 (absence is still useful information)
+
+G. ruber total
+
+P/D intergrades and G. pachyderma -> N. incompta
+G. truncatulinoides sinistral and dextral -> G. truncatulinoides
+T. quinqueloba sinistral and dextral -> T. quinqueloba
+N. pachyderma s -> N. pachyderma
+N. pachyderma d -> N. incompta
+G. ruber pink -> G. ruber ruber
+G. ruber white -> G. ruber albus
+G. flexuosa, G. menardii, G. menardii flexuos -> G. cultrata (as ForCenS for consistency)
+G. menardii tumida -> G. tumida
+T. sacculifer sac and without sac, also T. trilobus -> T. sacculifer
+G. theyeri  -> G. eastropacia
+G. brady -> G. uvula

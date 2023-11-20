@@ -19,11 +19,12 @@ wdf <- ldf %>%
     names_from = "Species",
     values_fill = NA, 
     values_fn = list
-  ) %>%
-  unnest(cols = c(`O. universa`:`G. adamsi`))
+  )
 
+wdf <- wdf %>% unnest(cols=`O. universa`:`G. uvula`)
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
+
 wdf %>% fwrite("tidy/lgm_sp_r_tidy.csv")
 
 #---------------------------------------------------
@@ -51,7 +52,7 @@ wdf <- ldf %>%
   )
 
 wdf <- wdf  %>% unnest(`G. bulloides`:`G. elongatus`)
-
+'Age [ka BP]' %in%ldf[[12]]
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
 
@@ -120,13 +121,13 @@ wdf <- ldf %>% pivot_wider(
 
 ## handle with the case of different length of vectors
 ## delete it first
-tmp1 <- wdf[521,]
-wdf <- wdf[-521,]
+tmp1 <- wdf[355,]
+wdf <- wdf[-355,]
 
-tmp2 <- wdf[536,]
-wdf <- wdf[-536,]
-
+tmp2 <- wdf[370,]
+wdf <- wdf[-370,]
 wdf <- wdf %>% unnest(cols = c(`symbiont-barren non-spinose`:`symbiont-facultative spinose`))
+
 
 ## putting back the deleted rows
 ## the number is based on calculation that all groups sum up to 1

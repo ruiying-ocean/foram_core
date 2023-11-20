@@ -1,9 +1,7 @@
 Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
-44.36,-26.543333,0.555,Age [ka BP],18.68
 44.36,-26.543333,0.555,G. eastropacia,0
 44.36,-26.543333,0.555,G. bulloides,62
 44.36,-26.543333,0.555,G. calida,0
-44.36,-26.543333,0.555,G. cavernula,0
 44.36,-26.543333,0.555,G. conglobatus,0
 44.36,-26.543333,0.555,G. crassaformis,0
 44.36,-26.543333,0.555,S. dehiscens,0
@@ -28,13 +26,11 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 44.36,-26.543333,0.555,G. tumida,0
 44.36,-26.543333,0.555,O. universa,0
 44.36,-26.543333,0.555,G. uvula,0
-44.36,-26.543333,0.555,N. incompta,29
+44.36,-26.543333,0.555,N. incompta,66
 44.36,-26.543333,0.555,T. sacculifer,0
-44.36,-26.543333,0.605,Age [ka BP],19.99
 44.36,-26.543333,0.605,G. eastropacia,0
 44.36,-26.543333,0.605,G. bulloides,61
 44.36,-26.543333,0.605,G. calida,0
-44.36,-26.543333,0.605,G. cavernula,0
 44.36,-26.543333,0.605,G. conglobatus,0
 44.36,-26.543333,0.605,G. crassaformis,0
 44.36,-26.543333,0.605,S. dehiscens,0
@@ -59,13 +55,11 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 44.36,-26.543333,0.605,G. tumida,0
 44.36,-26.543333,0.605,O. universa,0
 44.36,-26.543333,0.605,G. uvula,0
-44.36,-26.543333,0.605,N. incompta,25
+44.36,-26.543333,0.605,N. incompta,51
 44.36,-26.543333,0.605,T. sacculifer,0
-44.36,-26.543333,0.665,Age [ka BP],21.56
 44.36,-26.543333,0.665,G. eastropacia,0
 44.36,-26.543333,0.665,G. bulloides,93
 44.36,-26.543333,0.665,G. calida,0
-44.36,-26.543333,0.665,G. cavernula,0
 44.36,-26.543333,0.665,G. conglobatus,0
 44.36,-26.543333,0.665,G. crassaformis,0
 44.36,-26.543333,0.665,S. dehiscens,0
@@ -90,13 +84,11 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 44.36,-26.543333,0.665,G. tumida,0
 44.36,-26.543333,0.665,O. universa,0
 44.36,-26.543333,0.665,G. uvula,0
-44.36,-26.543333,0.665,N. incompta,26
+44.36,-26.543333,0.665,N. incompta,64
 44.36,-26.543333,0.665,T. sacculifer,0
-44.36,-26.543333,0.685,Age [ka BP],22.08
 44.36,-26.543333,0.685,G. eastropacia,0
 44.36,-26.543333,0.685,G. bulloides,51
 44.36,-26.543333,0.685,G. calida,0
-44.36,-26.543333,0.685,G. cavernula,0
 44.36,-26.543333,0.685,G. conglobatus,0
 44.36,-26.543333,0.685,G. crassaformis,0
 44.36,-26.543333,0.685,S. dehiscens,0
@@ -121,13 +113,11 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 44.36,-26.543333,0.685,G. tumida,0
 44.36,-26.543333,0.685,O. universa,0
 44.36,-26.543333,0.685,G. uvula,0
-44.36,-26.543333,0.685,N. incompta,26
+44.36,-26.543333,0.685,N. incompta,57
 44.36,-26.543333,0.685,T. sacculifer,0
-44.36,-26.543333,0.705,Age [ka BP],22.6
 44.36,-26.543333,0.705,G. eastropacia,0
 44.36,-26.543333,0.705,G. bulloides,78
 44.36,-26.543333,0.705,G. calida,0
-44.36,-26.543333,0.705,G. cavernula,0
 44.36,-26.543333,0.705,G. conglobatus,0
 44.36,-26.543333,0.705,G. crassaformis,0
 44.36,-26.543333,0.705,S. dehiscens,0
@@ -152,13 +142,11 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 44.36,-26.543333,0.705,G. tumida,0
 44.36,-26.543333,0.705,O. universa,0
 44.36,-26.543333,0.705,G. uvula,0
-44.36,-26.543333,0.705,N. incompta,30
+44.36,-26.543333,0.705,N. incompta,74
 44.36,-26.543333,0.705,T. sacculifer,0
-44.36,-26.543333,0.725,Age [ka BP],23.13
 44.36,-26.543333,0.725,G. eastropacia,0
 44.36,-26.543333,0.725,G. bulloides,69
 44.36,-26.543333,0.725,G. calida,0
-44.36,-26.543333,0.725,G. cavernula,0
 44.36,-26.543333,0.725,G. conglobatus,0
 44.36,-26.543333,0.725,G. crassaformis,0
 44.36,-26.543333,0.725,S. dehiscens,0
@@ -183,5 +171,5 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 44.36,-26.543333,0.725,G. tumida,0
 44.36,-26.543333,0.725,O. universa,0
 44.36,-26.543333,0.725,G. uvula,0
-44.36,-26.543333,0.725,N. incompta,43
+44.36,-26.543333,0.725,N. incompta,96
 44.36,-26.543333,0.725,T. sacculifer,0

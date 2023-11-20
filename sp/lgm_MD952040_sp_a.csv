@@ -6,7 +6,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.44,G. tenellus,0
 40.581833,-9.861167,3.44,T. sacculifer,0
 40.581833,-9.861167,3.44,S. dehiscens,0
-40.581833,-9.861167,3.44,G. siphonifera,15
+40.581833,-9.861167,3.44,G. eastropacia,15
 40.581833,-9.861167,3.44,G. calida,0
 40.581833,-9.861167,3.44,G. bulloides,40
 40.581833,-9.861167,3.44,G. falconensis,26
@@ -14,7 +14,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.44,G. rubescens,0
 40.581833,-9.861167,3.44,T. quinqueloba,43
 40.581833,-9.861167,3.44,N. pachyderma,21
-40.581833,-9.861167,3.44,N. incompta,138
+40.581833,-9.861167,3.44,N. incompta,143
 40.581833,-9.861167,3.44,N. dutertrei,0
 40.581833,-9.861167,3.44,P. obliquiloculata,0
 40.581833,-9.861167,3.44,G. inflata,83
@@ -36,7 +36,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.47,G. tenellus,1
 40.581833,-9.861167,3.47,T. sacculifer,0
 40.581833,-9.861167,3.47,S. dehiscens,0
-40.581833,-9.861167,3.47,G. siphonifera,22
+40.581833,-9.861167,3.47,G. eastropacia,22
 40.581833,-9.861167,3.47,G. calida,0
 40.581833,-9.861167,3.47,G. bulloides,64
 40.581833,-9.861167,3.47,G. falconensis,40
@@ -44,7 +44,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.47,G. rubescens,0
 40.581833,-9.861167,3.47,T. quinqueloba,67
 40.581833,-9.861167,3.47,N. pachyderma,24
-40.581833,-9.861167,3.47,N. incompta,237
+40.581833,-9.861167,3.47,N. incompta,246
 40.581833,-9.861167,3.47,N. dutertrei,0
 40.581833,-9.861167,3.47,P. obliquiloculata,0
 40.581833,-9.861167,3.47,G. inflata,85
@@ -66,7 +66,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.5,G. tenellus,0
 40.581833,-9.861167,3.5,T. sacculifer,0
 40.581833,-9.861167,3.5,S. dehiscens,0
-40.581833,-9.861167,3.5,G. siphonifera,11
+40.581833,-9.861167,3.5,G. eastropacia,11
 40.581833,-9.861167,3.5,G. calida,0
 40.581833,-9.861167,3.5,G. bulloides,44
 40.581833,-9.861167,3.5,G. falconensis,28
@@ -74,7 +74,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.5,G. rubescens,0
 40.581833,-9.861167,3.5,T. quinqueloba,33
 40.581833,-9.861167,3.5,N. pachyderma,8
-40.581833,-9.861167,3.5,N. incompta,104
+40.581833,-9.861167,3.5,N. incompta,106
 40.581833,-9.861167,3.5,N. dutertrei,0
 40.581833,-9.861167,3.5,P. obliquiloculata,0
 40.581833,-9.861167,3.5,G. inflata,35
@@ -96,7 +96,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.53,G. tenellus,1
 40.581833,-9.861167,3.53,T. sacculifer,0
 40.581833,-9.861167,3.53,S. dehiscens,0
-40.581833,-9.861167,3.53,G. siphonifera,22
+40.581833,-9.861167,3.53,G. eastropacia,22
 40.581833,-9.861167,3.53,G. calida,0
 40.581833,-9.861167,3.53,G. bulloides,75
 40.581833,-9.861167,3.53,G. falconensis,31
@@ -104,7 +104,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.53,G. rubescens,0
 40.581833,-9.861167,3.53,T. quinqueloba,44
 40.581833,-9.861167,3.53,N. pachyderma,16
-40.581833,-9.861167,3.53,N. incompta,147
+40.581833,-9.861167,3.53,N. incompta,152
 40.581833,-9.861167,3.53,N. dutertrei,0
 40.581833,-9.861167,3.53,P. obliquiloculata,0
 40.581833,-9.861167,3.53,G. inflata,58
@@ -126,7 +126,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.56,G. tenellus,1
 40.581833,-9.861167,3.56,T. sacculifer,0
 40.581833,-9.861167,3.56,S. dehiscens,0
-40.581833,-9.861167,3.56,G. siphonifera,28
+40.581833,-9.861167,3.56,G. eastropacia,28
 40.581833,-9.861167,3.56,G. calida,0
 40.581833,-9.861167,3.56,G. bulloides,87
 40.581833,-9.861167,3.56,G. falconensis,24
@@ -134,7 +134,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.56,G. rubescens,0
 40.581833,-9.861167,3.56,T. quinqueloba,75
 40.581833,-9.861167,3.56,N. pachyderma,35
-40.581833,-9.861167,3.56,N. incompta,257
+40.581833,-9.861167,3.56,N. incompta,264
 40.581833,-9.861167,3.56,N. dutertrei,0
 40.581833,-9.861167,3.56,P. obliquiloculata,0
 40.581833,-9.861167,3.56,G. inflata,146
@@ -156,7 +156,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.59,G. tenellus,1
 40.581833,-9.861167,3.59,T. sacculifer,0
 40.581833,-9.861167,3.59,S. dehiscens,0
-40.581833,-9.861167,3.59,G. siphonifera,5
+40.581833,-9.861167,3.59,G. eastropacia,5
 40.581833,-9.861167,3.59,G. calida,0
 40.581833,-9.861167,3.59,G. bulloides,60
 40.581833,-9.861167,3.59,G. falconensis,33
@@ -164,7 +164,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.59,G. rubescens,0
 40.581833,-9.861167,3.59,T. quinqueloba,42
 40.581833,-9.861167,3.59,N. pachyderma,12
-40.581833,-9.861167,3.59,N. incompta,157
+40.581833,-9.861167,3.59,N. incompta,164
 40.581833,-9.861167,3.59,N. dutertrei,0
 40.581833,-9.861167,3.59,P. obliquiloculata,0
 40.581833,-9.861167,3.59,G. inflata,53
@@ -186,7 +186,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.62,G. tenellus,1
 40.581833,-9.861167,3.62,T. sacculifer,0
 40.581833,-9.861167,3.62,S. dehiscens,0
-40.581833,-9.861167,3.62,G. siphonifera,9
+40.581833,-9.861167,3.62,G. eastropacia,9
 40.581833,-9.861167,3.62,G. calida,0
 40.581833,-9.861167,3.62,G. bulloides,60
 40.581833,-9.861167,3.62,G. falconensis,17
@@ -194,7 +194,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.62,G. rubescens,0
 40.581833,-9.861167,3.62,T. quinqueloba,33
 40.581833,-9.861167,3.62,N. pachyderma,10
-40.581833,-9.861167,3.62,N. incompta,98
+40.581833,-9.861167,3.62,N. incompta,102
 40.581833,-9.861167,3.62,N. dutertrei,0
 40.581833,-9.861167,3.62,P. obliquiloculata,0
 40.581833,-9.861167,3.62,G. inflata,46
@@ -216,7 +216,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.65,G. tenellus,0
 40.581833,-9.861167,3.65,T. sacculifer,0
 40.581833,-9.861167,3.65,S. dehiscens,0
-40.581833,-9.861167,3.65,G. siphonifera,14
+40.581833,-9.861167,3.65,G. eastropacia,14
 40.581833,-9.861167,3.65,G. calida,0
 40.581833,-9.861167,3.65,G. bulloides,44
 40.581833,-9.861167,3.65,G. falconensis,19
@@ -224,7 +224,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.65,G. rubescens,0
 40.581833,-9.861167,3.65,T. quinqueloba,35
 40.581833,-9.861167,3.65,N. pachyderma,11
-40.581833,-9.861167,3.65,N. incompta,108
+40.581833,-9.861167,3.65,N. incompta,115
 40.581833,-9.861167,3.65,N. dutertrei,0
 40.581833,-9.861167,3.65,P. obliquiloculata,0
 40.581833,-9.861167,3.65,G. inflata,45
@@ -246,7 +246,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.68,G. tenellus,0
 40.581833,-9.861167,3.68,T. sacculifer,0
 40.581833,-9.861167,3.68,S. dehiscens,0
-40.581833,-9.861167,3.68,G. siphonifera,17
+40.581833,-9.861167,3.68,G. eastropacia,17
 40.581833,-9.861167,3.68,G. calida,0
 40.581833,-9.861167,3.68,G. bulloides,78
 40.581833,-9.861167,3.68,G. falconensis,27
@@ -254,7 +254,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.68,G. rubescens,0
 40.581833,-9.861167,3.68,T. quinqueloba,25
 40.581833,-9.861167,3.68,N. pachyderma,17
-40.581833,-9.861167,3.68,N. incompta,132
+40.581833,-9.861167,3.68,N. incompta,134
 40.581833,-9.861167,3.68,N. dutertrei,0
 40.581833,-9.861167,3.68,P. obliquiloculata,0
 40.581833,-9.861167,3.68,G. inflata,60
@@ -276,7 +276,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.71,G. tenellus,0
 40.581833,-9.861167,3.71,T. sacculifer,0
 40.581833,-9.861167,3.71,S. dehiscens,0
-40.581833,-9.861167,3.71,G. siphonifera,3
+40.581833,-9.861167,3.71,G. eastropacia,3
 40.581833,-9.861167,3.71,G. calida,0
 40.581833,-9.861167,3.71,G. bulloides,69
 40.581833,-9.861167,3.71,G. falconensis,20
@@ -284,7 +284,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.71,G. rubescens,0
 40.581833,-9.861167,3.71,T. quinqueloba,27
 40.581833,-9.861167,3.71,N. pachyderma,7
-40.581833,-9.861167,3.71,N. incompta,114
+40.581833,-9.861167,3.71,N. incompta,119
 40.581833,-9.861167,3.71,N. dutertrei,0
 40.581833,-9.861167,3.71,P. obliquiloculata,0
 40.581833,-9.861167,3.71,G. inflata,52
@@ -306,7 +306,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.74,G. tenellus,0
 40.581833,-9.861167,3.74,T. sacculifer,0
 40.581833,-9.861167,3.74,S. dehiscens,0
-40.581833,-9.861167,3.74,G. siphonifera,8
+40.581833,-9.861167,3.74,G. eastropacia,8
 40.581833,-9.861167,3.74,G. calida,0
 40.581833,-9.861167,3.74,G. bulloides,49
 40.581833,-9.861167,3.74,G. falconensis,23
@@ -314,7 +314,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.74,G. rubescens,0
 40.581833,-9.861167,3.74,T. quinqueloba,44
 40.581833,-9.861167,3.74,N. pachyderma,15
-40.581833,-9.861167,3.74,N. incompta,135
+40.581833,-9.861167,3.74,N. incompta,138
 40.581833,-9.861167,3.74,N. dutertrei,0
 40.581833,-9.861167,3.74,P. obliquiloculata,0
 40.581833,-9.861167,3.74,G. inflata,53
@@ -336,7 +336,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.77,G. tenellus,1
 40.581833,-9.861167,3.77,T. sacculifer,0
 40.581833,-9.861167,3.77,S. dehiscens,0
-40.581833,-9.861167,3.77,G. siphonifera,6
+40.581833,-9.861167,3.77,G. eastropacia,6
 40.581833,-9.861167,3.77,G. calida,0
 40.581833,-9.861167,3.77,G. bulloides,64
 40.581833,-9.861167,3.77,G. falconensis,33
@@ -344,7 +344,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.77,G. rubescens,0
 40.581833,-9.861167,3.77,T. quinqueloba,37
 40.581833,-9.861167,3.77,N. pachyderma,23
-40.581833,-9.861167,3.77,N. incompta,160
+40.581833,-9.861167,3.77,N. incompta,162
 40.581833,-9.861167,3.77,N. dutertrei,0
 40.581833,-9.861167,3.77,P. obliquiloculata,0
 40.581833,-9.861167,3.77,G. inflata,80
@@ -366,7 +366,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.8,G. tenellus,0
 40.581833,-9.861167,3.8,T. sacculifer,0
 40.581833,-9.861167,3.8,S. dehiscens,0
-40.581833,-9.861167,3.8,G. siphonifera,10
+40.581833,-9.861167,3.8,G. eastropacia,10
 40.581833,-9.861167,3.8,G. calida,0
 40.581833,-9.861167,3.8,G. bulloides,85
 40.581833,-9.861167,3.8,G. falconensis,40
@@ -374,7 +374,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.8,G. rubescens,0
 40.581833,-9.861167,3.8,T. quinqueloba,59
 40.581833,-9.861167,3.8,N. pachyderma,19
-40.581833,-9.861167,3.8,N. incompta,153
+40.581833,-9.861167,3.8,N. incompta,161
 40.581833,-9.861167,3.8,N. dutertrei,0
 40.581833,-9.861167,3.8,P. obliquiloculata,0
 40.581833,-9.861167,3.8,G. inflata,68
@@ -396,7 +396,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.83,G. tenellus,0
 40.581833,-9.861167,3.83,T. sacculifer,0
 40.581833,-9.861167,3.83,S. dehiscens,0
-40.581833,-9.861167,3.83,G. siphonifera,11
+40.581833,-9.861167,3.83,G. eastropacia,11
 40.581833,-9.861167,3.83,G. calida,0
 40.581833,-9.861167,3.83,G. bulloides,92
 40.581833,-9.861167,3.83,G. falconensis,32
@@ -404,7 +404,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.83,G. rubescens,0
 40.581833,-9.861167,3.83,T. quinqueloba,47
 40.581833,-9.861167,3.83,N. pachyderma,31
-40.581833,-9.861167,3.83,N. incompta,152
+40.581833,-9.861167,3.83,N. incompta,160
 40.581833,-9.861167,3.83,N. dutertrei,0
 40.581833,-9.861167,3.83,P. obliquiloculata,0
 40.581833,-9.861167,3.83,G. inflata,97
@@ -426,7 +426,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.86,G. tenellus,0
 40.581833,-9.861167,3.86,T. sacculifer,0
 40.581833,-9.861167,3.86,S. dehiscens,0
-40.581833,-9.861167,3.86,G. siphonifera,5
+40.581833,-9.861167,3.86,G. eastropacia,5
 40.581833,-9.861167,3.86,G. calida,0
 40.581833,-9.861167,3.86,G. bulloides,60
 40.581833,-9.861167,3.86,G. falconensis,22
@@ -434,7 +434,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.86,G. rubescens,0
 40.581833,-9.861167,3.86,T. quinqueloba,57
 40.581833,-9.861167,3.86,N. pachyderma,26
-40.581833,-9.861167,3.86,N. incompta,96
+40.581833,-9.861167,3.86,N. incompta,102
 40.581833,-9.861167,3.86,N. dutertrei,0
 40.581833,-9.861167,3.86,P. obliquiloculata,0
 40.581833,-9.861167,3.86,G. inflata,50
@@ -456,7 +456,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.89,G. tenellus,0
 40.581833,-9.861167,3.89,T. sacculifer,0
 40.581833,-9.861167,3.89,S. dehiscens,0
-40.581833,-9.861167,3.89,G. siphonifera,9
+40.581833,-9.861167,3.89,G. eastropacia,9
 40.581833,-9.861167,3.89,G. calida,0
 40.581833,-9.861167,3.89,G. bulloides,98
 40.581833,-9.861167,3.89,G. falconensis,37
@@ -464,7 +464,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.89,G. rubescens,0
 40.581833,-9.861167,3.89,T. quinqueloba,54
 40.581833,-9.861167,3.89,N. pachyderma,34
-40.581833,-9.861167,3.89,N. incompta,183
+40.581833,-9.861167,3.89,N. incompta,190
 40.581833,-9.861167,3.89,N. dutertrei,0
 40.581833,-9.861167,3.89,P. obliquiloculata,0
 40.581833,-9.861167,3.89,G. inflata,75
@@ -486,7 +486,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.92,G. tenellus,0
 40.581833,-9.861167,3.92,T. sacculifer,0
 40.581833,-9.861167,3.92,S. dehiscens,0
-40.581833,-9.861167,3.92,G. siphonifera,7
+40.581833,-9.861167,3.92,G. eastropacia,7
 40.581833,-9.861167,3.92,G. calida,0
 40.581833,-9.861167,3.92,G. bulloides,70
 40.581833,-9.861167,3.92,G. falconensis,43
@@ -494,7 +494,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.92,G. rubescens,0
 40.581833,-9.861167,3.92,T. quinqueloba,53
 40.581833,-9.861167,3.92,N. pachyderma,40
-40.581833,-9.861167,3.92,N. incompta,178
+40.581833,-9.861167,3.92,N. incompta,184
 40.581833,-9.861167,3.92,N. dutertrei,0
 40.581833,-9.861167,3.92,P. obliquiloculata,0
 40.581833,-9.861167,3.92,G. inflata,71
@@ -516,7 +516,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.95,G. tenellus,0
 40.581833,-9.861167,3.95,T. sacculifer,0
 40.581833,-9.861167,3.95,S. dehiscens,0
-40.581833,-9.861167,3.95,G. siphonifera,3
+40.581833,-9.861167,3.95,G. eastropacia,3
 40.581833,-9.861167,3.95,G. calida,0
 40.581833,-9.861167,3.95,G. bulloides,63
 40.581833,-9.861167,3.95,G. falconensis,34
@@ -524,7 +524,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.95,G. rubescens,1
 40.581833,-9.861167,3.95,T. quinqueloba,23
 40.581833,-9.861167,3.95,N. pachyderma,30
-40.581833,-9.861167,3.95,N. incompta,130
+40.581833,-9.861167,3.95,N. incompta,134
 40.581833,-9.861167,3.95,N. dutertrei,0
 40.581833,-9.861167,3.95,P. obliquiloculata,0
 40.581833,-9.861167,3.95,G. inflata,95
@@ -546,7 +546,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.98,G. tenellus,0
 40.581833,-9.861167,3.98,T. sacculifer,0
 40.581833,-9.861167,3.98,S. dehiscens,0
-40.581833,-9.861167,3.98,G. siphonifera,4
+40.581833,-9.861167,3.98,G. eastropacia,4
 40.581833,-9.861167,3.98,G. calida,0
 40.581833,-9.861167,3.98,G. bulloides,49
 40.581833,-9.861167,3.98,G. falconensis,35
@@ -554,7 +554,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,3.98,G. rubescens,0
 40.581833,-9.861167,3.98,T. quinqueloba,40
 40.581833,-9.861167,3.98,N. pachyderma,30
-40.581833,-9.861167,3.98,N. incompta,88
+40.581833,-9.861167,3.98,N. incompta,96
 40.581833,-9.861167,3.98,N. dutertrei,0
 40.581833,-9.861167,3.98,P. obliquiloculata,0
 40.581833,-9.861167,3.98,G. inflata,68
@@ -576,7 +576,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.01,G. tenellus,0
 40.581833,-9.861167,4.01,T. sacculifer,0
 40.581833,-9.861167,4.01,S. dehiscens,0
-40.581833,-9.861167,4.01,G. siphonifera,4
+40.581833,-9.861167,4.01,G. eastropacia,4
 40.581833,-9.861167,4.01,G. calida,0
 40.581833,-9.861167,4.01,G. bulloides,89
 40.581833,-9.861167,4.01,G. falconensis,30
@@ -584,7 +584,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.01,G. rubescens,0
 40.581833,-9.861167,4.01,T. quinqueloba,12
 40.581833,-9.861167,4.01,N. pachyderma,10
-40.581833,-9.861167,4.01,N. incompta,79
+40.581833,-9.861167,4.01,N. incompta,88
 40.581833,-9.861167,4.01,N. dutertrei,0
 40.581833,-9.861167,4.01,P. obliquiloculata,0
 40.581833,-9.861167,4.01,G. inflata,32
@@ -606,7 +606,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.04,G. tenellus,0
 40.581833,-9.861167,4.04,T. sacculifer,0
 40.581833,-9.861167,4.04,S. dehiscens,0
-40.581833,-9.861167,4.04,G. siphonifera,6
+40.581833,-9.861167,4.04,G. eastropacia,6
 40.581833,-9.861167,4.04,G. calida,0
 40.581833,-9.861167,4.04,G. bulloides,114
 40.581833,-9.861167,4.04,G. falconensis,42
@@ -614,7 +614,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.04,G. rubescens,0
 40.581833,-9.861167,4.04,T. quinqueloba,86
 40.581833,-9.861167,4.04,N. pachyderma,55
-40.581833,-9.861167,4.04,N. incompta,320
+40.581833,-9.861167,4.04,N. incompta,331
 40.581833,-9.861167,4.04,N. dutertrei,0
 40.581833,-9.861167,4.04,P. obliquiloculata,0
 40.581833,-9.861167,4.04,G. inflata,110
@@ -636,7 +636,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.07,G. tenellus,0
 40.581833,-9.861167,4.07,T. sacculifer,0
 40.581833,-9.861167,4.07,S. dehiscens,0
-40.581833,-9.861167,4.07,G. siphonifera,5
+40.581833,-9.861167,4.07,G. eastropacia,5
 40.581833,-9.861167,4.07,G. calida,0
 40.581833,-9.861167,4.07,G. bulloides,85
 40.581833,-9.861167,4.07,G. falconensis,24
@@ -644,7 +644,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.07,G. rubescens,0
 40.581833,-9.861167,4.07,T. quinqueloba,31
 40.581833,-9.861167,4.07,N. pachyderma,18
-40.581833,-9.861167,4.07,N. incompta,166
+40.581833,-9.861167,4.07,N. incompta,177
 40.581833,-9.861167,4.07,N. dutertrei,0
 40.581833,-9.861167,4.07,P. obliquiloculata,0
 40.581833,-9.861167,4.07,G. inflata,60
@@ -666,7 +666,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.1,G. tenellus,0
 40.581833,-9.861167,4.1,T. sacculifer,0
 40.581833,-9.861167,4.1,S. dehiscens,0
-40.581833,-9.861167,4.1,G. siphonifera,4
+40.581833,-9.861167,4.1,G. eastropacia,4
 40.581833,-9.861167,4.1,G. calida,0
 40.581833,-9.861167,4.1,G. bulloides,76
 40.581833,-9.861167,4.1,G. falconensis,20
@@ -674,7 +674,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.1,G. rubescens,0
 40.581833,-9.861167,4.1,T. quinqueloba,36
 40.581833,-9.861167,4.1,N. pachyderma,16
-40.581833,-9.861167,4.1,N. incompta,126
+40.581833,-9.861167,4.1,N. incompta,134
 40.581833,-9.861167,4.1,N. dutertrei,0
 40.581833,-9.861167,4.1,P. obliquiloculata,0
 40.581833,-9.861167,4.1,G. inflata,35
@@ -696,7 +696,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.13,G. tenellus,0
 40.581833,-9.861167,4.13,T. sacculifer,0
 40.581833,-9.861167,4.13,S. dehiscens,0
-40.581833,-9.861167,4.13,G. siphonifera,5
+40.581833,-9.861167,4.13,G. eastropacia,5
 40.581833,-9.861167,4.13,G. calida,0
 40.581833,-9.861167,4.13,G. bulloides,83
 40.581833,-9.861167,4.13,G. falconensis,16
@@ -704,7 +704,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.13,G. rubescens,0
 40.581833,-9.861167,4.13,T. quinqueloba,34
 40.581833,-9.861167,4.13,N. pachyderma,8
-40.581833,-9.861167,4.13,N. incompta,160
+40.581833,-9.861167,4.13,N. incompta,167
 40.581833,-9.861167,4.13,N. dutertrei,0
 40.581833,-9.861167,4.13,P. obliquiloculata,0
 40.581833,-9.861167,4.13,G. inflata,43
@@ -726,7 +726,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.16,G. tenellus,0
 40.581833,-9.861167,4.16,T. sacculifer,0
 40.581833,-9.861167,4.16,S. dehiscens,0
-40.581833,-9.861167,4.16,G. siphonifera,4
+40.581833,-9.861167,4.16,G. eastropacia,4
 40.581833,-9.861167,4.16,G. calida,0
 40.581833,-9.861167,4.16,G. bulloides,75
 40.581833,-9.861167,4.16,G. falconensis,17
@@ -734,7 +734,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.16,G. rubescens,0
 40.581833,-9.861167,4.16,T. quinqueloba,43
 40.581833,-9.861167,4.16,N. pachyderma,11
-40.581833,-9.861167,4.16,N. incompta,178
+40.581833,-9.861167,4.16,N. incompta,183
 40.581833,-9.861167,4.16,N. dutertrei,0
 40.581833,-9.861167,4.16,P. obliquiloculata,0
 40.581833,-9.861167,4.16,G. inflata,36
@@ -756,7 +756,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.19,G. tenellus,0
 40.581833,-9.861167,4.19,T. sacculifer,0
 40.581833,-9.861167,4.19,S. dehiscens,0
-40.581833,-9.861167,4.19,G. siphonifera,4
+40.581833,-9.861167,4.19,G. eastropacia,4
 40.581833,-9.861167,4.19,G. calida,0
 40.581833,-9.861167,4.19,G. bulloides,74
 40.581833,-9.861167,4.19,G. falconensis,15
@@ -764,7 +764,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.19,G. rubescens,0
 40.581833,-9.861167,4.19,T. quinqueloba,28
 40.581833,-9.861167,4.19,N. pachyderma,5
-40.581833,-9.861167,4.19,N. incompta,92
+40.581833,-9.861167,4.19,N. incompta,97
 40.581833,-9.861167,4.19,N. dutertrei,0
 40.581833,-9.861167,4.19,P. obliquiloculata,0
 40.581833,-9.861167,4.19,G. inflata,35
@@ -786,7 +786,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.22,G. tenellus,0
 40.581833,-9.861167,4.22,T. sacculifer,0
 40.581833,-9.861167,4.22,S. dehiscens,0
-40.581833,-9.861167,4.22,G. siphonifera,11
+40.581833,-9.861167,4.22,G. eastropacia,11
 40.581833,-9.861167,4.22,G. calida,0
 40.581833,-9.861167,4.22,G. bulloides,84
 40.581833,-9.861167,4.22,G. falconensis,36
@@ -794,7 +794,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.22,G. rubescens,0
 40.581833,-9.861167,4.22,T. quinqueloba,57
 40.581833,-9.861167,4.22,N. pachyderma,15
-40.581833,-9.861167,4.22,N. incompta,169
+40.581833,-9.861167,4.22,N. incompta,183
 40.581833,-9.861167,4.22,N. dutertrei,0
 40.581833,-9.861167,4.22,P. obliquiloculata,0
 40.581833,-9.861167,4.22,G. inflata,45
@@ -816,7 +816,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.25,G. tenellus,1
 40.581833,-9.861167,4.25,T. sacculifer,0
 40.581833,-9.861167,4.25,S. dehiscens,0
-40.581833,-9.861167,4.25,G. siphonifera,2
+40.581833,-9.861167,4.25,G. eastropacia,2
 40.581833,-9.861167,4.25,G. calida,0
 40.581833,-9.861167,4.25,G. bulloides,49
 40.581833,-9.861167,4.25,G. falconensis,11
@@ -824,7 +824,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.25,G. rubescens,0
 40.581833,-9.861167,4.25,T. quinqueloba,60
 40.581833,-9.861167,4.25,N. pachyderma,11
-40.581833,-9.861167,4.25,N. incompta,118
+40.581833,-9.861167,4.25,N. incompta,122
 40.581833,-9.861167,4.25,N. dutertrei,0
 40.581833,-9.861167,4.25,P. obliquiloculata,0
 40.581833,-9.861167,4.25,G. inflata,41
@@ -846,7 +846,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.28,G. tenellus,0
 40.581833,-9.861167,4.28,T. sacculifer,0
 40.581833,-9.861167,4.28,S. dehiscens,0
-40.581833,-9.861167,4.28,G. siphonifera,7
+40.581833,-9.861167,4.28,G. eastropacia,7
 40.581833,-9.861167,4.28,G. calida,0
 40.581833,-9.861167,4.28,G. bulloides,73
 40.581833,-9.861167,4.28,G. falconensis,30
@@ -854,7 +854,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.28,G. rubescens,0
 40.581833,-9.861167,4.28,T. quinqueloba,55
 40.581833,-9.861167,4.28,N. pachyderma,13
-40.581833,-9.861167,4.28,N. incompta,193
+40.581833,-9.861167,4.28,N. incompta,200
 40.581833,-9.861167,4.28,N. dutertrei,0
 40.581833,-9.861167,4.28,P. obliquiloculata,0
 40.581833,-9.861167,4.28,G. inflata,51
@@ -876,7 +876,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.31,G. tenellus,0
 40.581833,-9.861167,4.31,T. sacculifer,0
 40.581833,-9.861167,4.31,S. dehiscens,0
-40.581833,-9.861167,4.31,G. siphonifera,6
+40.581833,-9.861167,4.31,G. eastropacia,6
 40.581833,-9.861167,4.31,G. calida,0
 40.581833,-9.861167,4.31,G. bulloides,86
 40.581833,-9.861167,4.31,G. falconensis,30
@@ -884,7 +884,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.31,G. rubescens,0
 40.581833,-9.861167,4.31,T. quinqueloba,85
 40.581833,-9.861167,4.31,N. pachyderma,8
-40.581833,-9.861167,4.31,N. incompta,165
+40.581833,-9.861167,4.31,N. incompta,176
 40.581833,-9.861167,4.31,N. dutertrei,0
 40.581833,-9.861167,4.31,P. obliquiloculata,0
 40.581833,-9.861167,4.31,G. inflata,24
@@ -904,9 +904,9 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.34,G. ruber ruber,0
 40.581833,-9.861167,4.34,G. ruber albus,5
 40.581833,-9.861167,4.34,G. tenellus,0
-40.581833,-9.861167,4.34,T. sacculifer,0
+40.581833,-9.861167,4.34,T. sacculifer,1
 40.581833,-9.861167,4.34,S. dehiscens,0
-40.581833,-9.861167,4.34,G. siphonifera,9
+40.581833,-9.861167,4.34,G. eastropacia,9
 40.581833,-9.861167,4.34,G. calida,0
 40.581833,-9.861167,4.34,G. bulloides,232
 40.581833,-9.861167,4.34,G. falconensis,22
@@ -914,7 +914,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.34,G. rubescens,1
 40.581833,-9.861167,4.34,T. quinqueloba,153
 40.581833,-9.861167,4.34,N. pachyderma,29
-40.581833,-9.861167,4.34,N. incompta,655
+40.581833,-9.861167,4.34,N. incompta,698
 40.581833,-9.861167,4.34,N. dutertrei,0
 40.581833,-9.861167,4.34,P. obliquiloculata,0
 40.581833,-9.861167,4.34,G. inflata,134
@@ -936,7 +936,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.37,G. tenellus,0
 40.581833,-9.861167,4.37,T. sacculifer,0
 40.581833,-9.861167,4.37,S. dehiscens,0
-40.581833,-9.861167,4.37,G. siphonifera,2
+40.581833,-9.861167,4.37,G. eastropacia,2
 40.581833,-9.861167,4.37,G. calida,0
 40.581833,-9.861167,4.37,G. bulloides,44
 40.581833,-9.861167,4.37,G. falconensis,23
@@ -944,7 +944,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.37,G. rubescens,0
 40.581833,-9.861167,4.37,T. quinqueloba,24
 40.581833,-9.861167,4.37,N. pachyderma,2
-40.581833,-9.861167,4.37,N. incompta,107
+40.581833,-9.861167,4.37,N. incompta,117
 40.581833,-9.861167,4.37,N. dutertrei,0
 40.581833,-9.861167,4.37,P. obliquiloculata,0
 40.581833,-9.861167,4.37,G. inflata,19
@@ -966,7 +966,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.4,G. tenellus,0
 40.581833,-9.861167,4.4,T. sacculifer,0
 40.581833,-9.861167,4.4,S. dehiscens,0
-40.581833,-9.861167,4.4,G. siphonifera,4
+40.581833,-9.861167,4.4,G. eastropacia,4
 40.581833,-9.861167,4.4,G. calida,0
 40.581833,-9.861167,4.4,G. bulloides,81
 40.581833,-9.861167,4.4,G. falconensis,17
@@ -974,7 +974,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.4,G. rubescens,0
 40.581833,-9.861167,4.4,T. quinqueloba,49
 40.581833,-9.861167,4.4,N. pachyderma,9
-40.581833,-9.861167,4.4,N. incompta,234
+40.581833,-9.861167,4.4,N. incompta,248
 40.581833,-9.861167,4.4,N. dutertrei,0
 40.581833,-9.861167,4.4,P. obliquiloculata,0
 40.581833,-9.861167,4.4,G. inflata,38
@@ -996,7 +996,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.43,G. tenellus,0
 40.581833,-9.861167,4.43,T. sacculifer,0
 40.581833,-9.861167,4.43,S. dehiscens,0
-40.581833,-9.861167,4.43,G. siphonifera,5
+40.581833,-9.861167,4.43,G. eastropacia,5
 40.581833,-9.861167,4.43,G. calida,0
 40.581833,-9.861167,4.43,G. bulloides,82
 40.581833,-9.861167,4.43,G. falconensis,32
@@ -1004,7 +1004,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.43,G. rubescens,1
 40.581833,-9.861167,4.43,T. quinqueloba,86
 40.581833,-9.861167,4.43,N. pachyderma,8
-40.581833,-9.861167,4.43,N. incompta,239
+40.581833,-9.861167,4.43,N. incompta,246
 40.581833,-9.861167,4.43,N. dutertrei,0
 40.581833,-9.861167,4.43,P. obliquiloculata,0
 40.581833,-9.861167,4.43,G. inflata,43
@@ -1026,7 +1026,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.46,G. tenellus,0
 40.581833,-9.861167,4.46,T. sacculifer,0
 40.581833,-9.861167,4.46,S. dehiscens,0
-40.581833,-9.861167,4.46,G. siphonifera,9
+40.581833,-9.861167,4.46,G. eastropacia,9
 40.581833,-9.861167,4.46,G. calida,0
 40.581833,-9.861167,4.46,G. bulloides,116
 40.581833,-9.861167,4.46,G. falconensis,27
@@ -1034,7 +1034,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.46,G. rubescens,1
 40.581833,-9.861167,4.46,T. quinqueloba,84
 40.581833,-9.861167,4.46,N. pachyderma,13
-40.581833,-9.861167,4.46,N. incompta,293
+40.581833,-9.861167,4.46,N. incompta,305
 40.581833,-9.861167,4.46,N. dutertrei,0
 40.581833,-9.861167,4.46,P. obliquiloculata,0
 40.581833,-9.861167,4.46,G. inflata,54
@@ -1056,7 +1056,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.49,G. tenellus,0
 40.581833,-9.861167,4.49,T. sacculifer,0
 40.581833,-9.861167,4.49,S. dehiscens,0
-40.581833,-9.861167,4.49,G. siphonifera,9
+40.581833,-9.861167,4.49,G. eastropacia,9
 40.581833,-9.861167,4.49,G. calida,0
 40.581833,-9.861167,4.49,G. bulloides,85
 40.581833,-9.861167,4.49,G. falconensis,28
@@ -1064,7 +1064,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.49,G. rubescens,0
 40.581833,-9.861167,4.49,T. quinqueloba,78
 40.581833,-9.861167,4.49,N. pachyderma,13
-40.581833,-9.861167,4.49,N. incompta,246
+40.581833,-9.861167,4.49,N. incompta,254
 40.581833,-9.861167,4.49,N. dutertrei,0
 40.581833,-9.861167,4.49,P. obliquiloculata,0
 40.581833,-9.861167,4.49,G. inflata,55
@@ -1086,7 +1086,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.52,G. tenellus,0
 40.581833,-9.861167,4.52,T. sacculifer,0
 40.581833,-9.861167,4.52,S. dehiscens,0
-40.581833,-9.861167,4.52,G. siphonifera,7
+40.581833,-9.861167,4.52,G. eastropacia,7
 40.581833,-9.861167,4.52,G. calida,0
 40.581833,-9.861167,4.52,G. bulloides,112
 40.581833,-9.861167,4.52,G. falconensis,15
@@ -1094,7 +1094,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.52,G. rubescens,1
 40.581833,-9.861167,4.52,T. quinqueloba,67
 40.581833,-9.861167,4.52,N. pachyderma,21
-40.581833,-9.861167,4.52,N. incompta,378
+40.581833,-9.861167,4.52,N. incompta,390
 40.581833,-9.861167,4.52,N. dutertrei,0
 40.581833,-9.861167,4.52,P. obliquiloculata,0
 40.581833,-9.861167,4.52,G. inflata,41
@@ -1116,7 +1116,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.55,G. tenellus,0
 40.581833,-9.861167,4.55,T. sacculifer,0
 40.581833,-9.861167,4.55,S. dehiscens,0
-40.581833,-9.861167,4.55,G. siphonifera,4
+40.581833,-9.861167,4.55,G. eastropacia,4
 40.581833,-9.861167,4.55,G. calida,0
 40.581833,-9.861167,4.55,G. bulloides,110
 40.581833,-9.861167,4.55,G. falconensis,31
@@ -1124,7 +1124,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.55,G. rubescens,1
 40.581833,-9.861167,4.55,T. quinqueloba,63
 40.581833,-9.861167,4.55,N. pachyderma,26
-40.581833,-9.861167,4.55,N. incompta,210
+40.581833,-9.861167,4.55,N. incompta,223
 40.581833,-9.861167,4.55,N. dutertrei,0
 40.581833,-9.861167,4.55,P. obliquiloculata,0
 40.581833,-9.861167,4.55,G. inflata,47
@@ -1146,7 +1146,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.58,G. tenellus,0
 40.581833,-9.861167,4.58,T. sacculifer,0
 40.581833,-9.861167,4.58,S. dehiscens,0
-40.581833,-9.861167,4.58,G. siphonifera,4
+40.581833,-9.861167,4.58,G. eastropacia,4
 40.581833,-9.861167,4.58,G. calida,0
 40.581833,-9.861167,4.58,G. bulloides,48
 40.581833,-9.861167,4.58,G. falconensis,38
@@ -1154,7 +1154,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.58,G. rubescens,0
 40.581833,-9.861167,4.58,T. quinqueloba,59
 40.581833,-9.861167,4.58,N. pachyderma,27
-40.581833,-9.861167,4.58,N. incompta,161
+40.581833,-9.861167,4.58,N. incompta,170
 40.581833,-9.861167,4.58,N. dutertrei,0
 40.581833,-9.861167,4.58,P. obliquiloculata,0
 40.581833,-9.861167,4.58,G. inflata,32
@@ -1176,7 +1176,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.61,G. tenellus,0
 40.581833,-9.861167,4.61,T. sacculifer,0
 40.581833,-9.861167,4.61,S. dehiscens,0
-40.581833,-9.861167,4.61,G. siphonifera,6
+40.581833,-9.861167,4.61,G. eastropacia,6
 40.581833,-9.861167,4.61,G. calida,0
 40.581833,-9.861167,4.61,G. bulloides,88
 40.581833,-9.861167,4.61,G. falconensis,34
@@ -1184,7 +1184,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.61,G. rubescens,0
 40.581833,-9.861167,4.61,T. quinqueloba,73
 40.581833,-9.861167,4.61,N. pachyderma,21
-40.581833,-9.861167,4.61,N. incompta,184
+40.581833,-9.861167,4.61,N. incompta,194
 40.581833,-9.861167,4.61,N. dutertrei,0
 40.581833,-9.861167,4.61,P. obliquiloculata,0
 40.581833,-9.861167,4.61,G. inflata,52
@@ -1206,7 +1206,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.64,G. tenellus,1
 40.581833,-9.861167,4.64,T. sacculifer,0
 40.581833,-9.861167,4.64,S. dehiscens,0
-40.581833,-9.861167,4.64,G. siphonifera,2
+40.581833,-9.861167,4.64,G. eastropacia,2
 40.581833,-9.861167,4.64,G. calida,0
 40.581833,-9.861167,4.64,G. bulloides,113
 40.581833,-9.861167,4.64,G. falconensis,24
@@ -1214,7 +1214,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.64,G. rubescens,0
 40.581833,-9.861167,4.64,T. quinqueloba,72
 40.581833,-9.861167,4.64,N. pachyderma,40
-40.581833,-9.861167,4.64,N. incompta,184
+40.581833,-9.861167,4.64,N. incompta,188
 40.581833,-9.861167,4.64,N. dutertrei,0
 40.581833,-9.861167,4.64,P. obliquiloculata,0
 40.581833,-9.861167,4.64,G. inflata,50
@@ -1236,7 +1236,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.67,G. tenellus,0
 40.581833,-9.861167,4.67,T. sacculifer,0
 40.581833,-9.861167,4.67,S. dehiscens,0
-40.581833,-9.861167,4.67,G. siphonifera,7
+40.581833,-9.861167,4.67,G. eastropacia,7
 40.581833,-9.861167,4.67,G. calida,0
 40.581833,-9.861167,4.67,G. bulloides,136
 40.581833,-9.861167,4.67,G. falconensis,22
@@ -1244,7 +1244,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.67,G. rubescens,1
 40.581833,-9.861167,4.67,T. quinqueloba,109
 40.581833,-9.861167,4.67,N. pachyderma,36
-40.581833,-9.861167,4.67,N. incompta,260
+40.581833,-9.861167,4.67,N. incompta,269
 40.581833,-9.861167,4.67,N. dutertrei,0
 40.581833,-9.861167,4.67,P. obliquiloculata,0
 40.581833,-9.861167,4.67,G. inflata,60
@@ -1266,7 +1266,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.7,G. tenellus,0
 40.581833,-9.861167,4.7,T. sacculifer,0
 40.581833,-9.861167,4.7,S. dehiscens,0
-40.581833,-9.861167,4.7,G. siphonifera,9
+40.581833,-9.861167,4.7,G. eastropacia,9
 40.581833,-9.861167,4.7,G. calida,0
 40.581833,-9.861167,4.7,G. bulloides,74
 40.581833,-9.861167,4.7,G. falconensis,42
@@ -1274,7 +1274,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.7,G. rubescens,0
 40.581833,-9.861167,4.7,T. quinqueloba,101
 40.581833,-9.861167,4.7,N. pachyderma,27
-40.581833,-9.861167,4.7,N. incompta,144
+40.581833,-9.861167,4.7,N. incompta,148
 40.581833,-9.861167,4.7,N. dutertrei,0
 40.581833,-9.861167,4.7,P. obliquiloculata,0
 40.581833,-9.861167,4.7,G. inflata,50
@@ -1296,7 +1296,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.73,G. tenellus,0
 40.581833,-9.861167,4.73,T. sacculifer,0
 40.581833,-9.861167,4.73,S. dehiscens,0
-40.581833,-9.861167,4.73,G. siphonifera,12
+40.581833,-9.861167,4.73,G. eastropacia,12
 40.581833,-9.861167,4.73,G. calida,0
 40.581833,-9.861167,4.73,G. bulloides,81
 40.581833,-9.861167,4.73,G. falconensis,31
@@ -1304,7 +1304,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.73,G. rubescens,0
 40.581833,-9.861167,4.73,T. quinqueloba,91
 40.581833,-9.861167,4.73,N. pachyderma,32
-40.581833,-9.861167,4.73,N. incompta,173
+40.581833,-9.861167,4.73,N. incompta,181
 40.581833,-9.861167,4.73,N. dutertrei,0
 40.581833,-9.861167,4.73,P. obliquiloculata,0
 40.581833,-9.861167,4.73,G. inflata,56
@@ -1326,7 +1326,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.76,G. tenellus,0
 40.581833,-9.861167,4.76,T. sacculifer,0
 40.581833,-9.861167,4.76,S. dehiscens,0
-40.581833,-9.861167,4.76,G. siphonifera,5
+40.581833,-9.861167,4.76,G. eastropacia,5
 40.581833,-9.861167,4.76,G. calida,0
 40.581833,-9.861167,4.76,G. bulloides,122
 40.581833,-9.861167,4.76,G. falconensis,16
@@ -1334,7 +1334,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.76,G. rubescens,0
 40.581833,-9.861167,4.76,T. quinqueloba,75
 40.581833,-9.861167,4.76,N. pachyderma,52
-40.581833,-9.861167,4.76,N. incompta,184
+40.581833,-9.861167,4.76,N. incompta,194
 40.581833,-9.861167,4.76,N. dutertrei,0
 40.581833,-9.861167,4.76,P. obliquiloculata,0
 40.581833,-9.861167,4.76,G. inflata,45
@@ -1356,7 +1356,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.79,G. tenellus,0
 40.581833,-9.861167,4.79,T. sacculifer,0
 40.581833,-9.861167,4.79,S. dehiscens,0
-40.581833,-9.861167,4.79,G. siphonifera,2
+40.581833,-9.861167,4.79,G. eastropacia,2
 40.581833,-9.861167,4.79,G. calida,0
 40.581833,-9.861167,4.79,G. bulloides,75
 40.581833,-9.861167,4.79,G. falconensis,43
@@ -1364,7 +1364,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.79,G. rubescens,0
 40.581833,-9.861167,4.79,T. quinqueloba,79
 40.581833,-9.861167,4.79,N. pachyderma,64
-40.581833,-9.861167,4.79,N. incompta,189
+40.581833,-9.861167,4.79,N. incompta,196
 40.581833,-9.861167,4.79,N. dutertrei,0
 40.581833,-9.861167,4.79,P. obliquiloculata,0
 40.581833,-9.861167,4.79,G. inflata,45
@@ -1386,7 +1386,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.82,G. tenellus,0
 40.581833,-9.861167,4.82,T. sacculifer,0
 40.581833,-9.861167,4.82,S. dehiscens,0
-40.581833,-9.861167,4.82,G. siphonifera,2
+40.581833,-9.861167,4.82,G. eastropacia,2
 40.581833,-9.861167,4.82,G. calida,0
 40.581833,-9.861167,4.82,G. bulloides,68
 40.581833,-9.861167,4.82,G. falconensis,25
@@ -1394,7 +1394,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.82,G. rubescens,0
 40.581833,-9.861167,4.82,T. quinqueloba,55
 40.581833,-9.861167,4.82,N. pachyderma,65
-40.581833,-9.861167,4.82,N. incompta,111
+40.581833,-9.861167,4.82,N. incompta,118
 40.581833,-9.861167,4.82,N. dutertrei,0
 40.581833,-9.861167,4.82,P. obliquiloculata,0
 40.581833,-9.861167,4.82,G. inflata,32
@@ -1416,7 +1416,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.85,G. tenellus,0
 40.581833,-9.861167,4.85,T. sacculifer,0
 40.581833,-9.861167,4.85,S. dehiscens,0
-40.581833,-9.861167,4.85,G. siphonifera,2
+40.581833,-9.861167,4.85,G. eastropacia,2
 40.581833,-9.861167,4.85,G. calida,0
 40.581833,-9.861167,4.85,G. bulloides,49
 40.581833,-9.861167,4.85,G. falconensis,14
@@ -1424,7 +1424,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.85,G. rubescens,0
 40.581833,-9.861167,4.85,T. quinqueloba,45
 40.581833,-9.861167,4.85,N. pachyderma,99
-40.581833,-9.861167,4.85,N. incompta,78
+40.581833,-9.861167,4.85,N. incompta,81
 40.581833,-9.861167,4.85,N. dutertrei,0
 40.581833,-9.861167,4.85,P. obliquiloculata,0
 40.581833,-9.861167,4.85,G. inflata,13
@@ -1446,7 +1446,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.88,G. tenellus,0
 40.581833,-9.861167,4.88,T. sacculifer,0
 40.581833,-9.861167,4.88,S. dehiscens,0
-40.581833,-9.861167,4.88,G. siphonifera,0
+40.581833,-9.861167,4.88,G. eastropacia,0
 40.581833,-9.861167,4.88,G. calida,0
 40.581833,-9.861167,4.88,G. bulloides,41
 40.581833,-9.861167,4.88,G. falconensis,16
@@ -1454,7 +1454,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 40.581833,-9.861167,4.88,G. rubescens,0
 40.581833,-9.861167,4.88,T. quinqueloba,43
 40.581833,-9.861167,4.88,N. pachyderma,156
-40.581833,-9.861167,4.88,N. incompta,57
+40.581833,-9.861167,4.88,N. incompta,60
 40.581833,-9.861167,4.88,N. dutertrei,0
 40.581833,-9.861167,4.88,P. obliquiloculata,0
 40.581833,-9.861167,4.88,G. inflata,10

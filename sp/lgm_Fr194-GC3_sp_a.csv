@@ -4,7 +4,7 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -44.25,149.98,0.355,T. clarkei,0
 -44.25,149.98,0.355,G. falconensis,0
 -44.25,149.98,0.355,T. quinqueloba,29
--44.25,149.98,0.355,G. siphonifera,0
+-44.25,149.98,0.355,G. eastropacia,0
 -44.25,149.98,0.355,G. calida,0
 -44.25,149.98,0.355,G. glutinata,60
 -44.25,149.98,0.355,G. uvula,0
@@ -13,7 +13,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -44.25,149.98,0.355,T. sacculifer,0
 -44.25,149.98,0.355,G. crassaformis,0
 -44.25,149.98,0.355,G. hirsuta,0
--44.25,149.98,0.355,G. inflata,23
 -44.25,149.98,0.355,G. scitula,2
 -44.25,149.98,0.355,G. truncatulinoides,6
 -44.25,149.98,0.355,G. hexagonus,0
@@ -25,12 +24,13 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -44.25,149.98,0.355,O. universa,1
 -44.25,149.98,0.355,P. obliquiloculata,0
 -44.25,149.98,0.355,T. iota,0
+-44.25,149.98,0.355,G. inflata,23
 -44.25,149.98,0.405,B. digitata,1
 -44.25,149.98,0.405,G. bulloides,184
 -44.25,149.98,0.405,T. clarkei,0
 -44.25,149.98,0.405,G. falconensis,0
 -44.25,149.98,0.405,T. quinqueloba,21
--44.25,149.98,0.405,G. siphonifera,0
+-44.25,149.98,0.405,G. eastropacia,0
 -44.25,149.98,0.405,G. calida,0
 -44.25,149.98,0.405,G. glutinata,42
 -44.25,149.98,0.405,G. uvula,0
@@ -39,7 +39,6 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -44.25,149.98,0.405,T. sacculifer,0
 -44.25,149.98,0.405,G. crassaformis,0
 -44.25,149.98,0.405,G. hirsuta,0
--44.25,149.98,0.405,G. inflata,38
 -44.25,149.98,0.405,G. scitula,1
 -44.25,149.98,0.405,G. truncatulinoides,13
 -44.25,149.98,0.405,G. hexagonus,0
@@ -51,3 +50,4 @@ Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 -44.25,149.98,0.405,O. universa,1
 -44.25,149.98,0.405,P. obliquiloculata,0
 -44.25,149.98,0.405,T. iota,0
+-44.25,149.98,0.405,G. inflata,38

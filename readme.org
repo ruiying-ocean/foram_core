@@ -10,14 +10,16 @@ This project aims to collect and sort out existing foraminifera census data in t
 
 #+html: <p align="center"><img src="example/example_map.png" /></p>
 
-* Structure
-+ /raw: raw data after cleaning
-+ /fg: functionl group level data in each project
-+ /sp: species level data in each project
+* Structure and file name
++ /raw: raw data
++ /fg: functional group data in each core/data compilation
++ /sp: species level data each core/data compilation
 + /tidy: combined lgm and forcens in fg/sp or absolute/relative abundance. SST are assigned according to the georeferences.
 
+All the data follows the name pattern "[lgm/forcens]_[core]_[fg/sp]_[a/r].csv", where a/r is absolute or relative abundance.
+
 * Raw Data Sources
-** [[file:raw/RAEDME.org][Foraminifera global abundance]]
+** [[file:raw/RAEDME.org][Foraminifera abundance data]]
 ** LGM Sea Surface Temperature
 
 Tierney, J. E., Zhu, J., King, J., Malevich, S. B., Hakim, G. J., & Poulsen, C. J. (2020). Glacial cooling and climate sensitivity revisited. Nature, 584(7822), 569-573.
@@ -39,8 +41,8 @@ Taxonomy in this project is as Brummer and Kucera (2022). And relative abundance
 #+END_QUOTE
 
 * Use the repository
-+ The ready-to-use data are under the `tidy/` folder
-+ Re-compile the data: open foram_core.Rproject in RStudio and follow the prompt
++ The ready-to-use data are placed under the `tidy/` folder
++ (optionally) Re-compile the data: open lgm_foram_core.Rproject in RStudio and follow the prompt selection.
 
 * License
 This project is under protection of Attribution-NonCommercial 4.0 International (CC BY NC 4.0) license, which means you can share and adapt the code but you also must give appropriate credit (citation to the paper or this repository) to this project.

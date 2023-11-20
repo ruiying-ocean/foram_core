@@ -53,7 +53,7 @@ core8 <- core8 %>% mutate(Latitude = 43.483033, Longitude = -67.882617)
 ## IODP_U1418
 core9 <- read_tsv("https://www.ncei.noaa.gov/pub/data/paleo/contributions_by_author/payne2021/payne2021_SNW.txt", comment="#")
 core9 <- core9 %>% dplyr::filter(age>19000) %>% select(depth, Num_Npachy) %>% mutate(Latitude =58.8, Longitude=-144.13)
-core9 <- core9 %>% replace_column_name("Num_Npachy", "N. pachyderma")
+core9 <- core9 %>% revise_sp_name("Num_Npachy", "N. pachyderma")
 
 ## PS2644-5
 ## this core seems to use different unit
@@ -99,15 +99,7 @@ core17 <- read_tsv("raw/additional/GIK15612-2_foram.tab")
 core17 <- core17 %>% select(-c("SST win [°C] (Counting >150 µm fraction)",
                                "PP C [g/m**2/a] (Calculated)",
                                "SST sum [°C] (Counting >150 µm fraction)",
-                               "G. menardii [%] (including G. tumida, Counting...)",
-                               "P/D int [%] (Counting >150 µm fraction)...25",
-                               "P/D int [%] (Counting >150 µm fraction)...43"))
-names(core17) <- gsub(" [%] (Counting >150 µm fraction)", "", names(core17), fixed=T)
-
-## convert to absoltue abundance
-core17 <- core17 %>% mutate_at(vars(`G. aequilateralis`:`N. pachyderma d`), ~as.integer(.*`Foram plankt [#] (Counting >150 µm fraction)`/100))
-core17 <- core17 %>% select(-c(`Foram plankt [#] (Counting >150 µm fraction)`))
-core17 <- core17 %>% mutate(Latitude = 44.360000, Longitude = -26.543333, .before='Depth sed [m]')
+                               "G. menardii [%] (including G. tumida, Counting...)"))
 
 ## -----------------
 ## clean species name
@@ -115,157 +107,105 @@ core17 <- core17 %>% mutate(Latitude = 44.360000, Longitude = -26.543333, .befor
 ## Orbulina suturalis is Miocene species as Brummer and Kucera (2022)
 core1 <- core1 %>% select(-c("Foraminifera indet [#]", "Foram benth [#]", "Foram plankt fragm [#]"))
 names(core1) <- gsub(" [#]", "", names(core1), fixed=T)
-core1 <- core1 %>% replace_column_name("G. menardii", "G. cultrata")
-core1 <- core1 %>% replace_column_name("O. bilobata", "O. universa")
-core1 <- core1 %>% replace_column_name("T. trilobus", "T. sacculifer")
+core1 <- core1 %>% clean_species()
+core1 <- merge_morphotypes(core1, c("G. truncatulinoides d", "G. truncatulinoides s"), "G. truncatulinoides")
 core1 <- core1 %>% select(-`O. suturalis`)
 
-## combine G. trunc d/s
-core1 <- core1 %>% mutate(`G. truncatulinoides` = `G. truncatulinoides d` + `G. truncatulinoides s`) %>%
-  select(-c(`G. truncatulinoides d`, `G. truncatulinoides s`))
-
+## -----------------
 core2 <- core2 %>% select(-c("Foram benth [#]"))
 names(core2) <- gsub(" [#]", "", names(core2), fixed=T)
-core2 <- core2 %>% replace_column_name("G. menardii", "G. cultrata")
-core2 <- core2 %>% mutate(`G. truncatulinoides` = `G. truncatulinoides d` + `G. truncatulinoides s`) %>%
-  select(-c(`G. truncatulinoides d`, `G. truncatulinoides s`))
-core2 <- core2 %>% select(-c(`P/D int`,'G. trilobus tril')) 
-core2 <- core2 %>% replace_column_name("G. iota", "T. iota")
-core2 <- core2 %>% replace_column_name("N. pachyderma d", "N. incompta")
-core2 <- core2 %>% replace_column_name("N. pachyderma s", "N. pachyderma")
-core2 <- core2 %>% replace_column_name("G. sacculifer", "T. sacculifer")
-core2 <- core2 %>% replace_column_name("G. ruber p", "G. ruber ruber")
-core2 <- core2 %>% replace_column_name("G. ruber w", "G. ruber albus")
-core2 <- core2 %>% replace_column_name("G. aequilateralis", "G. siphonifera")
-core2 <- core2 %>% replace_column_name("T. cristata", "T. humilis")
-core2 <- core2 %>% mutate(`G. hirsuta` = `G. hirsuta s` + `G. hirsuta d`) %>%
-  select(-c(`G. hirsuta s`, `G. hirsuta d`))
+core2 <- core2 %>% revise_sp_name("G. menardii", "G. cultrata")
+core2 <- merge_morphotypes(core2, c("G. truncatulinoides d", "G. truncatulinoides s"), "G. truncatulinoides")
+core2 <- clean_species(core2)
+core2 <- core2 %>% revise_sp_name("T. cristata", "T. humilis")
+core2 <- merge_morphotypes(core2, c("G. hirsuta d", "G. hirsuta s"), "G. hirsuta")
+core2 <- core2 %>% revise_sp_name("P/D int", "N. incompta")
+core2 <- core2 %>% revise_sp_name("G. trilobus tril", "T. sacculifer")
 
-core3 <- core3 %>%   select(-c(`G. ruber [#] (sum of G. ruber pink and G. r...)`, 
+## -----------------
+core3 <- core3 %>%  select(-c(`G. ruber [#] (sum of G. ruber pink and G. r...)`, 
                                `Foram plankt oth [#]`,
                                `G. menardii [#] (sum of G. menardii, G. tumida...)`,
                                `G. sacculifer wo sac [#]`,
                                `G. sacculifer sac [#]`,
-                               `G. pachyderma [#]`
                                ))
 names(core3) <- gsub(" [#]", "", names(core3), fixed=T)
-core3 <- core3 %>% mutate(`G. truncatulinoides` = `G. truncatulinoides d` + `G. truncatulinoides s`) %>%
-  select(-c(`G. truncatulinoides d`, `G. truncatulinoides s`))
-core3 <- core3 %>% replace_column_name("G. ruber w", "G. ruber albus")
-core3 <- core3 %>% replace_column_name("G. ruber p", "G. ruber ruber")
-core3 <- core3 %>% replace_column_name("N. pachyderma d", "N. incompta")
-core3 <- core3 %>% replace_column_name("N. pachyderma s", "N. pachyderma")
-core3 <- core3 %>% replace_column_name("G. menardii", "G. cultrata")
-core3 <- core3 %>% replace_column_name("G. quinqueloba", "T. quinqueloba")
-core3 <- core3 %>% replace_column_name("G. sacculifer (sum of G. sacculifer no sac a...)", "T. sacculifer")
-core3 <- core3 %>% replace_column_name("G. aequilateralis", "G. siphonifera")
-core3 <- core3 %>% replace_column_name("G. dutertrei", "N. dutertrei")
-core3 <- core3 %>% replace_column_name("G. digitata", "B. digitata")
-core3 <- core3 %>% replace_column_name("G. humilis", "T. humilis")
-core3 <- core3 %>% replace_column_name("G. anfracta", "D. anfracta")
-core3 <- core3 %>% replace_column_name("G. iota", "T. iota")
-core3 <- core3 %>% replace_column_name("G. bradyi", "G. uvula")
-core3 <- core3 %>% replace_column_name("G. pumilio", "B. pumilio")
-core3 <- core3 %>% replace_column_name("G. hexagona", "G. hexagonus")
-core3 <- core3 %>% replace_column_name("G. tumida flexuosa", "G. tumida") ## as per Brummer & Kucera, 2022
-
+core3 <- merge_morphotypes(core3, c("G. truncatulinoides d", "G. truncatulinoides s"), "G. truncatulinoides")
+core3 <- core3 %>% clean_species()
+core3 <- core3 %>% revise_sp_name("G. sacculifer (sum of G. sacculifer no sac a...)", "T. sacculifer")
+## -----------------
+## G. bulloides [#] (Counting)...11 is 0
 core4 <- core4 %>% select(-c(`G. bulloides [#] (Counting)...11`,`B. praeadamsi [#] (Counting)`,
                              `D. conglomerata [#] (Counting)`,`D. pseudofoliata [#] (Counting)`))
 names(core4) <- gsub(" [#] (Counting)", "", names(core4), fixed=T)
 
-core4 <- core4 %>% replace_column_name("G. bulloides...10", "G. bulloides")
-core4 <- core4 %>% replace_column_name("G. quinqueloba", "T. quinqueloba")
-core4 <- core4 %>% replace_column_name("G. aequilateralis", "G. siphonifera")
-core4 <- core4 %>% replace_column_name("G. rubescens white", "G. rubescens")
-core4 <- core4 %>% replace_column_name("G. ruber w", "G. ruber albus")
-core4 <- core4 %>% replace_column_name("N. pachyderma d", "N. incompta")
-core4 <- core4 %>% replace_column_name("N. pachyderma s", "N. pachyderma")
-core4 <- core4 %>% replace_column_name("G. sacculifer", "T. sacculifer")
-core4 <- core4 %>% replace_column_name("G.umbilicata", "G. bulloides")
-core4 <- core4 %>% replace_column_name("G. hexagona", "G. hexagonus")
-core4 <- core4 %>% replace_column_name("G. clarkei", "T. clarkei")
-core4 <- core4 %>% replace_column_name("G. inflata d", "G. inflata")
-core4 <- core4 %>% replace_column_name("G. inflata s", "G. inflata")
-core4 <- core4 %>% replace_column_name("G. tenella", "G. tenellus")
-core4 <- core4 %>% replace_column_name("G. crassula", "G. crassaformis")
+core4 <- core4 %>% revise_sp_name("G. bulloides...10", "G. bulloides")
+core4 <- core4 %>% revise_sp_name("G. rubescens white", "G. rubescens")
+core4 <- core4 %>% revise_sp_name("G.umbilicata", "G. bulloides")
+core4 <- merge_morphotypes(core4, c("G. inflata d", "G. inflata s"), "G. inflata")
+core4 <- clean_species(core4)
 core4 <- core4 %>% select(-c("G. obesa", "Foram", "G. praecalida", "G. umbilicata"))
 
+## -----------------
 names(core5) <- gsub(" [%]", "", names(core5), fixed=T)
 core5 <- core5 %>% select(-c("T. quinqueloba d", "T. quinqueloba s"))
-core5 <- core5 %>% replace_column_name("T. crassaformis", "G. crassaformis")
-core5 <- core5 %>% replace_column_name("T. truncatulinoides", "G. truncatulinoides")
-core5 <- core5 %>% replace_column_name("G. sacculifer", "T. sacculifer")
-core5 <- core5 %>% replace_column_name("G. trilobus", "T. sacculifer")
-core5 <- core5 %>% replace_column_name("G. digitata", "B. digitata")
-core5 <- core5 %>% replace_column_name("N. pachyderma d", "N. incompta")
-core5 <- core5 %>% replace_column_name("N. pachyderma s", "N. pachyderma")
-core5 <- core5 %>% replace_column_name("G. tenella", "G. tenellus")
-core5 <- core5 %>% replace_column_name("G. ruber", "G. ruber albus") ## G. ruber ruber is not appearing in Pacific
-
+core5 <- core5 %>% revise_sp_name("T. crassaformis", "G. crassaformis")
+core5 <- core5 %>% revise_sp_name("T. truncatulinoides", "G. truncatulinoides")
+core5 <- core5 %>% revise_sp_name("G. sacculifer", "T. sacculifer")
+core5 <- core5 %>% revise_sp_name("G. trilobus", "T. sacculifer")
+core5 <- core5 %>% revise_sp_name("G. digitata", "B. digitata")
+core5 <- core5 %>% revise_sp_name("N. pachyderma d", "N. incompta")
+core5 <- core5 %>% revise_sp_name("N. pachyderma s", "N. pachyderma")
+core5 <- core5 %>% revise_sp_name("G. tenella", "G. tenellus")
+core5 <- core5 %>% revise_sp_name("G. ruber", "G. ruber albus") ## G. ruber ruber is not appearing in Pacific
+## -----------------
 names(core6) <- gsub(" [#]", "", names(core6), fixed=T)
-core6 <- core6 %>% replace_column_name("N. pachyderma d", "N. incompta")
-core6 <- core6 %>% replace_column_name("N. pachyderma s", "N. pachyderma")
-
+core6 <- core6 %>% revise_sp_name("N. pachyderma d", "N. incompta")
+core6 <- core6 %>% revise_sp_name("N. pachyderma s", "N. pachyderma")
+## -----------------
 names(core7) <- gsub(" [#] (Counting >150 µm fraction)", "", names(core7), fixed=T)
-core7 <- core7 %>% replace_column_name("N. pachyderma d", "N. incompta")
-core7 <- core7 %>% replace_column_name("N. pachyderma s", "N. pachyderma")
-core7 <- core7 %>% replace_column_name("G. quinqueloba", "T. quinqueloba")
-core7 <- core7 %>% replace_column_name("G. umbilicata", "G. bulloides")
-
-core8 <- core8 %>% replace_column_name('n.pachy', 'N. pachyderma')
-core8 <- core8 %>% replace_column_name('n.incomp', 'N. incompta')
-core8 <- core8 %>% replace_column_name('g.bull', 'G. bulloides')
-core8 <- core8 %>% replace_column_name('t.quinq', 'T. quinqueloba')
-core8 <- core8 %>% replace_column_name('g.infla', 'G. inflata')
-core8 <- core8 %>% replace_column_name('g.glut', 'G. glutinata')
-
-clean_species <- function(data) {
-  data <- data %>%
-    replace_column_name("G. ruber p", "G. ruber ruber") %>%
-    replace_column_name("G. ruber w", "G. ruber albus") %>%
-    replace_column_name("G. sacculifer", "T. sacculifer") %>%
-    replace_column_name("N. pachyderma s", "N. pachyderma") %>%
-    replace_column_name("N. pachyderma d", "N. incompta") %>%
-    replace_column_name("G. menardii", "G. cultrata") %>%
-    replace_column_name("G. aequilateralis", "G. eastropacia") %>%
-    replace_column_name("G. digitata", "B. digitata") %>%
-    replace_column_name("G. anfracta", "D. anfracta") %>%
-    replace_column_name("G. quinqueloba", "T. quinqueloba") %>%
-    replace_column_name("G. humilis", "T. humilis") %>%
-    replace_column_name("G. hexagona", "G. hexagonus") %>%
-    replace_column_name("G. dutertrei","N. dutertrei")%>%
-    replace_column_name("G. bradyi", "G. uvula") %>%
-    replace_column_name("G. pumilio", "B. pumilio") %>%
-    replace_column_name("G. iota", "T. iota") %>%    
-    mutate(across(everything(), ~ifelse(is.na(.), 0, .)))
-  
-  return(data)
-}
+core7 <- core7 %>% revise_sp_name("N. pachyderma d", "N. incompta")
+core7 <- core7 %>% revise_sp_name("N. pachyderma s", "N. pachyderma")
+core7 <- core7 %>% revise_sp_name("G. quinqueloba", "T. quinqueloba")
+core7 <- core7 %>% revise_sp_name("G. umbilicata", "G. bulloides")
+## -----------------
+core8 <- core8 %>% revise_sp_name('n.pachy', 'N. pachyderma')
+core8 <- core8 %>% revise_sp_name('n.incomp', 'N. incompta')
+core8 <- core8 %>% revise_sp_name('g.bull', 'G. bulloides')
+core8 <- core8 %>% revise_sp_name('t.quinq', 'T. quinqueloba')
+core8 <- core8 %>% revise_sp_name('g.infla', 'G. inflata')
+core8 <- core8 %>% revise_sp_name('g.glut', 'G. glutinata')
+## -----------------
 names(core11) <- gsub(" [#/g]", "", names(core11), fixed=T)
-core11 <- clean_species(core11)
-
+core11 <- clean_species(core11) %>% replace_na_with_zero()
+## -----------------
 names(core12) <- gsub(" [#/g]", "", names(core12), fixed=T)
-core12 <- clean_species(core12)
-
+core12 <- clean_species(core12) %>% replace_na_with_zero()
+## -----------------
 names(core13) <- gsub(" [#/g]", "", names(core13), fixed=T)
-core13 <- clean_species(core13)
-
+core13 <- clean_species(core13) %>% replace_na_with_zero()
+## -----------------
 names(core14) <- gsub(" [#/g]", "", names(core14), fixed=T)
-core14 <- clean_species(core14)
-
+core14 <- clean_species(core14) %>% replace_na_with_zero()
+## -----------------
 names(core15) <- gsub(" [#/g]", "", names(core15), fixed=T)
-core15 <- clean_species(core15)
-
+core15 <- clean_species(core15) %>% replace_na_with_zero()
+## -----------------
 names(core16) <- gsub(" [#/g]", "", names(core16), fixed=T)
-core16 <- clean_species(core16)
-
+core16 <- clean_species(core16) %>% replace_na_with_zero()
+## -----------------
+names(core17) <- gsub(" [%] (Counting >150 µm fraction)", "", names(core17), fixed=T)
+core17 <- merge_morphotypes(core17, c("P/D int...43", "P/D int...25","N. pachyderma d"), "N. incompta")
+## the total abundance is provided already
+core17 <- core17 %>% select(-c("G. quinqueloba s", "G. quinqueloba d",
+                               "G. cavernula",
+                               "G. truncatulinoides d", "G. truncatulinoides s"))
+core17 <- merge_morphotypes(core17, c("G. trilobus sac", "G. trilobus tril"), "T. sacculifer")
 core17 <- clean_species(core17)
-core17 <- core17 %>% mutate(`T. sacculifer` = `G. trilobus sac` + `G. trilobus tril`,
-                            `T. quinqueloba` = `G. quinqueloba s` + `G. quinqueloba d`,
-                            `G. truncatulinoides` = `G. truncatulinoides d` + `G. truncatulinoides s`) %>%
-  select(-c(`G. trilobus sac`, `G. trilobus tril`, `G. quinqueloba s`, `G. quinqueloba d`,
-            `G. truncatulinoides d`, `G. truncatulinoides s`))
-  
+## convert to absoltue abundance
+core17 <- core17 %>% mutate_at(vars(`G. eastropacia`:`T. sacculifer`), ~as.integer(.*`Foram plankt [#] (Counting >150 µm fraction)`/100))
+core17 <- core17 %>% select(-c("Foram plankt [#] (Counting >150 µm fraction)", "Age [ka BP]"))
+core17 <- core17 %>% mutate(Latitude = 44.360000, Longitude = -26.543333, .before='Depth sed [m]')
 
 find_missing_species(symbiosis_tbl$short_name, names(core17))
 

@@ -13,21 +13,15 @@
 ## ----------------------------------
 
 ## data is pre-downloaded from pangaea
-climap_lgm <- read_tsv("raw/CLIMAP/CLIMAP_LGM_foram_data.tab")
+climap_lgm <- read_tsv("raw/CLIMAP/CLIMAP_LGM_foram_data.tab") %>% distinct()
 
 ## clean unnecessary string in the species name
 names(climap_lgm) <- gsub(" [%]", "", names(climap_lgm), fixed=T)
 names(climap_lgm) <- gsub(" [m]", "", names(climap_lgm), fixed=T)
 
 ## replace species names
-climap_lgm <- climap_lgm %>% replace_column_name("G. sacculifer", "T. sacculifer")
-climap_lgm <- climap_lgm %>% replace_column_name("N. pachyderma s", "N. pachyderma")
-climap_lgm <- climap_lgm %>% replace_column_name("N. pachyderma d", "N. incompta")
-climap_lgm <- climap_lgm %>% replace_column_name("G. digitata", "B. digitata")
-climap_lgm <- climap_lgm %>% replace_column_name("G. quinqueloba", "T. quinqueloba")
-climap_lgm <- climap_lgm %>% replace_column_name("G. ruber", "G. ruber albus")
-climap_lgm <- climap_lgm %>% replace_column_name("G. hexagona", "G. hexagonus")
-climap_lgm <- climap_lgm %>% replace_column_name("G. aequilateralis", "G. siphonifera")
+climap_lgm <- climap_lgm %>% revise_sp_name("G. ruber", "G. ruber albus")
+climap_lgm <- climap_lgm %>% clean_species()
 
 ## combine G. truncatulinoides s and d
 climap_lgm <- climap_lgm %>% 
@@ -69,14 +63,15 @@ foram_dat <- foram_dat %>%
 names(foram_dat)[3:47] <- read_csv("raw/CLIMAP/foram_sp_list.txt")$Species
 
 ## clean species name
-foram_dat <- foram_dat %>% select(-c('G. ruber total', 'T. sacculifer wo sac', 'T. sacculifer w sac',
-                                     'N. pachyderma--N. dutertrei','G. tumida+flexuosa',
-                                     'G. cultrata+tumida+flexuosa','Others'))
+foram_dat <- foram_dat %>% select(-c('G. ruber total', 'T. sacculifer wo sac',
+                                     'G. cultrata+tumida+flexuosa','G. tumida+flexuosa',
+                                     'T. sacculifer w sac','Others'))
 
-foram_dat <- foram_dat %>% replace_column_name('N. pachyderma left', 'N. pachyderma')
-foram_dat <- foram_dat %>% replace_column_name('N. pachyderma right', 'N. incompta')
-foram_dat <- foram_dat %>% replace_column_name('T. sacculifer total', 'T. sacculifer')
-foram_dat <- foram_dat %>% replace_column_name('G. hexagona', 'G. hexagonus')
+foram_dat <- foram_dat %>% revise_sp_name('N. pachyderma left', 'N. pachyderma')
+foram_dat <- foram_dat %>% revise_sp_name('N. pachyderma--N. dutertrei', 'N. incompta')
+foram_dat <- foram_dat %>% revise_sp_name('N. pachyderma right', 'N. incompta')
+foram_dat <- foram_dat %>% revise_sp_name('T. sacculifer total', 'T. sacculifer')
+foram_dat <- foram_dat %>% revise_sp_name('G. hexagona', 'G. hexagonus')
 
 ## combine G. trunc sin/dex
 foram_dat <- foram_dat %>% 
@@ -143,7 +138,8 @@ foram_dat_lgm %>% global_group_and_aggregate(Depth='Depth sed [m]') %>% write_cs
 
 ## convert relative abundance to absolute abundance
 foram_dat_total_count <- foram_dat %>% select(New_CoreID, Depth, total_count)
-climap_lgm_a <- left_join(climap_lgm, foram_dat_total_count, by=c("Event"="New_CoreID", "Depth sed"="Depth"))
+climap_lgm_a <- left_join(climap_lgm, foram_dat_total_count, by=c("Event"="New_CoreID", "Depth sed"="Depth"),
+                          relationship = "many-to-many")
 
 subset_wo_count <- climap_lgm_a %>% dplyr::filter(is.na(total_count))
 
@@ -170,3 +166,4 @@ source("code/more_climap_cores.R")
 
 climap_lgm_r %>% global_group_and_aggregate(Depth='Depth sed') %>% write_csv(., "fg/lgm_climap1_fg_r.csv")
 climap_lgm_a %>% global_group_and_aggregate(Depth='Depth sed') %>% write_csv(., "fg/lgm_climap1_fg_a.csv")
+

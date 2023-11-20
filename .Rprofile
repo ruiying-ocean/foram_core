@@ -6,18 +6,17 @@ suppressPackageStartupMessages(library(data.table))
 library(sf)
 library(tmap)
 
-message(">>> read symbiosis table")
-source("code/read_symbiosis_table.R")
-message(">>> read replace_column_name function")
-source("code/replace_column_name.R")
+message(">>> read taxonomy related functions")
+source("code/taxonomy_lib.R")
+message("<<< DONE")
 message(">>> read replace_na_with_zero function")
 source("code/replace_na_with_zero.R")
 message("<<< DONE")
 
 USE_FORCENS = TRUE
 USE_MARGO = TRUE
-USE_EPILOG = TRUE
-USE_GLAMAP = TRUE
+USE_EPILOG = FALSE
+USE_GLAMAP = FALSE
 USE_CLIMAP = TRUE
 USE_ADDITIONAL=TRUE
 

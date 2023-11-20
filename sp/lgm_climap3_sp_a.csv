@@ -40,7 +40,7 @@ ELT48.022-PC,39.895,-85.41,0.82,G. rubescens,0
 ELT48.022-PC,39.895,-85.41,0.82,T. humilis,0
 ELT48.022-PC,39.895,-85.41,0.82,T. quinqueloba,24
 ELT48.022-PC,39.895,-85.41,0.82,N. pachyderma,32
-ELT48.022-PC,39.895,-85.41,0.82,N. incompta,53
+ELT48.022-PC,39.895,-85.41,0.82,N. incompta,60
 ELT48.022-PC,39.895,-85.41,0.82,N. dutertrei,1
 ELT48.022-PC,39.895,-85.41,0.82,G. conglomerata,0
 ELT48.022-PC,39.895,-85.41,0.82,G. hexagonus,0
@@ -69,7 +69,7 @@ ELT48.027-PC,-38.542,79.898,0.62,G. rubescens,0
 ELT48.027-PC,-38.542,79.898,0.62,T. humilis,2
 ELT48.027-PC,-38.542,79.898,0.62,T. quinqueloba,29
 ELT48.027-PC,-38.542,79.898,0.62,N. pachyderma,29
-ELT48.027-PC,-38.542,79.898,0.62,N. incompta,54
+ELT48.027-PC,-38.542,79.898,0.62,N. incompta,76
 ELT48.027-PC,-38.542,79.898,0.62,N. dutertrei,0
 ELT48.027-PC,-38.542,79.898,0.62,G. conglomerata,0
 ELT48.027-PC,-38.542,79.898,0.62,G. hexagonus,0
@@ -84,23 +84,23 @@ ELT48.027-PC,-38.542,79.898,0.62,C. nitida,0
 ELT48.027-PC,-38.542,79.898,0.62,G. glutinata,20
 ELT48.027-PC,-38.542,79.898,0.62,G. truncatulinoides,9
 ELT48.027-PC,-44.877,106.518,0.39,G. eastropacia,0
-ELT48.027-PC,-44.877,106.518,0.39,G. bulloides,45.7
+ELT48.027-PC,-44.877,106.518,0.39,G. bulloides,102
 ELT48.027-PC,-44.877,106.518,0.39,G. calida,0
 ELT48.027-PC,-44.877,106.518,0.39,G. crassaformis,0
 ELT48.027-PC,-44.877,106.518,0.39,N. dutertrei,0
-ELT48.027-PC,-44.877,106.518,0.39,G. falconensis,0.5
-ELT48.027-PC,-44.877,106.518,0.39,G. glutinata,1.4
+ELT48.027-PC,-44.877,106.518,0.39,G. falconensis,1
+ELT48.027-PC,-44.877,106.518,0.39,G. glutinata,3
 ELT48.027-PC,-44.877,106.518,0.39,G. hirsuta,0
 ELT48.027-PC,-44.877,106.518,0.39,T. humilis,0
-ELT48.027-PC,-44.877,106.518,0.39,G. inflata,16.7
-ELT48.027-PC,-44.877,106.518,0.39,T. quinqueloba,1.4
+ELT48.027-PC,-44.877,106.518,0.39,G. inflata,37
+ELT48.027-PC,-44.877,106.518,0.39,T. quinqueloba,3
 ELT48.027-PC,-44.877,106.518,0.39,G. ruber albus,0
 ELT48.027-PC,-44.877,106.518,0.39,T. sacculifer,0
 ELT48.027-PC,-44.877,106.518,0.39,G. scitula,0
-ELT48.027-PC,-44.877,106.518,0.39,N. pachyderma,27.6
-ELT48.027-PC,-44.877,106.518,0.39,N. incompta,4.5
+ELT48.027-PC,-44.877,106.518,0.39,N. pachyderma,61
+ELT48.027-PC,-44.877,106.518,0.39,N. incompta,10
 ELT48.027-PC,-44.877,106.518,0.39,O. universa,0
-ELT48.027-PC,-44.877,106.518,0.39,G. truncatulinoides,2.3
+ELT48.027-PC,-44.877,106.518,0.39,G. truncatulinoides,5
 RC13-152,16.708,-75.44,0.6,O. universa,6
 RC13-152,16.708,-75.44,0.6,G. conglobatus,9
 RC13-152,16.708,-75.44,0.6,G. ruber ruber,20
@@ -118,7 +118,7 @@ RC13-152,16.708,-75.44,0.6,G. rubescens,3
 RC13-152,16.708,-75.44,0.6,T. humilis,0
 RC13-152,16.708,-75.44,0.6,T. quinqueloba,0
 RC13-152,16.708,-75.44,0.6,N. pachyderma,0
-RC13-152,16.708,-75.44,0.6,N. incompta,0
+RC13-152,16.708,-75.44,0.6,N. incompta,1
 RC13-152,16.708,-75.44,0.6,N. dutertrei,8
 RC13-152,16.708,-75.44,0.6,G. conglomerata,0
 RC13-152,16.708,-75.44,0.6,G. hexagonus,0
@@ -155,7 +155,7 @@ RC13-152,15.065,-75.95,0.6,G. rubescens,6
 RC13-152,15.065,-75.95,0.6,T. humilis,0
 RC13-152,15.065,-75.95,0.6,T. quinqueloba,0
 RC13-152,15.065,-75.95,0.6,N. pachyderma,0
-RC13-152,15.065,-75.95,0.6,N. incompta,2
+RC13-152,15.065,-75.95,0.6,N. incompta,4
 RC13-152,15.065,-75.95,0.6,N. dutertrei,13
 RC13-152,15.065,-75.95,0.6,G. conglomerata,0
 RC13-152,15.065,-75.95,0.6,G. hexagonus,0
@@ -192,7 +192,7 @@ RC13-152,13.178,-79.83,0.8,G. rubescens,6
 RC13-152,13.178,-79.83,0.8,T. humilis,0
 RC13-152,13.178,-79.83,0.8,T. quinqueloba,0
 RC13-152,13.178,-79.83,0.8,N. pachyderma,0
-RC13-152,13.178,-79.83,0.8,N. incompta,1
+RC13-152,13.178,-79.83,0.8,N. incompta,4
 RC13-152,13.178,-79.83,0.8,N. dutertrei,19
 RC13-152,13.178,-79.83,0.8,G. conglomerata,0
 RC13-152,13.178,-79.83,0.8,G. hexagonus,0
@@ -232,6 +232,7 @@ RE5-034,42.3833,-21.9667,0.4,G. hexagonus,0
 RE5-034,42.3833,-21.9667,0.4,P. obliquiloculata,51
 RE5-034,42.3833,-21.9667,0.4,G. inflata,0
 RE5-034,42.3833,-21.9667,0.4,G. crassaformis,22
+RE5-034,42.3833,-21.9667,0.4,N. incompta,0
 RE5-034,42.3833,-21.9667,0.4,G. cultrata,34
 RE5-034,42.3833,-21.9667,0.4,C. nitida,0
 RE5-034,42.3833,-21.9667,0.4,G. uvula,0
@@ -255,7 +256,7 @@ V04-8,37.233,33.13,0.5,G. rubescens,0
 V04-8,37.233,33.13,0.5,T. humilis,38
 V04-8,37.233,33.13,0.5,T. quinqueloba,6
 V04-8,37.233,33.13,0.5,N. pachyderma,7
-V04-8,37.233,33.13,0.5,N. incompta,4
+V04-8,37.233,33.13,0.5,N. incompta,7
 V04-8,37.233,33.13,0.5,N. dutertrei,0
 V04-8,37.233,33.13,0.5,G. conglomerata,0
 V04-8,37.233,33.13,0.5,G. hexagonus,0
@@ -292,7 +293,7 @@ V04-32,35.05,-11.62,0.3,G. rubescens,1
 V04-32,35.05,-11.62,0.3,T. humilis,23
 V04-32,35.05,-11.62,0.3,T. quinqueloba,2
 V04-32,35.05,-11.62,0.3,N. pachyderma,48
-V04-32,35.05,-11.62,0.3,N. incompta,1
+V04-32,35.05,-11.62,0.3,N. incompta,4
 V04-32,35.05,-11.62,0.3,N. dutertrei,0
 V04-32,35.05,-11.62,0.3,G. conglomerata,0
 V04-32,35.05,-11.62,0.3,G. hexagonus,0

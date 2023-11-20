@@ -7,26 +7,21 @@ glamap <- read_csv("raw/GLAMAP.csv")%>% replace_na_with_zero()
 
 names(glamap) <- gsub(" [%]", "", names(glamap), fixed=T)
 
-glamap <- glamap %>% select(!c("P/D int...44","P/D int...26","G. mentum", "D. grahami"))
-glamap <- glamap %>% replace_column_name("N. pachyderma d", "N. incompta")
-glamap <- glamap %>% replace_column_name("G. ruber p", "G. ruber ruber")
-glamap <- glamap %>% replace_column_name("G. quinqueloba d", "T. quinqueloba")
-glamap <- glamap %>% replace_column_name("G. quinqueloba", "T. quinqueloba")
-glamap <- glamap %>% replace_column_name("G. trilobus sac", "G. sacculifer")
-glamap <- glamap %>% replace_column_name("G. trilobus tril", "G. clavaticamerata")
-glamap <- glamap %>% replace_column_name("G. truncatulinoides d", "G. truncatulinoides")
-glamap <- glamap %>% replace_column_name("G. aequilateralis", "G. siphonifera")
-glamap <- glamap %>% replace_column_name("G. digitata", "B. digitata")
-glamap <- glamap %>% replace_column_name("G. quinqueloba s", "T. quinqueloba")
-glamap <- glamap %>% replace_column_name("G. truncatulinoides s", "G. truncatulinoides")
-glamap <- glamap %>% replace_column_name("N. pachyderma s", "N. pachyderma")
-glamap <- glamap %>% replace_column_name("G. ruber w", "G. ruber albus")
-glamap <- glamap %>% replace_column_name("G. menardii", "G. cultrata")
-glamap <- glamap %>% replace_column_name("G. sacculifer", "T. sacculifer")
-glamap <- glamap %>% select(-"G. clavaticamerata")
+glamap <- merge_morphotypes(glamap, c("G. truncatulinoides d", "G. truncatulinoides s"), "G. truncatulinoides")
 
-glamap <- glamap %>% mutate_at(vars(`G. siphonifera`:`N. pachyderma`), ~ . /100)
-glamap <- glamap %>% pivot_longer(cols=c(`G. siphonifera`:`N. pachyderma`), names_to = "Species", values_to="Relative Abundance")
+glamap <- glamap %>% select(!c("G. mentum", "D. grahami", "G. quinqueloba s", "G. quinqueloba d"))
+glamap <- glamap %>% revise_sp_name("G. quinqueloba", "T. quinqueloba")
+
+glamap <- glamap %>% revise_sp_name("G. trilobus sac", "T. sacculifer")
+glamap <- glamap %>% revise_sp_name("G. trilobus tril", "T. sacculifer")
+glamap <- glamap %>% revise_sp_name("G. sacculifer", "T. sacculifer")
+
+glamap <- merge_morphotypes(glamap, c("P/D int...44","P/D int...26","N. pachyderma d"), "N. incompta")
+
+glamap <- glamap %>% clean_species()
+
+glamap <- glamap %>% mutate_at(vars(`G. eastropacia`:`N. incompta`), ~ . /100)
+glamap <- glamap %>% pivot_longer(cols=c(`G. eastropacia`:`N. incompta`), names_to = "Species", values_to="Relative Abundance")
 glamap <- glamap %>% distinct()
 write_csv(glamap, "sp/lgm_glamap_sp_r.csv")
 
