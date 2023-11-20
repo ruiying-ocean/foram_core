@@ -20,13 +20,11 @@ names(climap_lgm) <- gsub(" [%]", "", names(climap_lgm), fixed=T)
 names(climap_lgm) <- gsub(" [m]", "", names(climap_lgm), fixed=T)
 
 ## replace species names
-climap_lgm <- climap_lgm %>% revise_sp_name("G. ruber", "G. ruber albus")
 climap_lgm <- climap_lgm %>% clean_species()
+climap_lgm <- climap_lgm %>% revise_sp_name("G. ruber", "G. ruber albus")
 
 ## combine G. truncatulinoides s and d
-climap_lgm <- climap_lgm %>% 
-  mutate(`G. truncatulinoides` = `G. truncatulinoides s` + `G. truncatulinoides d`) %>%
-  select(-`G. truncatulinoides s`, -`G. truncatulinoides d`)
+climap_lgm <- merge_morphotypes(climap_lgm, c("G. truncatulinoides d", "G. truncatulinoides s"), "G. truncatulinoides")
 
 find_missing_species(symbiosis_tbl$short_name, names(climap_lgm))
 
@@ -74,9 +72,7 @@ foram_dat <- foram_dat %>% revise_sp_name('T. sacculifer total', 'T. sacculifer'
 foram_dat <- foram_dat %>% revise_sp_name('G. hexagona', 'G. hexagonus')
 
 ## combine G. trunc sin/dex
-foram_dat <- foram_dat %>% 
-  mutate(`G. truncatulinoides` = `G. truncatulinodes left` + `G. truncatulinodes right`) %>%
-  select(-`G. truncatulinodes left`, -`G. truncatulinodes right`)
+climap_lgm <- merge_morphotypes(climap_lgm, c("G. truncatulinoides left", "G. truncatulinoides right"), "G. truncatulinoides")
 
 ## format the CoreID column  
 core_id_formatter <- function(core_id) {

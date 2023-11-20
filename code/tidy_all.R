@@ -58,12 +58,6 @@ wdf <- wdf[!duplicated(wdf), ]
 
 wdf %>% write_csv("tidy/lgm_sp_a_tidy.csv")
 
-## number of species
-print(paste("LGM species:",
-      wdf %>% select(-c(Data_Source, Latitude, Longitude)) %>% colnames() %>% length()))
-
-print(paste("LGM samples:",
-            wdf  %>% nrow()))
 
 #---------------------------------------------------
 # merge all absolute abundance (LGM Functional Group)

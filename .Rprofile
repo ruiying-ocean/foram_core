@@ -94,6 +94,14 @@ customPrompt <- function() {
         if (USE_GLAMAP) source("code/clean_glamap.R")
         if (USE_ADDITIONAL) source("code/clean_additional.R")
         source("code/tidy_all.R")
+        ## number of species
+        df_lgm <- read_csv("tidy/lgm_sp_a_tidy.csv")
+        df_pi <- read_csv("tidy/forcens_sp_a_tidy.csv")
+        print(paste("LGM species:",df_lgm %>% select(-c(Data_Source, Latitude, Longitude)) %>% 
+                        colnames() %>% length()))
+        print(paste("PI species:", df_pi %>% select(`D. anfracta`:`H. digitata`) %>%
+                        colnames() %>% length()))
+
         ## Add your specific code here
     } else if (selection == "no") {
         ## Code to execute if user selects "No"
@@ -114,5 +122,5 @@ customPrompt <- function() {
     }
 }
 
-                                        # Call the custom prompt function
+##  Call the custom prompt function
 customPrompt()
