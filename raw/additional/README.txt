@@ -27,8 +27,7 @@ age model embedded
 
 Core PS2644-5
 Latitude: 67.866660, Longitude: -21.765000
-1.07-1.23 m -> 18.84-21.64 ka
-Age model: https://doi.pangaea.de/10.1594/PANGAEA.57797
+1.07-1.23 m -> 18.84-21.64 ka (https://doi.pangaea.de/10.1594/PANGAEA.57797)
 
 Core PS1243-1
 Latitude: 69.371800 * Longitude: -6.553000
