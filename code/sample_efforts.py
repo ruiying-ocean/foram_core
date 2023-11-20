@@ -4,12 +4,13 @@ import seaborn as sns
 from shapely.geometry import Point
 import geopandas as gpd
 import string
+from matplotlib.gridspec import GridSpec
 
 def pd_to_gpd(data):
     geometry = [Point(xy) for xy in zip(data['Longitude'], data['Latitude'])]
     gdf = gpd.GeoDataFrame(data, geometry=geometry, crs="EPSG:4326")
     return gdf
-from matplotlib.gridspec import GridSpec
+
 
 def main():
     "plot sample number over 1 degree bin (x axis)"
@@ -21,8 +22,8 @@ def main():
 
     # Create a figure with a 2x3 grid of subplots
     sns.set_style("ticks")
-    pi_color = sns.color_palette("Set2")[1]
-    lgm_color = sns.color_palette("Set2")[0]
+    pi_color = "#e86254"
+    lgm_color = "#1e466e"
 
     fig = plt.figure(figsize=(10.5, 8), tight_layout=True)
 
@@ -51,8 +52,8 @@ def main():
     n_pi = len(pi)
     n_lgm = len(lgm)
     
-    ax_map1.annotate('LGM: n= '+str(n_lgm), xy=(0.05, 0.925), xycoords='axes fraction', fontsize=10)
-    ax_map2.annotate('PI: n='+str(n_pi), xy=(0.05, 0.925), xycoords='axes fraction', fontsize=10)
+    ax_map1.annotate('n= '+str(n_lgm), xy=(0.05, 0.925), xycoords='axes fraction', fontsize=10)
+    ax_map2.annotate('n='+str(n_pi), xy=(0.05, 0.925), xycoords='axes fraction', fontsize=10)
 
     gdf_lgm.plot(ax=ax_map1, markersize=5, label='LGM', color=lgm_color)
     gdf_pi.plot(ax=ax_map2, markersize=5, label='PI', color=pi_color)
