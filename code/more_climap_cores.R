@@ -21,7 +21,7 @@ CHN82.24 <- CHN82.24 %>%
 
 ## ------------------
 ELT48.022 <- read_tsv("raw/CLIMAP/manually_downloaded/ELT48.022-PC.tab") %>%
-  mutate(Event = "ELT48.022-PC", Latitude = 39.895000, Longitude = -85.410000, .before = 1)
+  mutate(Event = "ELT48.022-PC", Latitude = 39.895000, Longitude = 85.410000, .before = 1)
 names(ELT48.022) <- gsub(" [#]", "", names(ELT48.022), fixed = T)
 ELT48.022 <- merge_morphotypes(ELT48.022, c("G. truncatulinoides d", "G. truncatulinoides s"), "G. truncatulinoides")
 ELT48.022 <- clean_species(ELT48.022) %>% replace_na_with_zero()
