@@ -47,6 +47,13 @@ def main():
     world.plot(ax=ax_map1, color='lightgray', edgecolor='lightgray')
     world.plot(ax=ax_map2, color='lightgray', edgecolor='lightgray')
 
+    ## annotate the total number of samples
+    n_pi = len(pi)
+    n_lgm = len(lgm)
+    
+    ax_map1.annotate('LGM: n= '+str(n_lgm), xy=(0.05, 0.925), xycoords='axes fraction', fontsize=10)
+    ax_map2.annotate('PI: n='+str(n_pi), xy=(0.05, 0.925), xycoords='axes fraction', fontsize=10)
+
     gdf_lgm.plot(ax=ax_map1, markersize=5, label='LGM', color=lgm_color)
     gdf_pi.plot(ax=ax_map2, markersize=5, label='PI', color=pi_color)
 
