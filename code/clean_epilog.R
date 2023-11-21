@@ -14,8 +14,10 @@ epilog <- merge_morphotypes(epilog, c("G. truncatulinoides d", "G. truncatulinoi
 epilog <- merge_morphotypes(epilog, c("G. sacculifer wo sac", "G. sacculifer sac"), "T. sacculifer")
 epilog <- epilog %>% revise_sp_name("G. menardii flexuosa", "G. cultrata")
 epilog <- epilog %>% clean_species()
-find_missing_species(symbiosis_tbl$short_name, names(epilog))
 
+## put `Foram plankt [#]` at the end
+epilog <- epilog %>% relocate("Foram plankt [#]", .after = "T. sacculifer")
+find_missing_species(symbiosis_tbl$short_name, names(epilog))
 ## ---------------------------------
 ## Convert Relative Abundance to Absolute Abundance
 ## ---------------------------------
