@@ -96,7 +96,7 @@ class DataProduct:
             if self.lon_eastern:
                 lon = self.convert_to_longitude_east(lon)
                 ## find the value
-            lst.append(self.find_nearest(lon, lat))
+            lst.append(self.find_nearest(lon, lat, tolerate_na=tolerate_na))
         df[column_name] = np.array(lst)
         return df
 
@@ -120,10 +120,10 @@ def main():
 
     tierney_data = xr.open_dataset("tidy/Tierney2020_DA_ocn_regrid.nc")['SSTLGM']
     SST_LGM = DataProduct(tierney_data, lon='lon', lat='lat', lon_eastern=True)
-    SST_LGM.match_dataframe(lgm_fg_a, df_lat, df_lon, df_sst).to_csv("tidy/lgm_fg_a_wsst.csv", index=False)
-    SST_LGM.match_dataframe(lgm_fg_r, df_lat, df_lon, df_sst).to_csv("tidy/lgm_fg_r_wsst.csv", index=False)
-    SST_LGM.match_dataframe(lgm_sp_a, df_lat, df_lon, df_sst).to_csv("tidy/lgm_sp_a_wsst.csv", index=False)
-    SST_LGM.match_dataframe(lgm_sp_r, df_lat, df_lon, df_sst).to_csv("tidy/lgm_sp_r_wsst.csv", index=False)
+    SST_LGM.match_dataframe(lgm_fg_a, df_lat, df_lon, df_sst, False).to_csv("tidy/lgm_fg_a_wsst.csv", index=False)
+    SST_LGM.match_dataframe(lgm_fg_r, df_lat, df_lon, df_sst, False).to_csv("tidy/lgm_fg_r_wsst.csv", index=False)
+    SST_LGM.match_dataframe(lgm_sp_a, df_lat, df_lon, df_sst, False).to_csv("tidy/lgm_sp_a_wsst.csv", index=False)
+    SST_LGM.match_dataframe(lgm_sp_r, df_lat, df_lon, df_sst, False).to_csv("tidy/lgm_sp_r_wsst.csv", index=False)
 
     ## if add the annan sst, use the following code
     ## the SST is built from PI + LGM anomaly, and PI field uses ERSSTv5
