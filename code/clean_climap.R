@@ -79,7 +79,7 @@ foram_dat <- foram_dat %>% revise_sp_name("T. sacculifer total", "T. sacculifer"
 foram_dat <- foram_dat %>% revise_sp_name("G. hexagona", "G. hexagonus")
 
 ## combine G. trunc sin/dex
-climap_lgm <- merge_morphotypes(climap_lgm, c("G. truncatulinoides left", "G. truncatulinoides right"), "G. truncatulinoides")
+foram_dat <- merge_morphotypes(foram_dat, c("G. truncatulinodes left", "G. truncatulinodes right"), "G. truncatulinoides")
 
 ## format the CoreID column
 core_id_formatter <- function(core_id) {

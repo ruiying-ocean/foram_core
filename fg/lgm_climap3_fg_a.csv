@@ -13,12 +13,6 @@ ELT48.022-PC,39.895,85.41,0.82,symbiont-facultative,non-spinose,49
 ELT48.022-PC,39.895,85.41,0.82,symbiont-facultative,spinose,0
 ELT48.022-PC,39.895,85.41,0.82,symbiont-obligate,spinose,0
 ELT48.022-PC,39.895,85.41,0.82,undetermined,non-spinose,0
-ELT48.027-PC,-44.877,106.518,0.39,symbiont-barren,non-spinose,76
-ELT48.027-PC,-44.877,106.518,0.39,symbiont-barren,spinose,105
-ELT48.027-PC,-44.877,106.518,0.39,symbiont-facultative,non-spinose,40
-ELT48.027-PC,-44.877,106.518,0.39,symbiont-facultative,spinose,0
-ELT48.027-PC,-44.877,106.518,0.39,symbiont-obligate,spinose,1
-ELT48.027-PC,-44.877,106.518,0.39,undetermined,non-spinose,0
 ELT48.027-PC,-38.542,79.898,0.62,symbiont-barren,non-spinose,114
 ELT48.027-PC,-38.542,79.898,0.62,symbiont-barren,spinose,140
 ELT48.027-PC,-38.542,79.898,0.62,symbiont-bearing,spinose,0
@@ -26,6 +20,12 @@ ELT48.027-PC,-38.542,79.898,0.62,symbiont-facultative,non-spinose,42
 ELT48.027-PC,-38.542,79.898,0.62,symbiont-facultative,spinose,2
 ELT48.027-PC,-38.542,79.898,0.62,symbiont-obligate,spinose,2
 ELT48.027-PC,-38.542,79.898,0.62,undetermined,non-spinose,0
+ELT48.029-PC,-44.877,106.518,0.39,symbiont-barren,non-spinose,76
+ELT48.029-PC,-44.877,106.518,0.39,symbiont-barren,spinose,105
+ELT48.029-PC,-44.877,106.518,0.39,symbiont-facultative,non-spinose,40
+ELT48.029-PC,-44.877,106.518,0.39,symbiont-facultative,spinose,0
+ELT48.029-PC,-44.877,106.518,0.39,symbiont-obligate,spinose,1
+ELT48.029-PC,-44.877,106.518,0.39,undetermined,non-spinose,0
 RC13-152,13.178,-79.83,0.8,symbiont-barren,non-spinose,14
 RC13-152,13.178,-79.83,0.8,symbiont-barren,spinose,5
 RC13-152,13.178,-79.83,0.8,symbiont-bearing,non-spinose,0

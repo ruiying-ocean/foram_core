@@ -21,7 +21,7 @@ wdf <- ldf %>%
     values_fn = list
   )
 
-wdf <- wdf %>% unnest(cols = `O. universa`:`G. uvula`)
+wdf <- wdf %>% unnest(cols = `O. universa`:`G. siphonifera`)
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
 
@@ -52,12 +52,11 @@ wdf <- ldf %>%
   )
 
 wdf <- wdf %>% unnest(`G. bulloides`:`G. elongatus`)
-"Age [ka BP]" %in% ldf[[12]]
+
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
 
-wdf %>% write_csv("tidy/lgm_sp_a_tidy.csv")
-
+wdf %>% fwrite("tidy/lgm_sp_a_tidy.csv")
 
 #---------------------------------------------------
 # merge all absolute abundance (LGM Functional Group)
@@ -118,11 +117,11 @@ wdf <- ldf %>% pivot_wider(
 
 ## handle with the case of different length of vectors
 ## delete it first
-tmp1 <- wdf[355, ]
-wdf <- wdf[-355, ]
+tmp1 <- wdf[413,]
+wdf <- wdf[-413,]
 
-tmp2 <- wdf[370, ]
-wdf <- wdf[-370, ]
+tmp2 <- wdf[428,]
+wdf <- wdf[-428,]
 wdf <- wdf %>% unnest(cols = c(`symbiont-barren non-spinose`:`symbiont-facultative spinose`))
 
 
