@@ -129,7 +129,7 @@ def main():
     ## if add the annan sst, use the following code
     ## the SST is built from PI + LGM anomaly, and PI field uses ERSSTv5
     annan_sst = xr.open_dataset("tidy/Annan2022_sst_field.nc")['sst']
-    SST_LGM_ALT = DataProduct(annan_sst, lon='longitude', lat='lattitude', lon_eastern=False)
+    SST_LGM_ALT = DataProduct(annan_sst, lon='longitude', lat='latitude', lon_eastern=False)
     
     SST_LGM_ALT.match_dataframe(lgm_fg_a, df_lat, df_lon, df_sst).to_csv("tidy/lgm_fg_a_wsst.csv", index=False)
     SST_LGM_ALT.match_dataframe(lgm_fg_r, df_lat, df_lon, df_sst).to_csv("tidy/lgm_fg_r_wsst.csv", index=False)
