@@ -100,9 +100,8 @@ class DataProduct:
         df[column_name] = np.array(lst)
         return df
 
+    
 def main():    
-    
-    
 
     lgm_fg_a = pd.read_csv("tidy/lgm_fg_a_tidy.csv")
     lgm_fg_r = pd.read_csv("tidy/lgm_fg_r_tidy.csv")

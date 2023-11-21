@@ -89,7 +89,8 @@ wdf <- ldf %>%
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
 
-wdf %>% write_csv("tidy/lgm_fg_a_tidy.csv")
+wdf %>% fwrite("tidy/lgm_fg_a_tidy.csv")
+
 #---------------------------------------------------
 # merge all relative abundance (LGM Functional Group)
 #---------------------------------------------------
