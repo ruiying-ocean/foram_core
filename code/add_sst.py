@@ -135,14 +135,21 @@ def main():
     SST_LGM_ALT.match_dataframe(lgm_fg_r, df_lat, df_lon, df_sst).to_csv("tidy/lgm_fg_r_wsst.csv", index=False)
     SST_LGM_ALT.match_dataframe(lgm_sp_a, df_lat, df_lon, df_sst).to_csv("tidy/lgm_sp_a_wsst.csv", index=False)
     SST_LGM_ALT.match_dataframe(lgm_sp_r, df_lat, df_lon, df_sst).to_csv("tidy/lgm_sp_r_wsst.csv", index=False)
-
     
-    hadi_sst = xr.open_dataset("tidy/HadISST_PI.nc")['sst']
-    PI_SST = DataProduct(hadi_sst, lon='longitude', lat='latitude', lon_eastern=False)
-    PI_SST.match_dataframe(pi_fg_a, df_lat, df_lon, df_sst).to_csv("tidy/forcens_fg_a_wsst.csv", index=False)
-    PI_SST.match_dataframe(pi_fg_r, df_lat, df_lon, df_sst).to_csv("tidy/forcens_fg_r_wsst.csv", index=False)
-    PI_SST.match_dataframe(pi_sp_a, df_lat, df_lon, df_sst).to_csv("tidy/forcens_sp_a_wsst.csv", index=False)
-    PI_SST.match_dataframe(pi_sp_r, df_lat, df_lon, df_sst).to_csv("tidy/forcens_sp_r_wsst.csv", index=False)
+    # hadi_sst = xr.open_dataset("tidy/HadISST_PI.nc")['sst']
+    # PI_SST = DataProduct(hadi_sst, lon='longitude', lat='latitude', lon_eastern=False)
+    # PI_SST.match_dataframe(pi_fg_a, df_lat, df_lon, df_sst).to_csv("tidy/forcens_fg_a_wsst.csv", index=False)
+    # PI_SST.match_dataframe(pi_fg_r, df_lat, df_lon, df_sst).to_csv("tidy/forcens_fg_r_wsst.csv", index=False)
+    # PI_SST.match_dataframe(pi_sp_a, df_lat, df_lon, df_sst).to_csv("tidy/forcens_sp_a_wsst.csv", index=False)
+    # PI_SST.match_dataframe(pi_sp_r, df_lat, df_lon, df_sst).to_csv("tidy/forcens_sp_r_wsst.csv", index=False)
+
+    ersst = xr.open_dataset("tidy/ersst_1854_1883.nc")['tos']
+    PI_SST_ALT = DataProduct(ersst, lon='lon', lat='lat', lon_eastern=False)
+    PI_SST_ALT.match_dataframe(pi_fg_a, df_lat, df_lon, df_sst).to_csv("tidy/forcens_fg_a_wsst.csv", index=False)
+    PI_SST_ALT.match_dataframe(pi_fg_r, df_lat, df_lon, df_sst).to_csv("tidy/forcens_fg_r_wsst.csv", index=False)
+    PI_SST_ALT.match_dataframe(pi_sp_a, df_lat, df_lon, df_sst).to_csv("tidy/forcens_sp_a_wsst.csv", index=False)
+    PI_SST_ALT.match_dataframe(pi_sp_r, df_lat, df_lon, df_sst).to_csv("tidy/forcens_sp_r_wsst.csv", index=False)
+    
     print(">>> [DONE] SST Added")
 
 if __name__ == "__main__":
