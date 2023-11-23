@@ -1,17 +1,17 @@
-Latitude,Longitude,Depth sed [m],Symbiosis,Spine,Absolute Abundance
--44.25,149.98,0.355,symbiont-barren,non-spinose,114
--44.25,149.98,0.355,symbiont-barren,spinose,222
--44.25,149.98,0.355,symbiont-bearing,non-spinose,0
--44.25,149.98,0.355,symbiont-bearing,spinose,0
--44.25,149.98,0.355,symbiont-facultative,non-spinose,84
--44.25,149.98,0.355,symbiont-obligate,spinose,1
--44.25,149.98,0.355,undetermined,non-spinose,0
--44.25,149.98,0.355,undetermined,spinose,0
--44.25,149.98,0.405,symbiont-barren,non-spinose,93
--44.25,149.98,0.405,symbiont-barren,spinose,206
--44.25,149.98,0.405,symbiont-bearing,non-spinose,0
--44.25,149.98,0.405,symbiont-bearing,spinose,0
--44.25,149.98,0.405,symbiont-facultative,non-spinose,81
--44.25,149.98,0.405,symbiont-obligate,spinose,1
--44.25,149.98,0.405,undetermined,non-spinose,0
--44.25,149.98,0.405,undetermined,spinose,0
+Event,Latitude,Longitude,Depth sed [m],Symbiosis,Spine,Absolute Abundance
+Fr194-GC3,-44.25,149.98,0.355,symbiont-barren,non-spinose,114
+Fr194-GC3,-44.25,149.98,0.355,symbiont-barren,spinose,222
+Fr194-GC3,-44.25,149.98,0.355,symbiont-bearing,non-spinose,0
+Fr194-GC3,-44.25,149.98,0.355,symbiont-bearing,spinose,0
+Fr194-GC3,-44.25,149.98,0.355,symbiont-facultative,non-spinose,84
+Fr194-GC3,-44.25,149.98,0.355,symbiont-obligate,spinose,1
+Fr194-GC3,-44.25,149.98,0.355,undetermined,non-spinose,0
+Fr194-GC3,-44.25,149.98,0.355,undetermined,spinose,0
+Fr194-GC3,-44.25,149.98,0.405,symbiont-barren,non-spinose,93
+Fr194-GC3,-44.25,149.98,0.405,symbiont-barren,spinose,206
+Fr194-GC3,-44.25,149.98,0.405,symbiont-bearing,non-spinose,0
+Fr194-GC3,-44.25,149.98,0.405,symbiont-bearing,spinose,0
+Fr194-GC3,-44.25,149.98,0.405,symbiont-facultative,non-spinose,81
+Fr194-GC3,-44.25,149.98,0.405,symbiont-obligate,spinose,1
+Fr194-GC3,-44.25,149.98,0.405,undetermined,non-spinose,0
+Fr194-GC3,-44.25,149.98,0.405,undetermined,spinose,0

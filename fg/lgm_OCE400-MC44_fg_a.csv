@@ -1,4 +1,4 @@
-Latitude,Longitude,depth_cm,Symbiosis,Spine,Absolute Abundance
-43.483033,-67.882617,34.5,symbiont-barren,non-spinose,160
-43.483033,-67.882617,34.5,symbiont-barren,spinose,12
-43.483033,-67.882617,34.5,symbiont-facultative,non-spinose,2
+Event,Latitude,Longitude,depth_cm,Symbiosis,Spine,Absolute Abundance
+OCE400-MC44,43.483033,-67.882617,34.5,symbiont-barren,non-spinose,160
+OCE400-MC44,43.483033,-67.882617,34.5,symbiont-barren,spinose,12
+OCE400-MC44,43.483033,-67.882617,34.5,symbiont-facultative,non-spinose,2

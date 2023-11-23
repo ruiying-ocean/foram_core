@@ -1,7 +1,7 @@
-Latitude,Longitude,Depth sed [m],Symbiosis,Spine,Absolute Abundance
-70.305,-3.123333,0.44,symbiont-barren,non-spinose,372
-70.305,-3.123333,0.44,symbiont-barren,spinose,2
-70.305,-3.123333,0.44,symbiont-bearing,non-spinose,0
-70.305,-3.123333,0.44,symbiont-facultative,non-spinose,0
-70.305,-3.123333,0.44,symbiont-obligate,spinose,0
-70.305,-3.123333,0.44,undetermined,non-spinose,0
+Event,Latitude,Longitude,Depth sed [m],Symbiosis,Spine,Absolute Abundance
+GIK23059-3,70.305,-3.123333,0.44,symbiont-barren,non-spinose,372
+GIK23059-3,70.305,-3.123333,0.44,symbiont-barren,spinose,2
+GIK23059-3,70.305,-3.123333,0.44,symbiont-bearing,non-spinose,0
+GIK23059-3,70.305,-3.123333,0.44,symbiont-facultative,non-spinose,0
+GIK23059-3,70.305,-3.123333,0.44,symbiont-obligate,spinose,0
+GIK23059-3,70.305,-3.123333,0.44,undetermined,non-spinose,0
