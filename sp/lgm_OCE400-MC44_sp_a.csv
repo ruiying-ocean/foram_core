@@ -1,7 +1,7 @@
-depth_cm,Event,Latitude,Longitude,Species,Absolute Abundance
-34.5,OCE400-MC44,43.483033,-67.882617,N. pachyderma,8
-34.5,OCE400-MC44,43.483033,-67.882617,N. incompta,152
-34.5,OCE400-MC44,43.483033,-67.882617,G. bulloides,4
-34.5,OCE400-MC44,43.483033,-67.882617,T. quinqueloba,8
-34.5,OCE400-MC44,43.483033,-67.882617,G. inflata,2
-34.5,OCE400-MC44,43.483033,-67.882617,G. glutinata,NA
+Event,Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
+OCE400-MC44,43.483033,-67.882617,0.345,N. pachyderma,8
+OCE400-MC44,43.483033,-67.882617,0.345,N. incompta,152
+OCE400-MC44,43.483033,-67.882617,0.345,G. bulloides,4
+OCE400-MC44,43.483033,-67.882617,0.345,T. quinqueloba,8
+OCE400-MC44,43.483033,-67.882617,0.345,G. inflata,2
+OCE400-MC44,43.483033,-67.882617,0.345,G. glutinata,NA

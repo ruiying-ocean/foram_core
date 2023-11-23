@@ -1,20 +1,47 @@
 #---------------------------------------------------
 # merge all relative abundance (LGM Species)
 #---------------------------------------------------
+process_file <- function(file, ecolvl, abundance_col, file_pattern) {
+  print(file)
+  df <- read_csv(file)
+
+  # If contains Core column, rename it to "Event"
+  if ("Core" %in% colnames(df)) {
+    df <- df %>% rename(Event = Core)
+  }
+
+  # Candidate columns for Depth
+  candidate_cols <- c(
+    "Depth sed [m]", "Depth top [m]", "depth",
+    "Depth sed", "Sample depth - upper (m)"
+  )
+  common_cols <- intersect(candidate_cols, colnames(df))
+
+  # If contains any of the candidate Depth columns, rename it to "Depth [m]"
+  if (length(common_cols) > 0) {
+    df <- df %>% rename(`Depth [m]` = common_cols[1])
+  }
+
+  # Select specific columns
+  df <- df %>% select(c("Event", "Latitude", "Longitude", "Depth [m]", all_of(ecolvl), all_of(abundance_col)))
+
+  # Extract additional information from the file name
+  df <- df %>% mutate(Data_Source = str_extract(basename(file), file_pattern), .after = Event)
+
+  return(df)
+}
 
 filenames <- list.files("sp", pattern = "^lgm.*_r\\.csv$", full.names = TRUE)
-
-ldf <- lapply(filenames, function(file) {
-  df <- read_csv(file)
-  df <- df %>% select(c("Latitude", "Longitude", "Species", "Relative Abundance"))
-  df <- df %>% mutate(Data_Source = str_extract(basename(file), "(?<=lgm_).*?(?=_sp_r\\.csv)"))
-  return(df)
-})
+ldf <- lapply(filenames, process_file,
+  ecolvl = "Species",
+  abundance_col = "Relative Abundance",
+  file_pattern = "(?<=lgm_).*?(?=_sp_r\\.csv)"
+)
 
 wdf <- ldf %>%
   rbindlist() %>%
   pivot_wider(
-    id_cols = c("Data_Source", "Latitude", "Longitude"),
+    id_cols = c("Event", "Data_Source", "Depth [m]", "Latitude", "Longitude"),
     values_from = "Relative Abundance",
     names_from = "Species",
     values_fill = NA,
@@ -32,19 +59,16 @@ wdf %>% fwrite("tidy/lgm_sp_r_tidy.csv")
 #---------------------------------------------------
 
 filenames <- list.files("sp", pattern = "^lgm.*_a\\.csv$", full.names = TRUE)
-
-ldf <- lapply(filenames, function(file) {
-  df <- read_csv(file)
-  print(file)
-  df <- df %>% select(c("Latitude", "Longitude", "Species", "Absolute Abundance"))
-  df <- df %>% mutate(Data_Source = str_extract(basename(file), "(?<=lgm_).*?(?=_sp_a\\.csv)"))
-  return(df)
-})
+ldf <- lapply(filenames, process_file,
+  ecolvl = "Species",
+  abundance_col = "Absolute Abundance",
+  file_pattern = "(?<=lgm_).*?(?=_sp_a\\.csv)"
+)
 
 wdf <- ldf %>%
   rbindlist() %>%
   pivot_wider(
-    id_cols = c("Data_Source", "Latitude", "Longitude"),
+    id_cols = c("Event", "Data_Source", "Depth [m]", "Latitude", "Longitude"),
     values_from = "Absolute Abundance",
     names_from = "Species",
     values_fill = NA,
@@ -64,13 +88,11 @@ wdf %>% fwrite("tidy/lgm_sp_a_tidy.csv")
 
 filenames <- list.files("fg", pattern = "^lgm.*_a\\.csv$", full.names = TRUE)
 
-ldf <- lapply(filenames, function(file) {
-  df <- read_csv(file)
-  print(file)
-  df <- df %>% select(c("Latitude", "Longitude", "Spine", "Symbiosis", "Absolute Abundance"))
-  df <- df %>% mutate(Data_Source = str_extract(basename(file), "(?<=lgm_).*?(?=_fg_a\\.csv)"))
-  return(df)
-})
+ldf <- ldf <- lapply(filenames, process_file,
+  ecolvl = c("Symbiosis", "Spine"),
+  abundance_col = "Absolute Abundance",
+  file_pattern = "(?<=lgm_).*?(?=_fg_a\\.csv)"
+)
 
 ldf <- ldf %>% rbindlist()
 
@@ -78,7 +100,7 @@ ldf <- ldf %>% mutate(`Functional Group` = paste(Symbiosis, Spine, sep = " "))
 
 wdf <- ldf %>%
   pivot_wider(
-    id_cols = c("Data_Source", "Latitude", "Longitude"),
+    id_cols = c("Event", "Data_Source", "Depth [m]", "Latitude", "Longitude"),
     values_from = "Absolute Abundance",
     names_from = "Functional Group",
     values_fill = NA,
@@ -96,20 +118,18 @@ wdf %>% fwrite("tidy/lgm_fg_a_tidy.csv")
 #---------------------------------------------------
 
 filenames <- list.files("fg", pattern = "^lgm.*_r\\.csv$", full.names = TRUE)
-
-ldf <- lapply(filenames, function(file) {
-  df <- read_csv(file)
-  df <- df %>% select(c("Latitude", "Longitude", "Spine", "Symbiosis", "Relative Abundance"))
-  df <- df %>% mutate(Data_Source = str_extract(basename(file), "(?<=lgm_).*?(?=_fg_r\\.csv)"))
-  return(df)
-})
+ldf <- lapply(filenames, process_file,
+  ecolvl = c("Symbiosis", "Spine"),
+  abundance_col = "Relative Abundance",
+  file_pattern = "(?<=lgm_).*?(?=_fg_r\\.csv)"
+)
 
 ldf <- ldf %>%
   rbindlist() %>%
   mutate(`Functional Group` = paste(Symbiosis, Spine, sep = " "))
 
 wdf <- ldf %>% pivot_wider(
-  id_cols = c("Data_Source", "Latitude", "Longitude"),
+  id_cols = c("Event", "Data_Source", "Depth [m]", "Latitude", "Longitude"),
   values_from = "Relative Abundance",
   names_from = "Functional Group",
   values_fill = NA,
@@ -118,11 +138,11 @@ wdf <- ldf %>% pivot_wider(
 
 ## handle with the case of different length of vectors
 ## delete it first
-tmp1 <- wdf[413,]
-wdf <- wdf[-413,]
+tmp1 <- wdf[413, ]
+wdf <- wdf[-413, ]
 
-tmp2 <- wdf[428,]
-wdf <- wdf[-428,]
+tmp2 <- wdf[428, ]
+wdf <- wdf[-428, ]
 wdf <- wdf %>% unnest(cols = c(`symbiont-barren non-spinose`:`symbiont-facultative spinose`))
 
 

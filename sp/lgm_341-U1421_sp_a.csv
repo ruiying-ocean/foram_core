@@ -1,4 +1,4 @@
-Event,Latitude,Longitude,Depth top [m],Species,Absolute Abundance
+Event,Latitude,Longitude,Depth sed [m],Species,Absolute Abundance
 341-U1421,59.5072,-144.0456,51.8,G. bulloides,0
 341-U1421,59.5072,-144.0456,51.8,T. quinqueloba,0
 341-U1421,59.5072,-144.0456,51.8,G. scitula,0

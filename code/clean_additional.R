@@ -53,7 +53,7 @@ core7 <- core7 %>%
     `Depth top [m] (CSF-A, IODP Depth Scale Termi...)`,
     `G. bulloides [#] (Counting >150 µm fraction)`:`O. universa [#] (Counting >150 µm fraction)`
   ) %>%
-  rename(`Depth top [m]` = `Depth top [m] (CSF-A, IODP Depth Scale Termi...)`)
+  rename(`Depth sed [m]` = `Depth top [m] (CSF-A, IODP Depth Scale Termi...)`)
 core7 <- core7 %>% mutate(Latitude = 59.507200, Longitude = -144.045600, .before = 1) %>%
     mutate(Event="341-U1421", .before=Latitude)
 
@@ -64,16 +64,18 @@ core8 <- read_tsv("https://www.ncei.noaa.gov/pub/data/paleo/contributions_by_aut
 core8 <- core8 %>% dplyr::filter(depth_int_cm == "34-35")
 core8 %>% select("depth_cm", "n.pachy", "n.incomp", "g.bull", "t.quinq", "g.infla", "g.glut") -> core8
 core8 <- core8 %>% mutate(Latitude = 43.483033, Longitude = -67.882617) %>%
-    mutate(Event="OCE400-MC44", .before=Latitude)
+    mutate(Event="OCE400-MC44", .before=Latitude) %>%mutate(`Depth sed [m]` = depth_cm/100) %>%
+    select(-depth_cm)
 
 ## IODP_U1418
 core9 <- read_tsv("https://www.ncei.noaa.gov/pub/data/paleo/contributions_by_author/payne2021/payne2021_SNW.txt", comment = "#")
 core9 <- core9 %>%
-  dplyr::filter(age > 19000) %>%
+  dplyr::filter(age > 19000 & age < 21000) %>%
   select(depth, Num_Npachy) %>%
   mutate(Latitude = 58.8, Longitude = -144.13)
 core9 <- core9 %>% revise_sp_name("Num_Npachy", "N. pachyderma") %>%
-    mutate(Event="IODP_U1418", .before=Latitude)
+    mutate(Event="IODP_U1418", .before=Latitude) %>% 
+  rename(`Depth sed [m]` = depth)
 
 ## PS2644-5
 ## this core seems to use different unit
@@ -265,10 +267,10 @@ core5_long <- core5 %>% pivot_longer(cols = -c("Event", "Latitude", "Longitude",
 
 core6_long <- core6 %>% pivot_longer(cols = -c("Event", "Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
 
-core7_long <- core7 %>% pivot_longer(cols = -c("Event", "Latitude", "Longitude", "Depth top [m]"), names_to = "Species", values_to = "Absolute Abundance")
-core8_long <- core8 %>% pivot_longer(cols = -c("Event", "Latitude", "Longitude", "depth_cm"), names_to = "Species", values_to = "Absolute Abundance")
+core7_long <- core7 %>% pivot_longer(cols = -c("Event", "Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
+core8_long <- core8 %>% pivot_longer(cols = -c("Event", "Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
 
-core9_long <- core9 %>% pivot_longer(cols = -c("Event", "Latitude", "Longitude", "depth"), names_to = "Species", values_to = "Absolute Abundance")
+core9_long <- core9 %>% pivot_longer(cols = -c("Event", "Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
 
 core10_long <- core10 %>% pivot_longer(cols = -c("Event", "Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
 core11_long <- core11 %>% pivot_longer(cols = -c("Event", "Latitude", "Longitude", "Depth sed [m]"), names_to = "Species", values_to = "Absolute Abundance")
@@ -342,15 +344,15 @@ core6_long <- core6_long %>%
   summarise_all(.funs = sum, na.rm = T) %>%
   ungroup()
 core7_long <- core7_long %>%
-  group_by(Event,Latitude, Longitude, `Depth top [m]`, Symbiosis, Spine) %>%
+  group_by(Event,Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>%
   summarise_all(.funs = sum, na.rm = T) %>%
   ungroup()
 core8_long <- core8_long %>%
-  group_by(Event,Latitude, Longitude, `depth_cm`, Symbiosis, Spine) %>%
+  group_by(Event,Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>%
   summarise_all(.funs = sum, na.rm = T) %>%
   ungroup()
 core9_long <- core9_long %>%
-  group_by(Event,Latitude, Longitude, `depth`, Symbiosis, Spine) %>%
+  group_by(Event,Latitude, Longitude, `Depth sed [m]`, Symbiosis, Spine) %>%
   summarise_all(.funs = sum, na.rm = T) %>%
   ungroup()
 core10_long <- core10_long %>%

@@ -1,8 +1,8 @@
 ## This script is to clean the CLIMAP data in the LGM section
 ## It contains three data sources:
-## 1. Existing LGM relative abundance compilation and convert to absolute abundance
-## 2. All absolute abundance collection from NOAA/NCEI of climap 18k and
-## .   select the LGM set based on existing age model compilation
+## 1. Existing LGM relative abundance compilation to be converted to absolute abundance
+## 2. All absolute abundance collection from NOAA/NCEI climap 18k 
+## .   selected based on the existing LGM age model compilation
 ## 3. Manually searched LGM sediment cores in pangaea.de (KEYWORD: CLIMAP, or age model compilation)
 
 ## contact: rui.ying@bristol.ac.uk
