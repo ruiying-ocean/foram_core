@@ -11,11 +11,11 @@ def pd_to_gpd(data):
     gdf = gpd.GeoDataFrame(data, geometry=geometry, crs="EPSG:4326")
     return gdf
 
-
 def main():
     "plot sample number over 1 degree bin (x axis)"
-    pi = pd.read_csv("tidy/forcens_fg_a_wsst.csv")
-    lgm = pd.read_csv("tidy/lgm_fg_a_wsst.csv")
+    pi = pd.read_csv("tidy/forcens_fg_r_wsst.csv")
+    lgm = pd.read_csv("tidy/lgm_fg_r_wsst.csv")
+    lgm = lgm[lgm['Data_Source'] == 'margo']
 
     gdf_pi = pd_to_gpd(pi)
     gdf_lgm = pd_to_gpd(lgm)
@@ -65,25 +65,17 @@ def main():
             'SST']
 
     for i, col in enumerate(cols):
-        ax_hs[i].hist(pi[col], bins=30, label='PI', color=pi_color)
-        ax_hs[i].hist(lgm[col], bins=30, label='LGM', color=lgm_color)
-
-        ## get the location of highest bar of pi and normalise to 0-1
-        max_x = max(ax_hs[i].patches[:30], key=lambda p: p.get_height()).get_x()
-        max_y = max(ax_hs[i].get_yticks())
-
-        ax_hs[i].set_ylim(0, max_y*0.33)
-
-        ## add annotation for cutted off bars
-        annotation = 'highest: '+str(int(max_y))
+        #ax_hs[i].hist(pi[col], bins=30, label='PI', color=pi_color)
+        #ax_hs[i].hist(lgm[col], bins=30, label='LGM', color=lgm_color)
+        sns.kdeplot(pi[col], label='PI', ax=ax_hs[i], color=pi_color)
+        sns.kdeplot(lgm[col], label='LGM', ax=ax_hs[i], color=lgm_color)
 
         if col != 'SST':
-            ax_hs[i].set_xlabel(col+' Abundance')
-            ax_hs[i].annotate(annotation, xy=(0.15, 0.85), xycoords='axes fraction', fontsize=8)
+            ax_hs[i].set_xlabel('relative abundance')
         else:
             ax_hs[i].set_xlabel(col+' (°C)')
-            ax_hs[i].annotate(annotation, xy=(0.4, 0.85), xycoords='axes fraction', fontsize=8)
-        ax_hs[i].set_ylabel('Sample number')
+        ax_hs[i].set_title(col)
+        ax_hs[i].set_ylabel('Density')
         ax_hs[i].legend()
 
     # Customize the legends for the histogram subplots
