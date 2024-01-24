@@ -82,7 +82,12 @@ def main():
     labels = string.ascii_lowercase
     for i, ax in enumerate(all_axs):
         ax.legend()
-        ax.set_title(labels[i], loc='left', fontweight='bold', fontsize=14)
+        if i == 0:
+            ax.set_title(labels[i]+" LGM", loc='left', fontweight='bold', fontsize=14)
+        elif i == 1:
+            ax.set_title(labels[i]+" PI", loc='left', fontweight='bold', fontsize=14)
+        else:
+            ax.set_title(labels[i], loc='left', fontweight='bold', fontsize=14)
 
     # Save the figure to a PNG file
     fig.savefig("example/sample_effort.png", dpi=300, bbox_inches='tight')
