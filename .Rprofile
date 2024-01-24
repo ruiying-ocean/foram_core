@@ -58,12 +58,17 @@ add_sst <- function(){
     
     add_sst_script_path <- paste(project_path, "code/add_sst.py", sep = "/")
     
-    ## sample efforts
-    samp_eff_script_path <- paste(project_path, "code/sample_efforts.py", sep = "/")
-    
     ## Run the Python script to add SST data and plot sample efforts
     ## Please ensure packages is installed in user's Python environment
     system(paste("python3", add_sst_script_path, project_path))
+
+}
+
+plot_samples <- function(){
+    cat("Running plotting script...\n")
+    project_path <- file.path(getwd())
+    ## sample efforts
+    samp_eff_script_path <- paste(project_path, "code/sample_efforts.py", sep = "/")
     system(paste("python3", samp_eff_script_path, project_path))
 }
 
@@ -115,6 +120,16 @@ customPrompt <- function() {
     selection <- tolower(choices[selection])
     if (selection == "yes") {
         add_sst()
+    } else if (selection == "no") {
+        cat("No action taken.\n")
+    } else {
+        cat("Exiting...\n")    
+    }
+    
+    selection <- utils::menu(choices, title = "Do you want to re-plot samples?")
+    selection <- tolower(choices[selection])
+    if (selection == "yes") {
+        plot_samples()
     } else if (selection == "no") {
         cat("No action taken.\n")
     } else {
