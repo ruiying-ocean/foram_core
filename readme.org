@@ -10,7 +10,7 @@ This project collects existing foraminifera abundance data in the Last Glacial M
 + Publication citation: Ying, R., Monteiro, F. M., Wilson, J. D., & Schmidt, D. N. (2023). in submission
 
 #+BEGIN_QUOTE
-We only use MARGO and ForCenS in the latest manuscript version.
+We only use MARGO and ForCenS in the latest manuscript version, despite related scripts on other dataset (e.g., CLIMAP) still retained here.
 #+END_QUOTE
 
 #+html: <p align="center"><img src="example/example_map.png" /></p>
