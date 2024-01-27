@@ -1,9 +1,0 @@
-Event,Latitude,Longitude,Depth sed [m],Symbiosis,Spine,Absolute Abundance
-V26-124,16.133,-74.45,0.6,symbiont-barren,non-spinose,11
-V26-124,16.133,-74.45,0.6,symbiont-barren,spinose,9
-V26-124,16.133,-74.45,0.6,symbiont-bearing,non-spinose,0
-V26-124,16.133,-74.45,0.6,symbiont-bearing,spinose,18
-V26-124,16.133,-74.45,0.6,symbiont-facultative,non-spinose,76
-V26-124,16.133,-74.45,0.6,symbiont-facultative,spinose,0
-V26-124,16.133,-74.45,0.6,symbiont-obligate,spinose,201
-V26-124,16.133,-74.45,0.6,undetermined,non-spinose,35
