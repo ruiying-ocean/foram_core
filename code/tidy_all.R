@@ -48,7 +48,7 @@ wdf <- ldf %>%
     values_fn = list
   )
 
-wdf <- wdf %>% unnest(cols = `O. universa`:`G. siphonifera`)
+wdf <- wdf %>% unnest(cols = `O. universa`:`G. uvula`)
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
 
@@ -75,7 +75,7 @@ wdf <- ldf %>%
     values_fn = list
   )
 
-wdf <- wdf %>% unnest(`G. bulloides`:`G. elongatus`)
+wdf <- wdf %>% unnest(`O. universa`:`G. uvula`)
 
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
@@ -105,8 +105,9 @@ wdf <- ldf %>%
     names_from = "Functional Group",
     values_fill = NA,
     values_fn = list
-  ) %>%
-  unnest(cols = `symbiont-barren non-spinose`:`undetermined spinose`)
+  )
+
+wdf <- wdf%>%  unnest(cols = `symbiont-barren non-spinose`:`undetermined non-spinose`)
 
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
@@ -136,32 +137,7 @@ wdf <- ldf %>% pivot_wider(
   values_fn = list
 )
 
-## handle with the case of different length of vectors
-## delete it first
-tmp1 <- wdf[413, ]
-wdf <- wdf[-413, ]
-
-tmp2 <- wdf[428, ]
-wdf <- wdf[-428, ]
 wdf <- wdf %>% unnest(cols = c(`symbiont-barren non-spinose`:`symbiont-facultative spinose`))
-
-
-## putting back the deleted rows
-## the number is based on calculation that all groups sum up to 1
-tmp1$`symbiont-barren non-spinose`[[1]] <- c(
-  tmp1$`symbiont-barren non-spinose`[[1]],
-  1 - 0.03
-)
-tmp1 <- tmp1 %>% unnest(`symbiont-barren non-spinose`:`symbiont-facultative spinose`)
-
-tmp2$`symbiont-barren non-spinose`[[1]] <- c(
-  tmp2$`symbiont-barren non-spinose`[[1]],
-  (1 - 0.013 - 0.019 - 0.002),
-  (1 - 0.001)
-)
-tmp2 <- tmp2 %>% unnest(`symbiont-barren non-spinose`:`symbiont-facultative spinose`)
-
-wdf <- rbind(wdf, tmp1, tmp2)
 
 ## remove duplicate rows
 wdf <- wdf[!duplicated(wdf), ]
